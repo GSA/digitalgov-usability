@@ -31,3 +31,26 @@ According to _"The Story Behind Usability.gov"_ by Sanjay Koyani from 2002
 - Stand up a team through [Open Opportunities](https://openopps.usajobs.gov/) to help with the transition of the site.
 - Develop a schedule for communicating with the Usability team, including public meetings.
 - Develop a comms plan around the work we're doing and how it ties into the USWDS and 21st Century IDEA.
+
+
+
+---
+
+
+## Making the site static
+
+We used [WGET](https://www.gnu.org/software/wget/manual/wget.html) to copy the whole site as static HTML files.
+
+```
+wget \
+     --recursive \
+     -nc -k \
+     --no-clobber \
+     --page-requisites \
+     --html-extension \
+     --convert-links \
+     --restrict-file-names=windows \
+     --domains usability.gov \
+     --no-parent \
+         www.usability.gov/
+```
