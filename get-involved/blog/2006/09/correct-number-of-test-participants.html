@@ -1,0 +1,690 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="https://www.usability.gov/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width" />
+<link rel="canonical" href="correct-number-of-test-participants.html" />
+<link rel="shortlink" href="../../../../node/78.html" />
+<meta name="author" content="Assistant Secretary for Public Affairs" />
+<meta name="description" content="Determining the appropriate number of participants for usability tests can be difficult. Use the cumulative binomial probability to help determine the correct number of participants needed." />
+<meta name="dc.title" content="Determining the Correct Number of Usability Test Participants" />
+<meta name="keywords" content="user experience, ux, usability testing, test participants" />
+<meta name="dc.description" content="Determining the appropriate number of participants for usability tests can be difficult. Use the cumulative binomial probability to help determine the correct number of participants needed." />
+<meta name="dc.creator" content="Assistant Secretary for Public Affairs" />
+<meta name="dc.publisher" content="Department of Health and Human Services" />
+<meta name="dc.language" content="en-us" />
+<meta name="dc.date" content="2013-10-08" />
+<meta name="DCTERMS.dateReviewed" content="2013-05-24" />
+<meta name="DCTERMS.dateCreated" content="2013-05-24" />
+<meta name="DCTERMS.dateModified" content="2013-10-08" />
+<meta name="DCTERMS.keywords" content="user experience, ux, usability testing, test participants" />
+<meta name="nodeid" content="78" />
+  <title>Determining the Correct Number of Usability Test Participants | Usability.gov</title>
+  <meta content="width" name="MobileOptimized"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="on" http-equiv="cleartype"/>
+  <style type="text/css" media="all and (min-width: 720px)">
+@import url("https://www.usability.gov/modules/system/system.base.css?q4sx4v");
+@import url("https://www.usability.gov/modules/system/system.menus.css?q4sx4v");
+@import url("https://www.usability.gov/modules/system/system.messages.css?q4sx4v");
+@import url("https://www.usability.gov/modules/system/system.theme.css?q4sx4v");
+@import url("../../../../sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css@q4sx4v.css");
+@import url("../../../../sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css@q4sx4v.css");
+</style>
+<style type="text/css" media="all and (min-width: 720px)">
+@import url("../../../../sites/all/modules/ckeditor/ckeditor.css@q4sx4v.css");
+@import url("../../../../sites/all/modules/ctools/css/ctools.css@q4sx4v.css");
+@import url("../../../../sites/all/modules/panels/css/panels.css@q4sx4v.css");
+@import url("https://www.usability.gov/modules/book/book.css?q4sx4v");
+@import url("https://www.usability.gov/modules/comment/comment.css?q4sx4v");
+@import url("../../../../sites/all/modules/date/date_api/date.css@q4sx4v.css");
+@import url("../../../../sites/all/modules/date/date_popup/themes/datepicker.1.7.css@q4sx4v.css");
+@import url("https://www.usability.gov/modules/field/theme/field.css?q4sx4v");
+@import url("../../../../sites/all/modules/google_appliance/theme/google_appliance.css@q4sx4v.css");
+@import url("https://www.usability.gov/modules/node/node.css?q4sx4v");
+@import url("https://www.usability.gov/modules/search/search.css?q4sx4v");
+@import url("../../../../sites/all/modules/views/css/views.css@q4sx4v.css");
+@import url("../../../../sites/all/modules/comment_goodness/css/disabled_actions.css@q4sx4v.css");
+</style>
+<style type="text/css" media="all">
+@import url("../../../../sites/default/themes/usability/css/reset.css@q4sx4v.css");
+@import url("../../../../sites/default/themes/usability/css/layout.css@q4sx4v.css");
+@import url("../../../../sites/default/themes/usability/css/style.css@q4sx4v.css");
+</style>
+<style type="text/css" media="print">
+@import url("../../../../sites/default/themes/usability/css/print.css@q4sx4v.css");
+@import url("../../../../sites/default/themes/usability/css/jfontsize.css@q4sx4v.css");
+@import url("../../../../sites/default/themes/usability/css/jquery-ui.css@q4sx4v.css");
+</style>
+<style type="text/css" media="screen and (min-width: 720px)">
+@import url("../../../../sites/default/themes/usability/css/style-960.css@q4sx4v.css");
+</style>
+ 
+ <!--[if lte IE 10]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/style-960.css" />
+  <![endif]-->
+  
+   <!--[if gte IE 9]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/ie9.css" />
+  <![endif]-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.usability.gov/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.usability.gov/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.usability.gov/misc/drupal.js?q4sx4v"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery.ui || document.write("<script src='/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../../sites/all/modules/comment_goodness/comment_goodness.js@q4sx4v"></script>
+<script type="text/javascript" src="../../../../sites/default/themes/usability/js/misc.js@q4sx4v"></script>
+<script type="text/javascript" src="../../../../sites/default/themes/usability/js/jquery.jfontsize-1.0.js@q4sx4v"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"usability","theme_token":"wNfBMJGFsNrfJk8_axnYBjU6l_AbmZdKuaDZAB5G_jM","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/comment_goodness\/comment_goodness.js":1,"sites\/default\/themes\/usability\/js\/misc.js":1,"sites\/default\/themes\/usability\/js\/jquery.jfontsize-1.0.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_appliance\/theme\/google_appliance.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/comment_goodness\/css\/disabled_actions.css":1,"sites\/default\/themes\/usability\/user.css":1,"sites\/default\/themes\/usability\/css\/reset.css":1,"sites\/default\/themes\/usability\/css\/layout.css":1,"sites\/default\/themes\/usability\/css\/style.css":1,"sites\/default\/themes\/usability\/css\/print.css":1,"sites\/default\/themes\/usability\/css\/jfontsize.css":1,"sites\/default\/themes\/usability\/css\/jquery-ui.css":1,"sites\/default\/themes\/usability\/css\/style-960.css":1}},"better_exposed_filters":{"views":{"related_content":{"displays":{"block_5":{"filters":[]}}},"resources_views":{"displays":{"block_5":{"filters":[]}}},"related_categories":{"displays":{"block_1":{"filters":[]}}},"archive":{"displays":{"block":{"filters":[]}}}}}});
+//--><!]]>
+</script>
+
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"219216",ustr:"",originlat:"0",clientrtt:"23",ghostip:"184.26.44.58",ipv6:false,pct:"10",clientip:"67.244.78.94",requestid:"37a2457",region:"16428",protocol:"",blver:14,akM:"dscx",akN:"ae",akTT:"O",akTX:"1",akTI:"37a2457",ai:"303448",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-78 node-type-blog list-view sidebar_right sidebar_left" >
+<!--[if IE 8]>
+<div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+<div id="ie-9">
+<![endif]-->
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-QN2B" title="googletagmanager"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-QN2B');</script>
+<!-- End Google Tag Manager -->
+  <div id="skip-link">
+    <a href="correct-number-of-test-participants.html#main-content" class="element-invisible element-focusable skippy">Skip to main content</a>
+  </div>
+    <div id="wrapper">
+	<div id="header">
+	  
+		<div id="topBranding">
+		  <div class="girdle">
+			  <div class="topNavMenuButton">
+				<a href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/menu_icon_mobileversion.png" alt="expand navigation menu"></a>
+			  </div>
+			  <div id="logo">
+				  <div class="logoWrapper"><a href="http://www.usability.gov/" title="Home"><img src="https://www.usability.gov/sites/default/themes/usability/css/images/logo_without_tagline.png" alt="Home" class="usability-logo" /></a>				  <span id="slogan"><em>Improving the User Experience </em></span></div>  
+			  </div>
+			  <div class="topNavSearchButton">
+				<a href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/search_icon_mobileversion.png" alt="Search"></a>
+			  </div> 
+			  <div id="gsearch">
+					<div id="gsearch_inner">
+						<form name="HHS" action='https://search.hhs.gov/searchblox/usability/index.html' method='get'>
+						    <label for="searchbox">Search</label>
+						    <input type="text" name="query" id="searchbox" size="20" maxlength="256" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+						    <input type="image" src="http://www.usability.gov/sites/default/themes/usability/css/images/search_arrow.png" name="btnG" class="submit" id="gsearchbtn" alt="Search" value="Search" role="button" />
+						    <input type='hidden' name='page' value='1'>
+						    <input type='hidden' name='pagesize' value='10'>
+						    <input type='hidden' name='sortdir' value='desc'>
+						    <input type='hidden' name='sort' value='relevance'>
+						    <input type='hidden' name='adsCname' value='HHS'>
+						    <input type='hidden' name='adsDisplay' value='false'>
+						    <input type='hidden' name='cname' value='usability'>
+						    <input type='hidden' name='default' value='AND'>
+						    <input type='hidden' name='tune' value='false'>
+					</form>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		<div id="topNavigation">		  <div class="girdle">
+		
+		  <div class="region region-topnav">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.usability.gov/what-and-why/index.html" title="">What &amp; Why of Usability</a></li>
+<li class="leaf"><a href="http://www.usability.gov/how-to-and-tools/index.html">How To &amp; Tools</a></li>
+<li class="last expanded active-trail"><a href="http://www.usability.gov/get-involved/index.html" title="" class="active-trail">Get Involved</a><ul class="menu"><li class="first last leaf active-trail"><a href="correct-number-of-test-participants.html" class="menu-position-link active-trail active">Determining the Correct Number of Usability Test Participants</a></li>
+</ul></li>
+</ul>  </div>
+</div>
+  </div>
+		
+		</div>	
+	  </div> 
+	</div>
+	<div id="contentWrap">
+		<div class="shadow"></div>
+	  <div class="girdle">
+	
+	<div id="navigationLeft">
+		<div id="sidebar-left">
+			    <div class="region region-sidebar-left">
+    <div id="block-menu-menu-task-bar" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.usability.gov/how-to-and-tools/methods/index.html" title=""><img alt = "" src = "http://www.usability.gov/sites/default/themes/usability/css/images/methods_icon_1.png" /> <span>Methods</span></a></li>
+<li class="leaf"><a href="http://www.usability.gov/how-to-and-tools/resources/templates.html" title=""><img alt = "" src = "http://www.usability.gov/sites/default/themes/usability/css/images/resources%26templates_icon_1.png" /> <span>Templates &<br />Documents</span></a></li>
+<li class="last leaf"><a href="https://guidelines.usability.gov/" title=""><img alt = "" src = "http://www.usability.gov/sites/default/themes/usability/css/images/guidelines_icon_1.png" /> <span>Guidelines</span></a></li>
+</ul>  </div>
+</div>
+  </div>
+			</div>
+		</div>
+	<div id="content">
+	<div id="breadcrumbs"><p class='breadcrumb'><a href="http://www.usability.gov/">Home</a> > <a href="http://www.usability.gov/get-involved/index.html" title="">Get Involved</a> > Determining the Correct Number of Usability Test Participants</p></div>
+
+
+
+          <div id="tabs-wrapper" class="clearfix">          </div>                                        		  
+<div class="region region-content">
+
+      <div id="add_this_container">
+	
+	
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        	<!--BEGIN text resizer -->
+	    <div class="fontResize">
+		<a class="jfontsize-button" id="jfontsize-m" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/text_resize_minus_a_icon.png" width="27" height="27" border="0" alt="Minimize text size" title="Minimize text size" /></a>
+        <a class="jfontsize-button" id="jfontsize-d" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/text_resize_default_a_icon.png" width="27" height="27" border="0" alt="Reset text to normal size" title="Reset text to normal size" /></a>
+        <a class="jfontsize-button" id="jfontsize-p" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/text_resize_plus_a_icon.png" width="27" height="27" border="0" alt="Increase text size" title="Increase text size"/></a>
+		
+		<script type="text/javascript" language="javascript">
+			jQuery('.region-content').jfontsize({
+			btnMinusClasseId: '#jfontsize-m',
+			btnDefaultClasseId: '#jfontsize-d',
+			btnPlusClasseId: '#jfontsize-p'
+			});
+		</script>
+        
+		</div>
+		 <div class="shareToolBox">
+		<div class="shareMore">
+			<a class="addthis_button_print" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/insidepage_print_icon.png" width="27" height="27" border="0" alt="Print this page" title="Print this page" /></a>
+			
+			<!-- AddThis Button BEGIN -->
+		<div class="additionalShareOptions">
+        <a class="addthis_button_email" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/insidepage_email_icon.png" width="27" height="27" border="0" alt="Email this page" title="Email this page" /></a>
+		<a class="addthis_button_twitter" tw:via="UsabilityGov" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/insidepage_twitter_icon.png" width="27" height="27" border="0" alt="Tweet this page" title="Tweet this page" /></a> 
+		<a class="addthis_button_facebook" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/insidepage_facebook_icon.png" width="27" height="27" border="0" alt="Post this page" title="Post this page" /></a> 
+		<a class="addthis_button_pinterest_share" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/insidepage_pinterest_icon.png" width="27" height="27" border="0" alt="Pin this page" title="Pin this page" /></a>
+		<a class="addthis_button_compact" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/insidepage_plus_icon.png" width="27" height="27" border="0" alt="More ways to share" title="More ways to share" /></a>
+		</div><a class="moreShareButton" href="correct-number-of-test-participants.html#"><img src="http://www.usability.gov/sites/default/themes/usability/css/images/insidepage_share_icon.png" width="27" height="27" border="0" alt="Share tools" title="Share tools" />Share</a>
+		</div>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=hhsgov" async="async"></script>
+		</div> 
+		<!-- AddThis Button END -->
+	
+		</div>
+				
+		<script type="text/javascript">
+				 var addthis_config =  {
+						  ui_click: true,
+						  data_track_addressbar: false,
+						  services_compact: 'linkedin, google_plusone_share, tumblr, reddit, delicious, myspace, digg, stumbleupon, favorites',
+						  ui_508_compliant: true,
+						  
+					};
+					
+				var addthis_share = {
+    			templates : {
+        		twitter : "{{title}} {{url}} (via @UsabilityGov)"
+  						  }
+				}
+		 </script>
+
+
+		<!-- END text resizer -->
+
+  </div><!--End of this add_this_container-->
+ 
+        <a id="main-content"></a>
+                    				<h1 class="with-tabs">Determining the Correct Number of Usability Test Participants</h1>
+					                  
+<div>
+
+
+  <div>
+
+    
+	                                            <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <article about="/get-involved/blog/2006/09/correct-number-of-test-participants.html" typeof="sioc:Item foaf:Document">
+        <span property="dc:title" content="Determining the Correct Number of Usability Test Participants" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-field-by-line field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Bob Bailey, Ph.D.</div></div></div><div class="field field-name-field-blog-post-date field-type-datetime field-label-hidden"><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2006-09-01T18:15:00-04:00">Friday, September 1, 2006</span></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Often we are faced with determining the appropriate number of participants for our usability tests. Too many participants increase the cost and development time. If the number of participants is too small, the testing process may fail to detect important problems and result in reduced site usability.</p>
+<p>There are several ways to determine the correct number of participants, but this article will discuss a formula to estimate the number of participants needed. This formula is called cumulative binomial probability.</p>
+<h2>
+	When to Use Cumulative Binomial Probability</h2>
+<p>The binomial probability formula can be used to help estimate the appropriate number of test participants when <em>something is already known</em> about the usability of the site. We use the formula to determine the likelihood that any problem has a certain probability of occurring at least once during a testing session.</p>
+<p>The simple formula is 1 - (1 - p)<sup>n</sup></p>
+<p>where:</p>
+<p>p = the probability of a usability problem occurring during testing<br />
+	n = the number of test participants</p>
+<h2>
+	An Example, "Confusing Link Names"</h2>
+<p>Assume that the link name that you developed for your new site confuses 50% of potential users. The reason you know about the confusing link is because 50% of your users commented via email and help desk calls that they were confused by the link name.</p>
+<p>Considering the following table, how many users should be tested to reliably determine if the link name will confuse any one participant?</p>
+<table>
+<tbody>
+<tr>
+<th scope="col">
+				Number of Participants</th>
+<th scope="col">
+				Likelihood of Link Name Confusion</th>
+<th scope="col">
+				The Calculation</th>
+<th scope="col">
+				Probability of Users Finding the Usability Problem</th>
+</tr>
+<tr>
+<td scope="row">
+				1</td>
+<td>
+				50% (.50)</td>
+<td>
+				1 - (.50)<sup>1</sup> - .50</td>
+<td>
+				50% (.50)</td>
+</tr>
+<tr>
+<td scope="row">
+				2</td>
+<td>
+				50% (.50)</td>
+<td>
+				1 - (.50)<sup>2</sup> - .75</td>
+<td>
+				75% (.75)</td>
+</tr>
+<tr>
+<td scope="row">
+				3</td>
+<td>
+				50% (.50)</td>
+<td>
+				1 - (.50)<sup>3</sup> - .87</td>
+<td>
+				87% (.87)</td>
+</tr>
+<tr>
+<td scope="row">
+				5</td>
+<td>
+				50% (.50)</td>
+<td>
+				1 - (.50)<sup>5</sup> - .97</td>
+<td bgcolor="aqua">
+				97% (.97)</td>
+</tr>
+<tr>
+<td scope="row">
+				6</td>
+<td>
+				50% (.50)</td>
+<td>
+				1 - (.50)<sup>6</sup> - .98</td>
+<td>
+				98% (.98)</td>
+</tr>
+<tr>
+<td scope="row">
+				7</td>
+<td>
+				50% (.50)</td>
+<td>
+				1 - (.50)<sup>7</sup> - .99</td>
+<td bgcolor="#00ff00">
+				99% (.99)</td>
+</tr>
+<tr>
+<td scope="row">
+				8</td>
+<td>
+				50% (.50)</td>
+<td>
+				1 - (.50)<sup>8</sup> - .99</td>
+<td bgcolor="#00ff00">
+				99% (.99)</td>
+</tr>
+</tbody>
+</table>
+<div style="clear: both;">
+	 </div>
+<p>In this example, the likelihood that the link names will confuse any one user is 0.50 or 50%. So in a well-designed usability test, the likelihood that the link name will confuse any one test participant is also 0.50 (or 50%). This means that we will have a 50-50 chance of identifying the potentially confusing link name if we use one participant. If two participants are used, the probability of identifying the confusing link name increases to 75%. If three test participants are used, the likelihood that at least one of them will have difficulty when viewing the confusing link name is 87%. As the number of test participants increases, so does the probability of finding the confusing link name. In this example, if five users are tested, the likelihood that at least one of them will be confused by the link name is 97%.</p>
+<p>For reliability, it would be best to use probabilities of either .97 (blue background) or .99 (green background). So in our example, you would need between five and seven or eight participants for a probability from .97 to .99.</p>
+<p>Using five test participants obviously makes the chances of detection of the confusing link problem by at least on participant very high (likelihood is almost 100% of the time). We have a 100% chance that at least one test participant will identify the link name as a problem.</p>
+<h2>
+	Dealing with Rare Problems</h2>
+<p>The lower the incidence of a specific problem may mean that there is less of a need to identify and fix that problem. But a lower incidence does not necessarily mean the problem should not be identified and fixed. There may still be some problems that can only be discovered by users with special skill sets, limited education or experience, or certain disabilities. These problems, although infrequent, may result in serious problems for that group of users.</p>
+<h2>
+	Conclusion</h2>
+<p>We frequently ask, "How many users do we really need to detect certain reported problems in an interface?" The cumulative binomial probability formula helps us estimate the number of participants when we have existing information that a problem exists. The fewer the people experiencing the problem, the more test participants we will need to ensure that an identified issue is experienced by at least one of the participants. You will need fewer participants if an issue is experienced by many users. You will need more participants to be confident that at least one participant will experience a usability issue that is known and serious, but rarely impacts actual users.</p>
+</div></div></div>     <div id="voc-wrapper">
+		<div id="survey_target" style="border-top:1px solid #ccc;"> </div>
+	</div>
+            
+	 	
+	  
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+      </div>  
+</div>
+
+</div>
+	</div>
+	<div id="sidebarRight">
+	<div id="sidebar-right">
+			  <div class="region region-sidebar-right">
+    <div id="block-nodeblock-1868" class="block block-nodeblock">
+
+    
+  <div class="content">
+    <article about="/blog-rss.html" typeof="sioc:Item foaf:Document">
+
+  
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><h2 id="rightRail-rss">
+	<a href="../../rss.xml">Blog RSS <img alt="RSS ICON" src="http://www.usability.gov/sites/default/files/images/rss-image.jpg" /></a></h2>
+</div></div></div>
+	            
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+<div id="block-views-related-content-block-5" class="block block-views">
+
+    <h2>Related Content</h2>
+  
+  <div class="content">
+    <div class="view view-related-content view-id-related_content view-display-id-block_5 view-dom-id-43f7e23acec36c12bb93562678bd94a0">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../../2015/07/recruiting-participants.html">Recruiting Participants &amp; the Legend of “The General Public”</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.usability.gov/get-involved/blog/2015/05/welcome-to-relauched-hhsgov.html">Welcome to the Reimagined HHS.gov</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.usability.gov/get-involved/blog/2015/02/working-with-kids-and-teens.html">Usability Testing with Kids and Teens</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.usability.gov/get-involved/blog/2014/12/building-a-lab-series-constructing-and-equipping-a-lab.html">Constructing and Equipping a Lab – Part 3</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.usability.gov/get-involved/blog/2014/10/building-a-lab-series-deciding-if-you-need-a-dedicated-usability-lab.html">Deciding if You Need a Dedicated Usability Lab – Part 2</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-resources-views-block-5" class="block block-views">
+
+    <h2>Related Resources</h2>
+  
+  <div class="content">
+    <div class="view view-resources-views view-id-resources_views view-display-id-block_5 view-dom-id-52f9e4745549532dafd73aaf21a68c51">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.usability.gov/how-to-and-tools/resources/templates/receipt-form-usability-test-compensation-adult.html">Receipt Form: Usability Test Compensation Receipt Form (Adult)</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.usability.gov/how-to-and-tools/resources/templates/receipt-form-usability-test-compensation-minor.html">Receipt Form: Usability Test Compensation (Minor)</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.usability.gov/how-to-and-tools/resources/templates/introduction-to-testing-with-moderator-interaction.html">Introduction to Testing with Moderator Interaction</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.usability.gov/how-to-and-tools/resources/templates/digital-recording-release-form-minor.html">Digital Recording Release Form (Minor)</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-related-categories-block-1" class="block block-views">
+
+    <h2>Related Categories</h2>
+  
+  <div class="content">
+    <div class="view view-related-categories view-id-related_categories view-display-id-block_1 view-dom-id-5130c96ea85426a56828e6773dc5222b">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">  
+  <div class="views-field views-field-name">        <span class="field-content"><a href="../../../../tags/test-participants/index.html">Test Participants</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-archive-block" class="block block-views">
+
+    <h2>Blog Archives</h2>
+  
+  <div class="content">
+    <div class="view view-archive view-id-archive view-display-id-block view-dom-id-3e5753fc147dcc1dd6432268439017b3">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+  <ul class="views-summary">
+      <li><a href="../../2016/index.html">2016</a>
+              (1)
+          </li>
+      <li><a href="../../2015/index.html">2015</a>
+              (3)
+          </li>
+      <li><a href="../../2014/index.html">2014</a>
+              (5)
+          </li>
+      <li><a href="../../2013/index.html">2013</a>
+              (9)
+          </li>
+      <li><a href="../../2012/index.html">2012</a>
+              (3)
+          </li>
+      <li><a href="../../2011/index.html">2011</a>
+              (1)
+          </li>
+      <li><a href="../../2010/index.html">2010</a>
+              (4)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2009/index.html">2009</a>
+              (8)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2008/index.html">2008</a>
+              (3)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2007/index.html">2007</a>
+              (3)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2006/index.html">2006</a>
+              (9)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2005/index.html">2005</a>
+              (8)
+          </li>
+    </ul>
+</div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <div id="voc-wrapper">
+    <div id="survey_target"></div>
+</div>     </div>
+  
+  
+</div>  </div>
+</div>
+  </div>
+			</div>
+	</div>
+	<div class="clearBoth"></div>	
+	</div>
+	</div>
+	<div id="footerWrapper">
+		  <div class="girdle">
+		  <div class="region region-footer">
+    <div id="block-nodeblock-36" class="block block-nodeblock">
+
+    
+  <div class="content">
+    <article about="/footer.html" typeof="sioc:Item foaf:Document">
+    
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div role="contentinfo">
+<div id="footerBranding">
+<p><a href="../../../../index.html"><img alt="usability.gov, go to the homepage" src="http://www.usability.gov/sites/default/files/images/footer-logo.png" /></a></p>
+</div>
+<div id="stayConnected">
+		Stay Connected <a href="https://twitter.com/usabilitygov"><img alt="Follow us on Twitter @UsabilityGov" src="http://www.usability.gov/sites/default/files/images/footer_twitter_icon.png" title="Follow us on Twitter @UsabilityGov" /></a><a href="http://www.usability.gov/rss.xml"><img alt="RSS Feed" src="http://www.usability.gov/sites/default/files/images/rss-image-footer.png" title="RSS Feed" /></a></div>
+<div id="footerLinks">
+<ul>
+<li>
+				<a href="http://www.hhs.gov/Accessibility.html">Accessibility</a></li>
+<li>
+				<a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a></li>
+<li>
+				<a href="http://www.hhs.gov/foia/">FOIA</a></li>
+<li>
+				<a href="http://www.usability.gov/about-us/index.html">About Us</a></li>
+<li>
+				<a href="http://www.usability.gov/site-tour.html">Tour the Site</a></li>
+<li>
+				<a href="http://www.usability.gov/stay-connected/index.html">Widgets &amp; Badges</a></li>
+<li>
+				<a href="http://www.hhs.gov/Disclaimer.html">Disclaimers</a></li>
+<li>
+				<a href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a></li>
+<li>
+				<a href="http://www.hhs.gov/asa/eeo/resources/index.html">No FEAR</a></li>
+<li>
+				<a href="http://www.hhs.gov/plugins.html">Viewers &amp; Players</a></li>
+<li>
+				<a href="http://www.whitehouse.gov/">WhiteHouse.gov</a></li>
+<li>
+				<a href="http://www.usa.gov/">USA.gov</a></li>
+<li>
+				<a class="last" href="http://www.gobiernousa.gov/">GobiernoUSA.gov</a></li>
+</ul>
+</div>
+<div id="branddate">
+		<img alt="U.S. Flag" src="http://www.usability.gov/sites/default/files/images/footer_usaflag_icon.png" style="width: 20px; height: 13px; margin-right: 15px;" /> 
+<script>
+<!--//--><![CDATA[// ><!--
+var now = new Date();document.write(now.format('mmmm dd, yyyy'));
+//--><!]]>
+</script></div>
+<div id="copyright">
+		<a class="footerLinks" href="http://www.hhs.gov">U.S. Department of Health &amp; Human Services</a> - 200 Independence Avenue, S.W. - Washington, D.C. 20201</div>
+</div>
+<p> </p>
+</div></div></div>
+	            
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+  </div>
+		</div>
+	</div>
+  	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!--[if IE 8]>
+</div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+</div id="ie-9">
+<![endif]-->  
+</body>
+</html>
