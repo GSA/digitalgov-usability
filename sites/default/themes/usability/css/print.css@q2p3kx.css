@@ -1,0 +1,32 @@
+@media print
+ {
+
+body {
+	font-family: Helvetica, arial, Sans-serif;
+	background: none;
+	color: black;
+}
+
+.logoWrapper img{
+	padding: 20px;
+	background-color: #333 !important;
+}
+
+
+/*
+#logo a{
+	background-image: url(/images/logo_on_whitebackground.png) !important;
+	margin: 0 auto;
+	}
+*/
+
+.topNavMenuButton, .topNavSearchButton, #navigationLeft, #sidebar-left, #breadcrumbs, #add_this_container, #sidebarRight, #footerWrapper, #slogan {
+	display: none;
+	}
+
+
+.usability-logo {
+	}
+
+
+ }
