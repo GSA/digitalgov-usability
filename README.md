@@ -56,3 +56,5 @@ wget \
      -nc -k -p \
      https://www.usability.gov/
 ```
+
+Then we re-ran `wget -p -k --no-clobber https://www.usability.gov/` to clean up all the relative URLs.
