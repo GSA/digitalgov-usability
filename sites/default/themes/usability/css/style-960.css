@@ -1448,7 +1448,7 @@ body.list-view .jcarousel-skin-tango .jcarousel-prev-horizontal, body.list-view 
     width: 32px;
     height: 32px;
     cursor: pointer;
-    background: transparent url(https://www.uuusability.gov/sites/default/themes/usability/css/next-vertical.png) no-repeat 0 0;
+    background: transparent url(.//sites/default/themes/usability/css/next-vertical.png) no-repeat 0 0;
 }
 
 .jcarousel-skin-tango .jcarousel-next-vertical:hover,
@@ -1476,7 +1476,7 @@ body.list-view .jcarousel-skin-tango .jcarousel-prev-horizontal, body.list-view 
     width: 32px;
     height: 32px;
     cursor: pointer;
-    background: transparent url(https://www.uuusability.gov/sites/default/themes/usability/css/prev-vertical.png) no-repeat 0 0;
+    background: transparent url(.//sites/default/themes/usability/css/prev-vertical.png) no-repeat 0 0;
 }
 
 .jcarousel-skin-tango .jcarousel-prev-vertical:hover,

@@ -2025,7 +2025,7 @@ Expander
 
 .expand .unexpand a{
 	display: block;
-	background-image: url(https://www.uuusability.gov/sites/default/themes/usability/images/sys_images/show.jpg);
+	background-image: url(.//sites/default/themes/usability/images/sys_images/show.jpg);
 	background-position: top left;
 	background-repeat: no-repeat;
 	padding-left: 30px;
@@ -2063,7 +2063,7 @@ Expander
 .expand .expanded .hidedetails .collapselink{
 	float: right;
 	display: block;
-	background-image: url(https://www.uuusability.gov/sites/default/themes/usability/images/sys_images/hide.jpg);
+	background-image: url(.//sites/default/themes/usability/images/sys_images/hide.jpg);
 	background-position: top left;
 	background-repeat: no-repeat;
 	padding-left: 30px;
