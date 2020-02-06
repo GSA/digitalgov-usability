@@ -44,13 +44,15 @@ We used [WGET](https://www.gnu.org/software/wget/manual/wget.html) to copy the w
 ```
 wget \
      --recursive \
-     -nc -k \
+     --level=inf \
      --no-clobber \
      --page-requisites \
      --html-extension \
      --convert-links \
      --restrict-file-names=windows \
+     --adjust-extension \
      --domains usability.gov \
      --no-parent \
-         www.usability.gov/
+     -nc -k -p \
+     https://www.usability.gov/
 ```

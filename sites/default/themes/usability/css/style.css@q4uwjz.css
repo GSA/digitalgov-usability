@@ -4,19 +4,19 @@
 }
 @font-face {
 font-family: 'Helvetica';
-src: url('https://www.usability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.eot?');
-src: url('https://www.usability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.eot?') format('embedded-opentype'), url('https://www.usability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.woff') format('woff'), url('https://www.usability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.ttf') format('truetype'), url('https://www.usability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.svg') format('svg');
+src: url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.eot?');
+src: url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.eot?') format('embedded-opentype'), url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.woff') format('woff'), url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.ttf') format('truetype'), url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/Helvetica/Helvetica.svg') format('svg');
 }
 
 @font-face {
 font-family: 'ProximaNova-Regular';
-src: url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?');
-src: url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?') format('embedded-opentype'), url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'), url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype'), url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.svg') format('svg');
+src: url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?');
+src: url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?') format('embedded-opentype'), url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'), url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype'), url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Regular/ProximaNova-Regular.svg') format('svg');
 }
 @font-face {
 font-family: 'ProximaNova-Semibold';
-src: url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?');
-src: url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?') format('embedded-opentype'), url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff')format('woff') , url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf') format('truetype'), url('https://www.usability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.svg') format('svg');
+src: url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?');
+src: url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?') format('embedded-opentype'), url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff')format('woff') , url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf') format('truetype'), url('https://www.uuusability.gov/sites/default/themes/usability/css/fonts/ProximaNova-Semibold/ProximaNova-Semibold.svg') format('svg');
 }
 
 html {
@@ -336,7 +336,7 @@ height: 55px;
 }
 
 #contentWrap {
-	background: #d5cfc5 url('https://www.usability.gov/sites/default/themes/usability/css/images/backgr_bg.jpg') repeat fixed left top;
+	background: #d5cfc5 url('https://www.uuusability.gov/sites/default/themes/usability/css/images/backgr_bg.jpg') repeat fixed left top;
 	width: 100%;
 	display: block;
 /*	margin-top:60px;*/
@@ -647,7 +647,7 @@ body.front .view-home-page .views-row {
 }
 
 body.front .view-home-page .views-row-first, div.blogs .views-row-first.featured {
-	background: #ffffff url('https://www.usability.gov/sites/default/themes/usability/css/images/ribbon.png') no-repeat 1em top;
+	background: #ffffff url('https://www.uuusability.gov/sites/default/themes/usability/css/images/ribbon.png') no-repeat 1em top;
 	-webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
 	-moz-box-shadow:    0px 0px 0px rgba(255, 255, 255, 0);
 	box-shadow:         0px 0px 0px rgba(255, 255, 255, 0);
@@ -678,7 +678,7 @@ body.front .view-home-page .views-row-first h2 {
 }
 
 body.front .view-home-page .views-field-body {
-	background: transparent url('https://www.usability.gov/sites/default/themes/usability/css/images/default_blue_trans.png') repeat left top;
+	background: transparent url('https://www.uuusability.gov/sites/default/themes/usability/css/images/default_blue_trans.png') repeat left top;
 	color: #fff;
 	visibility: hidden;
 	z-index: 1000;
@@ -821,7 +821,7 @@ li.glossaryTerm .views-field-title {
 
 li.glossaryTerm .views-field-view-node a {
 	padding: 1em 1.5em 1em 0;
-	background: rgba(0, 0, 0, 0) url(https://www.usability.gov/sites/default/themes/usability/css/images/readmore_arrow_glossary_page.png) no-repeat right;
+	background: rgba(0, 0, 0, 0) url(https://www.uuusability.gov/sites/default/themes/usability/css/images/readmore_arrow_glossary_page.png) no-repeat right;
 	display: block;
 	width: 80px;
 }
@@ -914,7 +914,7 @@ padding: 1em;
 select.form-select {
     padding:3px;
     margin: 0;
-    background: #fff url(https://www.usability.gov/sites/default/themes/usability/css/images/insidepage_sub_category_arrow_open.png) no-repeat right;
+    background: #fff url(https://www.uuusability.gov/sites/default/themes/usability/css/images/insidepage_sub_category_arrow_open.png) no-repeat right;
     color:#666;
     border:1px solid #ccc;
     outline:none;
@@ -1138,23 +1138,23 @@ p.viewButtons {
 a.cardViewButton {
 	width: 48px;
 	height: 32px;
-	background: transparent url(https://www.usability.gov/sites/default/themes/usability/css/images/grid_view_on.png) 0 0;
+	background: transparent url(https://www.uuusability.gov/sites/default/themes/usability/css/images/grid_view_on.png) 0 0;
 	position: absolute;
 }
 a.listViewButton {
 	width: 48px;
 	height: 32px;
-	background: transparent url(https://www.usability.gov/sites/default/themes/usability/css/images/list_view_off.png) 0 0;
+	background: transparent url(https://www.uuusability.gov/sites/default/themes/usability/css/images/list_view_off.png) 0 0;
 	position: absolute;
 	margin: 0 0 0 48px;
 }
 
 body.list-view a.cardViewButton {
-	background: transparent url(https://www.usability.gov/sites/default/themes/usability/css/images/grid_view_off.png) 0 0;
+	background: transparent url(https://www.uuusability.gov/sites/default/themes/usability/css/images/grid_view_off.png) 0 0;
 }
 
 body.list-view a.listViewButton {
-	background: transparent url(https://www.usability.gov/sites/default/themes/usability/css/images/list_view_on.png) 0 0;
+	background: transparent url(https://www.uuusability.gov/sites/default/themes/usability/css/images/list_view_on.png) 0 0;
 }
 
 body.list-view div.blogs .views-row-first.featured {
@@ -1163,7 +1163,7 @@ body.list-view div.blogs .views-row-first.featured {
 
 /* ACCORDION BUTTON STYLE */
 span.accordionArrow {
-	background: transparent url(https://www.usability.gov/sites/default/themes/usability/css/images/insidepage_sub_category_arrow_open.png) no-repeat top right;
+	background: transparent url(https://www.uuusability.gov/sites/default/themes/usability/css/images/insidepage_sub_category_arrow_open.png) no-repeat top right;
 	height: 23px;
 	width: 23px;
 	display: inline-block;
@@ -1181,7 +1181,7 @@ span.accordionArrow a {
 }
 
 a.accordion span.closed {
-	background: transparent url(https://www.usability.gov/sites/default/themes/usability/css/images/insidepage_sub_category_arrow_close.png) no-repeat top right;
+	background: transparent url(https://www.uuusability.gov/sites/default/themes/usability/css/images/insidepage_sub_category_arrow_close.png) no-repeat top right;
 }
 	
 /*/*
@@ -1326,7 +1326,7 @@ li.cards {
 }
 
 li.cards .views-field-body {
-	background: transparent url('https://www.usability.gov/sites/default/themes/usability/css/images/methods_color_trans.png') repeat left top;
+	background: transparent url('https://www.uuusability.gov/sites/default/themes/usability/css/images/methods_color_trans.png') repeat left top;
 	color: #fff;
 	/*visibility: hidden;*/
 	z-index: 1000;
@@ -2025,7 +2025,7 @@ Expander
 
 .expand .unexpand a{
 	display: block;
-	background-image: url(https://www.usability.gov/sites/default/themes/usability/images/sys_images/show.jpg);
+	background-image: url(https://www.uuusability.gov/sites/default/themes/usability/images/sys_images/show.jpg);
 	background-position: top left;
 	background-repeat: no-repeat;
 	padding-left: 30px;
@@ -2063,7 +2063,7 @@ Expander
 .expand .expanded .hidedetails .collapselink{
 	float: right;
 	display: block;
-	background-image: url(https://www.usability.gov/sites/default/themes/usability/images/sys_images/hide.jpg);
+	background-image: url(https://www.uuusability.gov/sites/default/themes/usability/images/sys_images/hide.jpg);
 	background-position: top left;
 	background-repeat: no-repeat;
 	padding-left: 30px;
@@ -2083,7 +2083,7 @@ Expander
 	
 }
 
-/*This will suppress the display of “on this page” box  */
+/*This will suppress the display of ï¿½on this pageï¿½ box  */
 .syndicate #onthispage2 {
     display: none;
 }
@@ -2217,7 +2217,7 @@ span.vocquestionnumber {
 	width: 100%;
 	height: 63px;
 	margin: 25px 0 0 0;
-	background: url(https://www.usability.gov/sites/default/themes/usability/css/images/voc_image_mobile.png) no-repeat left top;
+	background: url(https://www.uuusability.gov/sites/default/themes/usability/css/images/voc_image_mobile.png) no-repeat left top;
 	color: #FFF;
 	float: right;
 	clear: both;
@@ -2261,7 +2261,7 @@ input[type="radio"] + label {
     display:block;
     height:19px;
     vertical-align:middle;
-    background:url(https://www.usability.gov/sites/default/themes/usability/css/images/radio_button.png) no-repeat;
+    background:url(https://www.uuusability.gov/sites/default/themes/usability/css/images/radio_button.png) no-repeat;
     cursor:pointer;
 	margin-top: .15em;
 	padding: 2px 0 0 25px;
@@ -2271,16 +2271,16 @@ span.vocradio input[type="radio"] + label  {
     display:block;
     height:19px;
     vertical-align:middle;
-    background:url(https://www.usability.gov/sites/default/themes/usability/css/images/radio_button.png) no-repeat;
+    background:url(https://www.uuusability.gov/sites/default/themes/usability/css/images/radio_button.png) no-repeat;
     cursor:pointer;
 	margin-top: .15em;
 	padding: 0 0 0 25px;
 }
 input[type="radio"]:checked + label  {
-    background:url(https://www.usability.gov/sites/default/themes/usability/css/images/radio_button_selected.png) no-repeat;
+    background:url(https://www.uuusability.gov/sites/default/themes/usability/css/images/radio_button_selected.png) no-repeat;
 }
 span.vocradio input[type="radio"]:checked + label  {
-    background:url(https://www.usability.gov/sites/default/themes/usability/css/images/radio_button_selected.png) no-repeat;
+    background:url(https://www.uuusability.gov/sites/default/themes/usability/css/images/radio_button_selected.png) no-repeat;
 }
 
 label[for="response_raw_responses_attributes_0_answer_7304"]{
@@ -2311,7 +2311,7 @@ span.vocradio input#response_raw_responses_attributes_0_answer_7306 + label {
 	}	
 	
 #page_2, #page_3 , #page_4 {
-	background: url(https://www.usability.gov/sites/default/themes/usability/css/images/voc-background-mobile.png) no-repeat right top;
+	background: url(https://www.uuusability.gov/sites/default/themes/usability/css/images/voc-background-mobile.png) no-repeat right top;
 	color: #000;
 	line-height: 1.25em;
 	height: 258px;
@@ -2393,7 +2393,7 @@ input[type="submit"]{
 	font-weight: bold;
 	border: none;
 	border: none;
-	background: #027497 url(https://www.usability.gov/sites/default/themes/usability/css/images/generic-button-arrow.png) no-repeat right center;
+	background: #027497 url(https://www.uuusability.gov/sites/default/themes/usability/css/images/generic-button-arrow.png) no-repeat right center;
 	text-align: left;
 	padding: 0 2.5em 0 1.25em;
 	cursor: pointer;
@@ -2428,7 +2428,7 @@ margin: 15px 0\9;
 	width: 100%;
 	height: 100px;
 	margin: 25px 0 0 0;
-	background: url(https://www.usability.gov/sites/default/themes/usability/css/images/voc_image_mobile-500.png) no-repeat left top;
+	background: url(https://www.uuusability.gov/sites/default/themes/usability/css/images/voc_image_mobile-500.png) no-repeat left top;
 	color: #FFF;
 	float: right;
 	clear: both;
