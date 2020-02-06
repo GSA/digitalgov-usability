@@ -1,5 +1,0 @@
-/* Disabled submit action buttons on the comment form */
-.comment-form .form-actions input:disabled {
-  color: #bbbbbb;
-}
-
