@@ -9,7 +9,7 @@
     var script_tag = document.createElement('script');
     script_tag.setAttribute('type', 'text/javascript');
     script_tag.setAttribute('src',
-      "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js");
+      "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js");
 
     /* Wait for the script to load */
     if(script_tag.readyState) {
