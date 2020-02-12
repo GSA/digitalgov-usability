@@ -1,0 +1,702 @@
+---
+layout: default
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="{{ site.baseurl }}/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width" />
+<link rel="shortlink" href="2843.html" />
+<link rel="canonical" href="../what-and-why/user-research.html" />
+<meta name="description" content="User research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies." />
+<meta name="dc.title" content="User Research Basics" />
+<meta name="keywords" content="User experience, UX, user research, user behavior, understanding  users user research, usability evaluation, card sorting, focus groups, heuristics, interviews, parallel design, personas, prototyping, surveys, task analysis, testing, use cases, user-centered design process" />
+<meta name="dc.description" content="User research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies." />
+<meta name="dc.publisher" content="Department of Health and Human Services" />
+<meta name="dc.language" content="en-us" />
+<meta name="dc.date" content="2013-10-08" />
+<meta name="DCTERMS.dateCreated" content="2013-10-07" />
+<meta name="DCTERMS.dateModified" content="2013-10-08" />
+<meta name="DCTERMS.keywords" content="User experience, UX, user research, user behavior, understanding  users user research, usability evaluation, card sorting, focus groups, heuristics, interviews, parallel design, personas, prototyping, surveys, task analysis, testing, use cases, user-centered design process" />
+<meta name="nodeid" content="2843" />
+  <title>User Research Basics | Usability.gov</title>
+  <meta content="width" name="MobileOptimized"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="on" http-equiv="cleartype"/>
+  <style type="text/css" media="all and (min-width: 720px)">
+@import url("{{ site.baseurl }}/modules/system/system.base.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.menus.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.messages.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.theme.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css");
+@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css");
+</style>
+<style type="text/css" media="all and (min-width: 720px)">
+@import url("{{ site.baseurl }}/sites/all/modules/ckeditor/ckeditor.css");
+@import url("{{ site.baseurl }}/sites/all/modules/ctools/css/ctools.css");
+@import url("{{ site.baseurl }}/sites/all/modules/panels/css/panels.css");
+@import url("{{ site.baseurl }}/modules/book/book.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/comment/comment.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/date/date_api/date.css");
+@import url("{{ site.baseurl }}/sites/all/modules/date/date_popup/themes/datepicker.1.7.css");
+@import url("{{ site.baseurl }}/modules/field/theme/field.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/google_appliance/theme/google_appliance.css");
+@import url("{{ site.baseurl }}/modules/node/node.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/search/search.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/views/css/views.css");
+</style>
+<style type="text/css" media="all">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/reset.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/layout.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style.css");
+</style>
+<style type="text/css" media="print">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/print.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jfontsize.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jquery-ui.css");
+</style>
+<style type="text/css" media="screen and (min-width: 720px)">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style-960.css");
+</style>
+ 
+ <!--[if lte IE 10]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/style-960.css" />
+  <![endif]-->
+  
+   <!--[if gte IE 9]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/ie9.css" />
+  <![endif]-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/drupal.js?q56q1n"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery.ui || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/misc.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/jquery.jfontsize-1.0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"usability","theme_token":"JzxzjNIh-lCiUwFB9cyfHFWaNwrYbicnrY5NFi_2ofQ","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/default\/themes\/usability\/js\/misc.js":1,"sites\/default\/themes\/usability\/js\/jquery.jfontsize-1.0.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_appliance\/theme\/google_appliance.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/default\/themes\/usability\/user.css":1,"sites\/default\/themes\/usability\/css\/reset.css":1,"sites\/default\/themes\/usability\/css\/layout.css":1,"sites\/default\/themes\/usability\/css\/style.css":1,"sites\/default\/themes\/usability\/css\/print.css":1,"sites\/default\/themes\/usability\/css\/jfontsize.css":1,"sites\/default\/themes\/usability\/css\/jquery-ui.css":1,"sites\/default\/themes\/usability\/css\/style-960.css":1}},"better_exposed_filters":{"views":{"related_content":{"displays":{"block_5":{"filters":[]}}},"resources_views":{"displays":{"block_5":{"filters":[]}}},"related_categories":{"displays":{"block_1":{"filters":[]}}}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-2843 node-type-basic-article sidebar_right sidebar_left" >
+<!--[if IE 8]>
+<div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+<div id="ie-9">
+<![endif]-->
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-QN2B" title="googletagmanager"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-QN2B');</script>
+<!-- End Google Tag Manager -->
+  <div id="skip-link">
+    <a href="2843.html#main-content" class="element-invisible element-focusable skippy">Skip to main content</a>
+  </div>
+    <div id="wrapper">
+	<div id="header">
+	  
+		<div id="topBranding">
+		  <div class="girdle">
+			  <div class="topNavMenuButton">
+				<a href="2843.html#"><img src="../sites/default/themes/usability/css/images/menu_icon_mobileversion.png" alt="expand navigation menu"></a>
+			  </div>
+			  <div id="logo">
+				  <div class="logoWrapper"><a href="../index.html" title="Home"><img src="{{ site.baseurl }}/sites/default/themes/usability/css/images/logo_without_tagline.png" alt="Home" class="usability-logo" /></a>				  <span id="slogan"><em>Improving the User Experience </em></span></div>  
+			  </div>
+			  <div class="topNavSearchButton">
+				<a href="2843.html#"><img src="../sites/default/themes/usability/css/images/search_icon_mobileversion.png" alt="Search"></a>
+			  </div> 
+			  <div id="gsearch">
+					<div id="gsearch_inner">
+						<form name="HHS" action='https://search.hhs.gov/searchblox/usability/index.html' method='get'>
+						    <label for="searchbox">Search</label>
+						    <input type="text" name="query" id="searchbox" size="20" maxlength="256" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+						    <input type="image" src="../sites/default/themes/usability/css/images/search_arrow.png" name="btnG" class="submit" id="gsearchbtn" alt="Search" value="Search" role="button" />
+						    <input type='hidden' name='page' value='1'>
+						    <input type='hidden' name='pagesize' value='10'>
+						    <input type='hidden' name='sortdir' value='desc'>
+						    <input type='hidden' name='sort' value='relevance'>
+						    <input type='hidden' name='adsCname' value='HHS'>
+						    <input type='hidden' name='adsDisplay' value='false'>
+						    <input type='hidden' name='cname' value='usability'>
+						    <input type='hidden' name='default' value='AND'>
+						    <input type='hidden' name='tune' value='false'>
+					</form>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		<div id="topNavigation">		  <div class="girdle">
+		
+		  <div class="region region-topnav">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first expanded active-trail"><a href="../what-and-why/index.html" title="" class="active-trail">What &amp; Why of Usability</a><ul class="menu"><li class="first last leaf active-trail"><a href="../what-and-why/user-research.html" class="menu-position-link active-trail active">User Research Basics</a></li>
+</ul></li>
+<li class="leaf"><a href="../how-to-and-tools/index.html">How To &amp; Tools</a></li>
+<li class="last leaf"><a href="../get-involved/index.html" title="">Get Involved</a></li>
+</ul>  </div>
+</div>
+  </div>
+		
+		</div>	
+	  </div> 
+	</div>
+	<div id="contentWrap">
+		<div class="shadow"></div>
+	  <div class="girdle">
+	
+	<div id="navigationLeft">
+		<div id="sidebar-left">
+			    <div class="region region-sidebar-left">
+    <div id="block-menu-menu-task-bar" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../how-to-and-tools/methods/index.html" title=""><img alt="" src="../sites/default/themes/usability/css/images/methods_icon_1.png" /> <span>Methods</span></a></li>
+<li class="leaf"><a href="../how-to-and-tools/resources/templates.html" title=""><img alt="" src="../sites/default/themes/usability/css/images/resources&amp;templates_icon_1.png" /> <span>Templates &<br />Documents</span></a></li>
+<li class="last leaf"><a href="https://guidelines.usability.gov/" title=""><img alt="" src="../sites/default/themes/usability/css/images/guidelines_icon_1.png" /> <span>Guidelines</span></a></li>
+</ul>  </div>
+</div>
+  </div>
+			</div>
+		</div>
+	<div id="content">
+	<div id="breadcrumbs"><p class='breadcrumb'><a href="../index.html">Home</a> > <a href="../what-and-why/index.html" title="">What &amp; Why of Usability</a> > User Research Basics</p></div>
+
+
+
+          <div id="tabs-wrapper" class="clearfix">          </div>                                        		  
+<div class="region region-content">
+
+      <div id="add_this_container">
+	
+	
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        	<!--BEGIN text resizer -->
+	    <div class="fontResize">
+		<a class="jfontsize-button" id="jfontsize-m" href="2843.html#"><img src="../sites/default/themes/usability/css/images/text_resize_minus_a_icon.png" width="27" height="27" border="0" alt="Minimize text size" title="Minimize text size" /></a>
+        <a class="jfontsize-button" id="jfontsize-d" href="2843.html#"><img src="../sites/default/themes/usability/css/images/text_resize_default_a_icon.png" width="27" height="27" border="0" alt="Reset text to normal size" title="Reset text to normal size" /></a>
+        <a class="jfontsize-button" id="jfontsize-p" href="2843.html#"><img src="../sites/default/themes/usability/css/images/text_resize_plus_a_icon.png" width="27" height="27" border="0" alt="Increase text size" title="Increase text size"/></a>
+		
+		<script type="text/javascript" language="javascript">
+			jQuery('.region-content').jfontsize({
+			btnMinusClasseId: '#jfontsize-m',
+			btnDefaultClasseId: '#jfontsize-d',
+			btnPlusClasseId: '#jfontsize-p'
+			});
+		</script>
+        
+		</div>
+		 <div class="shareToolBox">
+		<div class="shareMore">
+			<a class="addthis_button_print" href="2843.html#"><img src="../sites/default/themes/usability/css/images/insidepage_print_icon.png" width="27" height="27" border="0" alt="Print this page" title="Print this page" /></a>
+			
+			<!-- AddThis Button BEGIN -->
+		<div class="additionalShareOptions">
+        <a class="addthis_button_email" href="2843.html#"><img src="../sites/default/themes/usability/css/images/insidepage_email_icon.png" width="27" height="27" border="0" alt="Email this page" title="Email this page" /></a>
+		<a class="addthis_button_twitter" tw:via="UsabilityGov" href="2843.html#"><img src="../sites/default/themes/usability/css/images/insidepage_twitter_icon.png" width="27" height="27" border="0" alt="Tweet this page" title="Tweet this page" /></a> 
+		<a class="addthis_button_facebook" href="2843.html#"><img src="../sites/default/themes/usability/css/images/insidepage_facebook_icon.png" width="27" height="27" border="0" alt="Post this page" title="Post this page" /></a> 
+		<a class="addthis_button_pinterest_share" href="2843.html#"><img src="../sites/default/themes/usability/css/images/insidepage_pinterest_icon.png" width="27" height="27" border="0" alt="Pin this page" title="Pin this page" /></a>
+		<a class="addthis_button_compact" href="2843.html#"><img src="../sites/default/themes/usability/css/images/insidepage_plus_icon.png" width="27" height="27" border="0" alt="More ways to share" title="More ways to share" /></a>
+		</div><a class="moreShareButton" href="2843.html#"><img src="../sites/default/themes/usability/css/images/insidepage_share_icon.png" width="27" height="27" border="0" alt="Share tools" title="Share tools" />Share</a>
+		</div>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=hhsgov" async="async"></script>
+		</div> 
+		<!-- AddThis Button END -->
+	
+		</div>
+				
+		<script type="text/javascript">
+				 var addthis_config =  {
+						  ui_click: true,
+						  data_track_addressbar: false,
+						  services_compact: 'linkedin, google_plusone_share, tumblr, reddit, delicious, myspace, digg, stumbleupon, favorites',
+						  ui_508_compliant: true,
+						  
+					};
+					
+				var addthis_share = {
+    			templates : {
+        		twitter : "{{title}} {{url}} (via @UsabilityGov)"
+  						  }
+				}
+		 </script>
+
+
+		<!-- END text resizer -->
+
+  </div><!--End of this add_this_container-->
+ 
+        <a id="main-content"></a>
+                    				<h1 class="with-tabs">User Research Basics</h1>
+					                  
+<div>
+
+
+  <div>
+
+    
+	                                            <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div  about="/what-and-why/user-research.html" typeof="sioc:Item foaf:Document" class="ds-1col node node-basic-article view-mode-full clearfix">
+
+  
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>User research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies.  Mike Kuniaysky further notes that it is “the process of understanding the impact of design on an audience.”</p>
+<p>The types of user research you can or should perform will depend on the type of site, system or app you are developing, your timeline, and your environment.</p>
+<h2>
+	When to Perform User Research Methods</h2>
+<p>Guided by the <a href="../how-to-and-tools/resources/ucd-map.html">user-centered design (UCD)</a> process, we have provided examples of the types of research could perform at each phase of your project. A methodology may appear in one or in several phases.</p>
+<table>
+<thead>
+<tr>
+<th scope="col">
+				Methods</th>
+<th scope="col">
+				Know Your User</th>
+<th scope="col">
+				Content</th>
+<th scope="col">
+				Design</th>
+<th scope="col">
+				Test &amp; Refine</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/card-sorting.html">Card Sorting</a> - Allows users to group your site’s information. This helps ensure that the site structure matches the way users think.</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				YES</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/contextual-interview.html">Contextual Interviews</a> - Enable you to observe users in their natural environment, giving you a better understanding of the way users work.</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/first-click-testing.html">First Click Testing</a> - A testing method focused on navigation, which can be performed on a functioning website, a prototype, or a wireframe.</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/focus-groups.html">Focus Groups</a> - Moderated discussion with a group of users, allow you to learn about user attitudes, ideas, and desires.</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				NO</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/heuristic-evaluation.html">Heuristic Evaluation/Expert Review</a> - A group of usability experts evaluating your website against a list of established guidelines.</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				YES</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/individual-interviews.html">Individual Interviews</a> - One-on-one discussions with users show you how a particular user works. They enable you to get detailed information about a user's attitudes, desires, and experiences.</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/parallel-design.html">Parallel Design</a> - A design methodology that involves several designers pursuing the same effort simultaneously, but independently, with the intention to combine the best aspects of each for the ultimate solution.</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				NO</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/personas.html">Personas</a> - The creation of a representative user based on available data and user interviews.  Though the personal details of the persona may be fiction, the information used to create the user type is not.</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/prototyping.html">Prototyping</a> - Allows the design team to explore ideas before implementing them by creating a mock-up of the site. A prototype can range from a paper mock-up to interactive html pages.</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/online-surveys.html">Surveys</a> - A series of questions asked to multiple users of your website, help you learn about the people who visit your site.</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/system-usability-scale.html">System Usability Scale (SUS)</a> - SUS is a technology independent ten item scale for subjective evaluation of the usability.</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				YES</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/task-analysis.html">Task Analysis</a> - Involves learning about user goals, including what users want to do on your website, and helps you understand the tasks that users will perform on your site.</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				NO</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/usability-testing.html">Usability Testing</a> - Identifies user frustrations and problems with your site through one-on-one sessions where a "real-life" user performs tasks on your site.</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+</tr>
+<tr>
+<td scope="row">
+				<a href="../how-to-and-tools/methods/use-cases.html">Use Cases</a> - Provide a description of how users use a particular feature of your website. They provide a detailed look at how users interact with the site, including the steps users take to accomplish each task.</td>
+<td align="center">
+				NO</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				YES</td>
+<td align="center">
+				NO</td>
+</tr>
+</tbody>
+</table>
+<h2>
+	Best Practices</h2>
+<p>During <a href="../how-to-and-tools/methods/develop-plan.html">Project Planning</a> you should:</p>
+<ul>
+<li>
+		Consult the <a href="../how-to-and-tools/resources/ucd-map.html">UCD Guide</a> for a step-by-step visual map to guide you through the user-centered design process.</li>
+<li>
+		Consider when testing can be incorporated in your schedule
+<ul style="list-style-type: circle;">
+<li>
+				Test early and often</li>
+</ul>
+</li>
+<li>
+		Define the target audience(s) for the site.  This will assist the UX team in:
+<ul style="list-style-type: circle;">
+<li>
+				Creating a <a href="http://www.usability.gov/how-to-and-tools/resources/templates.html?field_discipline_tags_tid=17">screener</a></li>
+<li>
+				Recruiting participants</li>
+<li>
+				Defining <a href="../how-to-and-tools/methods/personas.html">Personas</a></li>
+<li>
+				Identifying tasks for testing</li>
+</ul>
+</li>
+</ul>
+<h2>
+	References</h2>
+<p><em>Observing the User Experience: A Practitioner's Guide for User Research by</em> Mike Kuniavsky</p>
+</div></div></div><div class="field field-name-voc-was-this-page-helpful-poll field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><div id="voc-wrapper">
+     <div id="survey_target"></div>
+      </div>
+</div></div></div></div>
+
+  </div>
+</div>
+      </div>  
+</div>
+
+</div>
+	</div>
+	<div id="sidebarRight">
+	<div id="sidebar-right">
+			  <div class="region region-sidebar-right">
+    <div id="block-views-related-content-block-5" class="block block-views">
+
+    <h2>Related Content</h2>
+  
+  <div class="content">
+    <div class="view view-related-content view-id-related_content view-display-id-block_5 view-dom-id-5ab49573968e6cff9837bca0019940dc">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/07/recruiting-participants.html">Recruiting Participants &amp; the Legend of “The General Public”</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/05/welcome-to-relauched-hhsgov.html">Welcome to the Reimagined HHS.gov</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/02/working-with-kids-and-teens.html">Usability Testing with Kids and Teens</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2014/12/building-a-lab-series-constructing-and-equipping-a-lab.html">Constructing and Equipping a Lab – Part 3</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2014/10/building-a-lab-series-deciding-if-you-need-a-dedicated-usability-lab.html">Deciding if You Need a Dedicated Usability Lab – Part 2</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-resources-views-block-5" class="block block-views">
+
+    <h2>Related Resources</h2>
+  
+  <div class="content">
+    <div class="view view-resources-views view-id-resources_views view-display-id-block_5 view-dom-id-62bcdf8f3359937b1dd1f2b95f43e544">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/receipt-form-usability-test-compensation-adult.html">Receipt Form: Usability Test Compensation Receipt Form (Adult)</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/receipt-form-usability-test-compensation-minor.html">Receipt Form: Usability Test Compensation (Minor)</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/introduction-to-testing-with-moderator-interaction.html">Introduction to Testing with Moderator Interaction</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/digital-recording-release-form-minor.html">Digital Recording Release Form (Minor)</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-related-categories-block-1" class="block block-views">
+
+    <h2>Related Categories</h2>
+  
+  <div class="content">
+    <div class="view view-related-categories view-id-related_categories view-display-id-block_1 view-dom-id-9464eed444d33719205e38638e9388db">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">  
+  <div class="views-field views-field-name">        <span class="field-content"><a href="../tags/basics/index.html">Basics</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+			</div>
+	</div>
+	<div class="clearBoth"></div>	
+	</div>
+	</div>
+	<div id="footerWrapper">
+		  <div class="girdle">
+		  <div class="region region-footer">
+    <div id="block-nodeblock-36" class="block block-nodeblock">
+
+    
+  <div class="content">
+    <article about="/footer.html" typeof="sioc:Item foaf:Document">
+    
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div role="contentinfo">
+<div id="footerBranding">
+<p><a href="/"><img alt="usability.gov, go to the homepage" src="../sites/default/files/images/footer-logo.png" /></a></p>
+</div>
+<div id="stayConnected">
+		Stay Connected <a href="https://twitter.com/usabilitygov"><img alt="Follow us on Twitter @UsabilityGov" src="../sites/default/files/images/footer_twitter_icon.png" title="Follow us on Twitter @UsabilityGov" /></a><a href="../rss.xml"><img alt="RSS Feed" src="../sites/default/files/images/rss-image-footer.png" title="RSS Feed" /></a></div>
+<div id="footerLinks">
+<ul>
+<li>
+				<a href="http://www.hhs.gov/Accessibility.html">Accessibility</a></li>
+<li>
+				<a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a></li>
+<li>
+				<a href="http://www.hhs.gov/foia/">FOIA</a></li>
+<li>
+				<a href="../about-us/index.html">About Us</a></li>
+<li>
+				<a href="../site-tour.html">Tour the Site</a></li>
+<li>
+				<a href="../stay-connected/index.html">Widgets &amp; Badges</a></li>
+<li>
+				<a href="http://www.hhs.gov/Disclaimer.html">Disclaimers</a></li>
+<li>
+				<a href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a></li>
+<li>
+				<a href="http://www.hhs.gov/asa/eeo/resources/index.html">No FEAR</a></li>
+<li>
+				<a href="http://www.hhs.gov/plugins.html">Viewers &amp; Players</a></li>
+<li>
+				<a href="http://www.whitehouse.gov/">WhiteHouse.gov</a></li>
+<li>
+				<a href="http://www.usa.gov/">USA.gov</a></li>
+<li>
+				<a class="last" href="http://www.gobiernousa.gov/">GobiernoUSA.gov</a></li>
+</ul>
+</div>
+<div id="branddate">
+		<img alt="U.S. Flag" src="../sites/default/files/images/footer_usaflag_icon.png" style="width: 20px; height: 13px; margin-right: 15px;" /> 
+<script>
+<!--//--><![CDATA[// ><!--
+var now = new Date();document.write(now.format('mmmm dd, yyyy'));
+//--><!]]>
+</script></div>
+<div id="copyright">
+		<a class="footerLinks" href="http://www.hhs.gov">U.S. Department of Health &amp; Human Services</a> - 200 Independence Avenue, S.W. - Washington, D.C. 20201</div>
+</div>
+<p> </p>
+</div></div></div>
+	            
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+  </div>
+		</div>
+	</div>
+  	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!--[if IE 8]>
+</div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+</div id="ie-9">
+<![endif]-->  
+</body>
+</html>

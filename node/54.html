@@ -1,0 +1,772 @@
+---
+layout: default
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="{{ site.baseurl }}/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width" />
+<link rel="canonical" href="../get-involved/blog/2009/10/using-avantgo-for-development.html" />
+<link rel="shortlink" href="54.html" />
+<meta name="author" content="Assistant Secretary for Public Affairs" />
+<meta name="description" content="NCI explores AvantGo Enterprise 4.2 Solution, which provides a platform to deliver Internet content onto handheld wireless devices such as Palm and Pocket PCs." />
+<meta name="dc.title" content="AvantGo Development" />
+<meta name="keywords" content="user experience, ux, mobile device testing, NCI, usability testing, Avantgo" />
+<meta name="dc.description" content="NCI explores AvantGo Enterprise 4.2 Solution, which provides a platform to deliver Internet content onto handheld wireless devices such as Palm and Pocket PCs." />
+<meta name="dc.creator" content="Assistant Secretary for Public Affairs" />
+<meta name="dc.publisher" content="Department of Health and Human Services" />
+<meta name="dc.language" content="en-us" />
+<meta name="dc.date" content="2013-09-06" />
+<meta name="DCTERMS.dateReviewed" content="2013-05-22" />
+<meta name="DCTERMS.dateCreated" content="2013-05-22" />
+<meta name="DCTERMS.dateModified" content="2013-09-06" />
+<meta name="DCTERMS.keywords" content="user experience, ux, mobile device testing, NCI, usability testing, Avantgo" />
+<meta name="nodeid" content="54" />
+  <title>AvantGo Development | Usability.gov</title>
+  <meta content="width" name="MobileOptimized"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="on" http-equiv="cleartype"/>
+  <style type="text/css" media="all and (min-width: 720px)">
+@import url("{{ site.baseurl }}/modules/system/system.base.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.menus.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.messages.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.theme.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css");
+@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css");
+</style>
+<style type="text/css" media="all and (min-width: 720px)">
+@import url("{{ site.baseurl }}/sites/all/modules/ckeditor/ckeditor.css");
+@import url("{{ site.baseurl }}/sites/all/modules/ctools/css/ctools.css");
+@import url("{{ site.baseurl }}/sites/all/modules/panels/css/panels.css");
+@import url("{{ site.baseurl }}/modules/book/book.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/comment/comment.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/date/date_api/date.css");
+@import url("{{ site.baseurl }}/sites/all/modules/date/date_popup/themes/datepicker.1.7.css");
+@import url("{{ site.baseurl }}/modules/field/theme/field.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/google_appliance/theme/google_appliance.css");
+@import url("{{ site.baseurl }}/modules/node/node.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/search/search.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/views/css/views.css");
+@import url("{{ site.baseurl }}/sites/all/modules/comment_goodness/css/disabled_actions.css");
+</style>
+<style type="text/css" media="all">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/reset.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/layout.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style.css");
+</style>
+<style type="text/css" media="print">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/print.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jfontsize.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jquery-ui.css");
+</style>
+<style type="text/css" media="screen and (min-width: 720px)">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style-960.css");
+</style>
+
+ <!--[if lte IE 10]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/style-960.css" />
+  <![endif]-->
+
+   <!--[if gte IE 9]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/ie9.css" />
+  <![endif]-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/drupal.js?q56q1n"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery.ui || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/all/modules/comment_goodness/comment_goodness.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/misc.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/jquery.jfontsize-1.0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"usability","theme_token":"uyA2GynEFgVgwy-xnRCcHTUsf6hZwx6m-YPBe41ogfo","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/comment_goodness\/comment_goodness.js":1,"sites\/default\/themes\/usability\/js\/misc.js":1,"sites\/default\/themes\/usability\/js\/jquery.jfontsize-1.0.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_appliance\/theme\/google_appliance.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/comment_goodness\/css\/disabled_actions.css":1,"sites\/default\/themes\/usability\/user.css":1,"sites\/default\/themes\/usability\/css\/reset.css":1,"sites\/default\/themes\/usability\/css\/layout.css":1,"sites\/default\/themes\/usability\/css\/style.css":1,"sites\/default\/themes\/usability\/css\/print.css":1,"sites\/default\/themes\/usability\/css\/jfontsize.css":1,"sites\/default\/themes\/usability\/css\/jquery-ui.css":1,"sites\/default\/themes\/usability\/css\/style-960.css":1}},"better_exposed_filters":{"views":{"related_content":{"displays":{"block_5":{"filters":[]}}},"resources_views":{"displays":{"block_5":{"filters":[]}}},"related_categories":{"displays":{"block_1":{"filters":[]}}},"archive":{"displays":{"block":{"filters":[]}}}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-54 node-type-blog list-view sidebar_right sidebar_left" >
+<!--[if IE 8]>
+<div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+<div id="ie-9">
+<![endif]-->
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-QN2B" title="googletagmanager"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-QN2B');</script>
+<!-- End Google Tag Manager -->
+  <div id="skip-link">
+    <a href="54.html#main-content" class="element-invisible element-focusable skippy">Skip to main content</a>
+  </div>
+    <div id="wrapper">
+	<div id="header">
+
+		<div id="topBranding">
+		  <div class="girdle">
+			  <div class="topNavMenuButton">
+				<a href="54.html#"><img src="../sites/default/themes/usability/css/images/menu_icon_mobileversion.png" alt="expand navigation menu"></a>
+			  </div>
+			  <div id="logo">
+				  <div class="logoWrapper"><a href="../index.html" title="Home"><img src="{{ site.baseurl }}/sites/default/themes/usability/css/images/logo_without_tagline.png" alt="Home" class="usability-logo" /></a>				  <span id="slogan"><em>Improving the User Experience </em></span></div>
+			  </div>
+			  <div class="topNavSearchButton">
+				<a href="54.html#"><img src="../sites/default/themes/usability/css/images/search_icon_mobileversion.png" alt="Search"></a>
+			  </div>
+			  <div id="gsearch">
+					<div id="gsearch_inner">
+						<form name="HHS" action='https://search.hhs.gov/searchblox/usability/index.html' method='get'>
+						    <label for="searchbox">Search</label>
+						    <input type="text" name="query" id="searchbox" size="20" maxlength="256" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+						    <input type="image" src="../sites/default/themes/usability/css/images/search_arrow.png" name="btnG" class="submit" id="gsearchbtn" alt="Search" value="Search" role="button" />
+						    <input type='hidden' name='page' value='1'>
+						    <input type='hidden' name='pagesize' value='10'>
+						    <input type='hidden' name='sortdir' value='desc'>
+						    <input type='hidden' name='sort' value='relevance'>
+						    <input type='hidden' name='adsCname' value='HHS'>
+						    <input type='hidden' name='adsDisplay' value='false'>
+						    <input type='hidden' name='cname' value='usability'>
+						    <input type='hidden' name='default' value='AND'>
+						    <input type='hidden' name='tune' value='false'>
+					</form>
+				</div>
+				</div>
+		  </div>
+		</div>
+
+		<div id="topNavigation">		  <div class="girdle">
+
+		  <div class="region region-topnav">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+
+
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../what-and-why/index.html" title="">What &amp; Why of Usability</a></li>
+<li class="leaf"><a href="../how-to-and-tools/index.html">How To &amp; Tools</a></li>
+<li class="last expanded active-trail"><a href="../get-involved/index.html" title="" class="active-trail">Get Involved</a><ul class="menu"><li class="first last leaf active-trail"><a href="../get-involved/blog/2009/10/using-avantgo-for-development.html" class="menu-position-link active-trail active">AvantGo Development</a></li>
+</ul></li>
+</ul>  </div>
+</div>
+  </div>
+
+		</div>
+	  </div>
+	</div>
+	<div id="contentWrap">
+		<div class="shadow"></div>
+	  <div class="girdle">
+
+	<div id="navigationLeft">
+		<div id="sidebar-left">
+			    <div class="region region-sidebar-left">
+    <div id="block-menu-menu-task-bar" class="block block-menu">
+
+
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../how-to-and-tools/methods/index.html" title=""><img alt="" src="../sites/default/themes/usability/css/images/methods_icon_1.png" /> <span>Methods</span></a></li>
+<li class="leaf"><a href="../how-to-and-tools/resources/templates.html" title=""><img alt="" src="../sites/default/themes/usability/css/images/resources&amp;templates_icon_1.png" /> <span>Templates &<br />Documents</span></a></li>
+<li class="last leaf"><a href="https://guidelines.usability.gov/" title=""><img alt="" src="../sites/default/themes/usability/css/images/guidelines_icon_1.png" /> <span>Guidelines</span></a></li>
+</ul>  </div>
+</div>
+  </div>
+			</div>
+		</div>
+	<div id="content">
+	<div id="breadcrumbs"><p class='breadcrumb'><a href="../index.html">Home</a> > <a href="../get-involved/index.html" title="">Get Involved</a> > AvantGo Development</p></div>
+
+
+
+          <div id="tabs-wrapper" class="clearfix">          </div>
+<div class="region region-content">
+
+      <div id="add_this_container">
+
+
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        	<!--BEGIN text resizer -->
+	    <div class="fontResize">
+		<a class="jfontsize-button" id="jfontsize-m" href="54.html#"><img src="../sites/default/themes/usability/css/images/text_resize_minus_a_icon.png" width="27" height="27" border="0" alt="Minimize text size" title="Minimize text size" /></a>
+        <a class="jfontsize-button" id="jfontsize-d" href="54.html#"><img src="../sites/default/themes/usability/css/images/text_resize_default_a_icon.png" width="27" height="27" border="0" alt="Reset text to normal size" title="Reset text to normal size" /></a>
+        <a class="jfontsize-button" id="jfontsize-p" href="54.html#"><img src="../sites/default/themes/usability/css/images/text_resize_plus_a_icon.png" width="27" height="27" border="0" alt="Increase text size" title="Increase text size"/></a>
+
+		<script type="text/javascript" language="javascript">
+			jQuery('.region-content').jfontsize({
+			btnMinusClasseId: '#jfontsize-m',
+			btnDefaultClasseId: '#jfontsize-d',
+			btnPlusClasseId: '#jfontsize-p'
+			});
+		</script>
+
+		</div>
+		 <div class="shareToolBox">
+		<div class="shareMore">
+			<a class="addthis_button_print" href="54.html#"><img src="../sites/default/themes/usability/css/images/insidepage_print_icon.png" width="27" height="27" border="0" alt="Print this page" title="Print this page" /></a>
+
+			<!-- AddThis Button BEGIN -->
+		<div class="additionalShareOptions">
+        <a class="addthis_button_email" href="54.html#"><img src="../sites/default/themes/usability/css/images/insidepage_email_icon.png" width="27" height="27" border="0" alt="Email this page" title="Email this page" /></a>
+		<a class="addthis_button_twitter" tw:via="UsabilityGov" href="54.html#"><img src="../sites/default/themes/usability/css/images/insidepage_twitter_icon.png" width="27" height="27" border="0" alt="Tweet this page" title="Tweet this page" /></a>
+		<a class="addthis_button_facebook" href="54.html#"><img src="../sites/default/themes/usability/css/images/insidepage_facebook_icon.png" width="27" height="27" border="0" alt="Post this page" title="Post this page" /></a>
+		<a class="addthis_button_pinterest_share" href="54.html#"><img src="../sites/default/themes/usability/css/images/insidepage_pinterest_icon.png" width="27" height="27" border="0" alt="Pin this page" title="Pin this page" /></a>
+		<a class="addthis_button_compact" href="54.html#"><img src="../sites/default/themes/usability/css/images/insidepage_plus_icon.png" width="27" height="27" border="0" alt="More ways to share" title="More ways to share" /></a>
+		</div><a class="moreShareButton" href="54.html#"><img src="../sites/default/themes/usability/css/images/insidepage_share_icon.png" width="27" height="27" border="0" alt="Share tools" title="Share tools" />Share</a>
+		</div>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=hhsgov" async="async"></script>
+		</div>
+		<!-- AddThis Button END -->
+
+		</div>
+
+		<script type="text/javascript">
+				 var addthis_config =  {
+						  ui_click: true,
+						  data_track_addressbar: false,
+						  services_compact: 'linkedin, google_plusone_share, tumblr, reddit, delicious, myspace, digg, stumbleupon, favorites',
+						  ui_508_compliant: true,
+
+					};
+
+				var addthis_share = {
+    			templates : {
+        		twitter : "{{title}} {{url}} (via @UsabilityGov)"
+  						  }
+				}
+		 </script>
+
+
+		<!-- END text resizer -->
+
+  </div><!--End of this add_this_container-->
+
+        <a id="main-content"></a>
+                    				<h1 class="with-tabs">AvantGo Development</h1>
+
+<div>
+
+
+  <div>
+
+
+	                                            <div id="block-system-main" class="block block-system">
+
+
+  <div class="content">
+    <article about="/get-involved/blog/2009/10/using-avantgo-for-development.html" typeof="sioc:Item foaf:Document">
+        <span property="dc:title" content="AvantGo Development" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+
+  <div>
+
+
+
+
+
+    <div class="field field-name-field-by-line field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Usability.gov Staff Writer</div></div></div><div class="field field-name-field-blog-post-date field-type-datetime field-label-hidden"><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2009-10-01T15:15:00-04:00">Thursday, October 1, 2009</span></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>The AvantGo Enterprise 4.2 Solution provides a platform to deliver Internet content onto handhelds.</p>
+<p>Providing cancer information on handheld wireless devices such as Palm and Pocket PCs presents new challenges to designers and usability professionals.</p>
+<h2>
+	Format Guidelines</h2>
+<h3>
+	Manual formatting was required to adjust for the variable interaction of the AvantGo application browser and the handheld hardware.</h3>
+<p>In the development of the NCI content for display on a PDA, the need for several formatting-related improvements was identified. These improvements included the following:</p>
+<ul>
+<li>
+		There were limitations in the ability to format text using standard display characteristics, such as underlining and italicizing, which are commonly available when designing on the Web.</li>
+<li>
+		There is no vertical spacing when using a &lt;P&gt; tag in the WinCE browser. As a result, it was necessary to replace each &lt;P&gt; tags with &lt;BR&gt; tags to force the formatting to appear as desired.</li>
+<li>
+		The end-of-line character sometimes wrapped onto a new line by itself, resulting in two blank lines being displayed instead of one. Manual adjustments were required to compensate for this "feature."</li>
+<li>
+		Punctuation marks are treated as separate words within AvantGo and are often wrapped to a new line. Manual adjustments were required to compensate for this "feature."</li>
+<li>
+		Italicizing and underlining text were not available on the Palm browser.</li>
+<li>
+		Mismatched &lt;table&gt; tags resulted in the entire page not being displayed correctly.</li>
+<li>
+		Lines that have multiple hyperlinks sometimes wrapped incorrectly in the WinCE browser.</li>
+</ul>
+<p>CTB contacted AvantGo Inc. and shared the formatting findings. AvantGo responded with their comments below.</p>
+<h2>
+	AvantGo Response</h2>
+<p>The following analysis is based on AvantGo M-Business Server version 4.2. In May 2002, AvantGo, Inc. released AvantGo M-Business Server version 5.0 Application Edition, which includes a complete rewrite of the AvantGo Client with greatly enhanced capabilities for developing robust mobile applications.</p>
+<p>In AvantGo M-Business Server version 5.0, many of these small differences have been addressed. The reason for the differing behavior in version 4.2 is that AvantGo used AvantGo technology on Palm and a hybrid of AvantGo and Microsoft’s HTML control on Pocket PC devices. Now with version 5.0, AvantGo uses a unified codebase for Palm and Pocket PC, and many of these formatting differences have been eliminated.</p>
+<p>A further explanation on the <a href="54.html#feature">features and capabilities of AvantGo version 5.0</a> is available at the end of this document.</p>
+<h2>
+	Scanning Images</h2>
+<p>The AvantGo application scales down images to fit onto the screen and needs some adjustments to improve image quality.</p>
+<p>To provide the best display of images, three steps were needed:</p>
+<ol>
+<li>
+		Darken and sharpen the image and lower its color depth to 16 colors</li>
+<li>
+		Scale the image to a width of 150 pixels</li>
+<li>
+		Manually retype each text label with a Web-friendly, pixel-based font</li>
+</ol>
+<p>Through this process, the quality of the scanned image showed improvement.</p>
+<p><strong>Before/After</strong> <strong>Example:</strong></p>
+<p><img alt="An image showing before and after shots of a graphic once it had been improved for a PDA screen." src="../sites/default/files/images/advantgo-1.JPG" style="width: 474px; " title="An image showing before and after shots of a graphic once it had been improved for a PDA screen." /></p>
+<p>CTB contacted AvantGo Inc. and shared the scanning findings. AvantGo Inc. responded with their comments below.</p>
+<h3>
+	AvantGo Inc. Response</h3>
+<p>AvantGo Inc. improved this scanning feature in version 5.0. For images less than 16-bit, the AvantGo server goes to the native format, which is a .bmp file format on CE and the Palm native format. For images greater than 16-bit, AvantGo converts the format to a .jpg file formats, which look much better.</p>
+<h2>
+	Searching</h2>
+<p>All PDAs do not have search engines.</p>
+<p>The AvantGo software does not have its own search engine. Instead, it relies on the handheld operating system’s search engine. Blackberry’s users do not have the search tool, leaving browsing as the only option to navigate and resulting in variable results, including an inability to complete the testing scenario.</p>
+<p>There are performance differences between handheld platforms when using the search.</p>
+<p><strong>Palm-Based Devices:</strong></p>
+<ul>
+<li>
+		Search tool performed much more slowly than Windows CE handhelds.</li>
+<li>
+		Had slower performance, which prompted users to cancel "search."</li>
+<li>
+		Needed to reset Palm when "cancel" button did not work.</li>
+</ul>
+<p>Users responded by:</p>
+<ul>
+<li>
+		Expecting immediate results.</li>
+<li>
+		Becoming frustrated by varying length of search time.</li>
+</ul>
+<h3>
+	There was a lack of effective feedback to the user regarding progression of the search.</h3>
+<p>Current feedback response model:</p>
+<ul>
+<li>
+		A single value should display the total search progress through all of the AvantGo pages or for each AvantGo channel</li>
+<li>
+		This data update rate provided accurate user feedback</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p><img alt="An image showing results on a PDA screen which participants didn't understand." src="../sites/default/files/images/advantgo-2.JPG" style="width: 474px; " title="An image showing results on a PDA screen which participants didn't understand." /></p>
+<p>There are insufficient options for searching using the AvantGo software.</p>
+<p>There are two primary reasons to search on the PDA:</p>
+<ul>
+<li>
+		To quickly locate an item on a lengthy page</li>
+<li>
+		To locate an item that may be contained in one or more locations across pages</li>
+</ul>
+<p>Users are presented with two AvantGo software "search" options:</p>
+<ul>
+<li>
+		Search within page</li>
+<li>
+		Search through all pages</li>
+</ul>
+<p>Inefficient searches did not meet users’ expectations.</p>
+<ul>
+<li>
+		Slower task time</li>
+<li>
+		Multiple user actions to locate their item of interest</li>
+<li>
+		Did not meet user’s expectations leading to frustration</li>
+</ul>
+<p>Recommendation</p>
+<ul>
+<li>
+		Searching within channel option may provide the solution to the usability problems.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p><img alt="An image showing the search function on a PDA screen" src="../sites/default/files/images/advantgo-3.JPG" style="width: 474px; " title="An image showing the search function on a PDA screen" /></p>
+<h3>
+	The format of the search results confused users.</h3>
+<p>The search results page displayed a listing of word phrases for each search hit with the search term highlighted. However, the format of this display provided limited utility to the user for several reasons:</p>
+<ul>
+<li>
+		The search hit listed the category in which the document was found but not the title of the document itself. This resulted in a display listing what appear to be multiple hits within the same document.</li>
+<li>
+		Only about 35 characters are available per line for the phrase, and generally only one line is used per search hit. The result is a phrase that often did not provide sufficient context to tell the value of the search hit.</li>
+<li>
+		Multiple lines appeared for a search hit, but users were unclear whether this actually represented two hits per document.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p><img alt="An image showing search results on a PDA screen." src="../sites/default/files/images/advantgo-4.JPG" style="width: 474px; height: 371px" title="An image showing search results on a PDA screen." /></p>
+<h3>
+	Presentation of search results was not organized intuitively.</h3>
+<p>The order of the search hits results did not correspond to the order of the channels on the AvantGo Server. This resulted in some confusion about the results and led some users to believe that there are no results matching their query.</p>
+<p><strong>Example:</strong></p>
+<p><img alt="An image showing search results on a PDA screen." src="../sites/default/files/images/advantgo-5.JPG" style="width: 474px; " title="An image showing search results on a PDA screen." /></p>
+<h3>
+	Search results are not cached.</h3>
+<p>Based partially on the lack of sufficient feedback, but also as part of the nature of searching behaviors, participants indicated their:</p>
+<ul>
+<li>
+		Need to evaluate the complete context of search hits</li>
+<li>
+		Return to the search results page</li>
+</ul>
+<p>Note: This behavior on PDA devices is consistent with search behaviors observed on Web sites.</p>
+<p>Currently, the AvantGo software does not provide a means of returning to the search results without performing an entirely new search.</p>
+<p>Recommendation:</p>
+<ul>
+<li>
+		Maintain a search results page</li>
+<li>
+		Provide a pathway to return to search results</li>
+</ul>
+<p>CTB contacted AvantGo Inc. and shared the search tool findings. AvantGo Inc. responded with their comments below.</p>
+<h3>
+	AvantGo Inc. Response</h3>
+<p>The AvantGo Client has built-in find capability on Palm and Pocket PC, which searches either within a page or all AvantGo pages stored on the device, but is not available on the Blackberry. However, search times are variable based on three factors:</p>
+<ul>
+<li>
+		Content size</li>
+<li>
+		Device processing power</li>
+<li>
+		Screen size limitations</li>
+</ul>
+<p>Due to these three factors, it may be difficult to navigate and interpret results. This is certainly something that AvantGo Inc. is investigating, but there are no plans to address this in its next release.</p>
+<h2>
+	Channel Concept</h2>
+<h3>
+	The concept of channels is difficult to pick up.</h3>
+<p>The AvantGo software presents content in the form of channels. This presents the system designer with different opportunities:</p>
+<ul>
+<li>
+		Allows the system designer to provide a logical separation of content</li>
+<li>
+		Provides the means for the user to manage memory usage.</li>
+<li>
+		For example, when large content areas are provided within a channel, usability testing dictates that this content must also be separated into manageable groups.</li>
+</ul>
+<p>The user’s ability to develop a cognitive model on the content structure of the AvantGo channels is stymied by the unclear distinction of the AvantGo channels and the grouping of content.</p>
+<p>Designer’s potential response:</p>
+<ul>
+<li>
+		Provide all content as separate channels (resulting in an overly flat structure)</li>
+<li>
+		Provide all content under a single channel (creating a non-functional layer in the application)</li>
+<li>
+		Force the user to work with two concepts</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p><img alt="An image showing the differences between adding channels and adding content to channels." src="../sites/default/files/images/advantgo-6.JPG" style="width: 474px; " title="An image showing the differences between adding channels and adding content to channels." /></p>
+<h3>
+	<a id="feature" name="feature">Features and Capabilities</a> of AvantGo M-Business Server 5.0</h3>
+<p>AvantGo M-Business Server 5.0 supports HTML 4.1, xHTML 1.0 and DOM level 1.0. Using Dynamic HTML, combined with JavaScript, developers can now create complex client-side logic and manipulate pages on the device for functionality such as sorting lists, building tables dynamically, populating controls and much more. Version 5.0 of AvantGo M-Business Server also includes new database functionality, allowing a developer to access XML data by doing a simple HTTP request, pulling back XML and the XSD and syncing the data into the native databases on Palm OS and Pocket PC-Powered devices. Once on the device, the data can easily be accessed using JavaScript to read/write and query from the native data stores. AvantGo M-Business Server 5.0 provides developers with a powerful infrastructure to develop and deploy robust mobile applications developed using web standard dynamic HTML, JavaScript and XML.</p>
+</div></div></div>     <div id="voc-wrapper">
+		<div id="survey_target" style="border-top:1px solid #ccc;"> </div>
+	</div>
+
+
+
+
+  </div>
+
+</article>
+  </div>
+</div>
+      </div>
+</div>
+
+</div>
+	</div>
+	<div id="sidebarRight">
+	<div id="sidebar-right">
+			  <div class="region region-sidebar-right">
+    <div id="block-nodeblock-1868" class="block block-nodeblock">
+
+
+  <div class="content">
+    <article about="/blog-rss.html" typeof="sioc:Item foaf:Document">
+
+
+
+  <div>
+
+
+
+
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><h2 id="rightRail-rss">
+	<a href="./get-involved/blog/rss.xml">Blog RSS <img alt="RSS ICON" src="../sites/default/files/images/rss-image.jpg" /></a></h2>
+</div></div></div>
+
+
+  </div>
+
+</article>
+  </div>
+</div>
+<div id="block-views-related-content-block-5" class="block block-views">
+
+    <h2>Related Content</h2>
+
+  <div class="content">
+    <div class="view view-related-content view-id-related_content view-display-id-block_5 view-dom-id-da0f769e157105d4b366aeeca55b514a">
+
+
+
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/07/recruiting-participants.html">Recruiting Participants &amp; the Legend of “The General Public”</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/05/welcome-to-relauched-hhsgov.html">Welcome to the Reimagined HHS.gov</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/02/working-with-kids-and-teens.html">Usability Testing with Kids and Teens</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2014/12/building-a-lab-series-constructing-and-equipping-a-lab.html">Constructing and Equipping a Lab – Part 3</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2014/10/building-a-lab-series-deciding-if-you-need-a-dedicated-usability-lab.html">Deciding if You Need a Dedicated Usability Lab – Part 2</a></span>  </div></li>
+      </ul></div>    </div>
+
+
+
+
+
+
+</div>  </div>
+</div>
+<div id="block-views-resources-views-block-5" class="block block-views">
+
+    <h2>Related Resources</h2>
+
+  <div class="content">
+    <div class="view view-resources-views view-id-resources_views view-display-id-block_5 view-dom-id-fc89e26913792a47246bfbe81fdf343d">
+
+
+
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/receipt-form-usability-test-compensation-adult.html">Receipt Form: Usability Test Compensation Receipt Form (Adult)</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/receipt-form-usability-test-compensation-minor.html">Receipt Form: Usability Test Compensation (Minor)</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/introduction-to-testing-with-moderator-interaction.html">Introduction to Testing with Moderator Interaction</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even views-row-last">
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/digital-recording-release-form-minor.html">Digital Recording Release Form (Minor)</a></span>  </div></li>
+      </ul></div>    </div>
+
+
+
+
+
+
+</div>  </div>
+</div>
+<div id="block-views-related-categories-block-1" class="block block-views">
+
+    <h2>Related Categories</h2>
+
+  <div class="content">
+    <div class="view view-related-categories view-id-related_categories view-display-id-block_1 view-dom-id-95a8658bff615e3092eefc708c8c03ea">
+
+
+
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+  <div class="views-field views-field-name">        <span class="field-content"><a href="../tags/government-specific/index.html">Government-specific</a></span>  </div></li>
+      </ul></div>    </div>
+
+
+
+
+
+
+</div>  </div>
+</div>
+<div id="block-views-archive-block" class="block block-views">
+
+    <h2>Blog Archives</h2>
+
+  <div class="content">
+    <div class="view view-archive view-id-archive view-display-id-block view-dom-id-c02e339e091e755f5c930b5188bf0269">
+
+
+
+      <div class="view-content">
+      <div class="item-list">
+  <ul class="views-summary">
+      <li><a href="../get-involved/blog/2016/index.html">2016</a>
+              (1)
+          </li>
+      <li><a href="../get-involved/blog/2015/index.html">2015</a>
+              (3)
+          </li>
+      <li><a href="../get-involved/blog/2014/index.html">2014</a>
+              (5)
+          </li>
+      <li><a href="../get-involved/blog/2013/index.html">2013</a>
+              (9)
+          </li>
+      <li><a href="../get-involved/blog/2012/index.html">2012</a>
+              (3)
+          </li>
+      <li><a href="../get-involved/blog/2011/index.html">2011</a>
+              (1)
+          </li>
+      <li><a href="../get-involved/blog/2010/index.html">2010</a>
+              (4)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2009/index.html">2009</a>
+              (8)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2008/index.html">2008</a>
+              (3)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2007/index.html">2007</a>
+              (3)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2006/index.html">2006</a>
+              (9)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2005/index.html">2005</a>
+              (8)
+          </li>
+    </ul>
+</div>
+    </div>
+
+
+
+
+      <div class="view-footer">
+      <div id="voc-wrapper">
+    <div id="survey_target"></div>
+</div>     </div>
+
+
+</div>  </div>
+</div>
+  </div>
+			</div>
+	</div>
+	<div class="clearBoth"></div>
+	</div>
+	</div>
+	<div id="footerWrapper">
+		  <div class="girdle">
+		  <div class="region region-footer">
+    <div id="block-nodeblock-36" class="block block-nodeblock">
+
+
+  <div class="content">
+    <article about="/footer.html" typeof="sioc:Item foaf:Document">
+
+
+  <div>
+
+
+
+
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div role="contentinfo">
+<div id="footerBranding">
+<p><a href="/"><img alt="usability.gov, go to the homepage" src="../sites/default/files/images/footer-logo.png" /></a></p>
+</div>
+<div id="stayConnected">
+		Stay Connected <a href="https://twitter.com/usabilitygov"><img alt="Follow us on Twitter @UsabilityGov" src="../sites/default/files/images/footer_twitter_icon.png" title="Follow us on Twitter @UsabilityGov" /></a><a href="../rss.xml"><img alt="RSS Feed" src="../sites/default/files/images/rss-image-footer.png" title="RSS Feed" /></a></div>
+<div id="footerLinks">
+<ul>
+<li>
+				<a href="http://www.hhs.gov/Accessibility.html">Accessibility</a></li>
+<li>
+				<a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a></li>
+<li>
+				<a href="http://www.hhs.gov/foia/">FOIA</a></li>
+<li>
+				<a href="../about-us/index.html">About Us</a></li>
+<li>
+				<a href="../site-tour.html">Tour the Site</a></li>
+<li>
+				<a href="../stay-connected/index.html">Widgets &amp; Badges</a></li>
+<li>
+				<a href="http://www.hhs.gov/Disclaimer.html">Disclaimers</a></li>
+<li>
+				<a href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a></li>
+<li>
+				<a href="http://www.hhs.gov/asa/eeo/resources/index.html">No FEAR</a></li>
+<li>
+				<a href="http://www.hhs.gov/plugins.html">Viewers &amp; Players</a></li>
+<li>
+				<a href="http://www.whitehouse.gov/">WhiteHouse.gov</a></li>
+<li>
+				<a href="http://www.usa.gov/">USA.gov</a></li>
+<li>
+				<a class="last" href="http://www.gobiernousa.gov/">GobiernoUSA.gov</a></li>
+</ul>
+</div>
+<div id="branddate">
+		<img alt="U.S. Flag" src="../sites/default/files/images/footer_usaflag_icon.png" style="width: 20px; height: 13px; margin-right: 15px;" />
+<script>
+<!--//--><![CDATA[// ><!--
+var now = new Date();document.write(now.format('mmmm dd, yyyy'));
+//--><!]]>
+</script></div>
+<div id="copyright">
+		<a class="footerLinks" href="http://www.hhs.gov">U.S. Department of Health &amp; Human Services</a> - 200 Independence Avenue, S.W. - Washington, D.C. 20201</div>
+</div>
+<p> </p>
+</div></div></div>
+
+
+  </div>
+
+</article>
+  </div>
+</div>
+  </div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--[if IE 8]>
+</div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+</div id="ie-9">
+<![endif]-->
+</body>
+</html>

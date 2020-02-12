@@ -1,0 +1,721 @@
+---
+layout: default
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="{{ site.baseurl }}/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width" />
+<link rel="canonical" href="../get-involved/blog/2009/10/online-form.html" />
+<link rel="shortlink" href="52.html" />
+<meta name="author" content="Assistant Secretary for Public Affairs" />
+<meta name="description" content="Creating an online form can present developers with many challenges. This case study reviews how a paper-based form was taken through the usability engineering process to develop a functional online version." />
+<meta name="dc.title" content="Developing an Online Form" />
+<meta name="keywords" content="" />
+<meta name="dc.description" content="Creating an online form can present developers with many challenges. This case study reviews how a paper-based form was taken through the usability engineering process to develop a functional online version." />
+<meta name="dc.creator" content="Assistant Secretary for Public Affairs" />
+<meta name="dc.publisher" content="Department of Health and Human Services" />
+<meta name="dc.language" content="en-us" />
+<meta name="dc.date" content="2013-10-08" />
+<meta name="DCTERMS.dateReviewed" content="2013-05-22" />
+<meta name="DCTERMS.dateCreated" content="2013-05-22" />
+<meta name="DCTERMS.dateModified" content="2013-10-08" />
+<meta name="DCTERMS.keywords" content="" />
+<meta name="nodeid" content="52" />
+  <title>Developing an Online Form | Usability.gov</title>
+  <meta content="width" name="MobileOptimized"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="on" http-equiv="cleartype"/>
+  <style type="text/css" media="all and (min-width: 720px)">
+@import url("{{ site.baseurl }}/modules/system/system.base.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.menus.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.messages.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.theme.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css");
+@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css");
+</style>
+<style type="text/css" media="all and (min-width: 720px)">
+@import url("{{ site.baseurl }}/sites/all/modules/ckeditor/ckeditor.css");
+@import url("{{ site.baseurl }}/sites/all/modules/ctools/css/ctools.css");
+@import url("{{ site.baseurl }}/sites/all/modules/panels/css/panels.css");
+@import url("{{ site.baseurl }}/modules/book/book.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/comment/comment.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/date/date_api/date.css");
+@import url("{{ site.baseurl }}/sites/all/modules/date/date_popup/themes/datepicker.1.7.css");
+@import url("{{ site.baseurl }}/modules/field/theme/field.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/google_appliance/theme/google_appliance.css");
+@import url("{{ site.baseurl }}/modules/node/node.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/search/search.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/views/css/views.css");
+@import url("{{ site.baseurl }}/sites/all/modules/comment_goodness/css/disabled_actions.css");
+</style>
+<style type="text/css" media="all">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/reset.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/layout.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style.css");
+</style>
+<style type="text/css" media="print">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/print.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jfontsize.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jquery-ui.css");
+</style>
+<style type="text/css" media="screen and (min-width: 720px)">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style-960.css");
+</style>
+ 
+ <!--[if lte IE 10]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/style-960.css" />
+  <![endif]-->
+  
+   <!--[if gte IE 9]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/ie9.css" />
+  <![endif]-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/drupal.js?q56q1n"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery.ui || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/all/modules/comment_goodness/comment_goodness.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/misc.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/jquery.jfontsize-1.0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"usability","theme_token":"bGKQIqeadZ_4gcXA4iqBDwYIgvVvNtMbuQPn5VS6FWI","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/comment_goodness\/comment_goodness.js":1,"sites\/default\/themes\/usability\/js\/misc.js":1,"sites\/default\/themes\/usability\/js\/jquery.jfontsize-1.0.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_appliance\/theme\/google_appliance.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/comment_goodness\/css\/disabled_actions.css":1,"sites\/default\/themes\/usability\/user.css":1,"sites\/default\/themes\/usability\/css\/reset.css":1,"sites\/default\/themes\/usability\/css\/layout.css":1,"sites\/default\/themes\/usability\/css\/style.css":1,"sites\/default\/themes\/usability\/css\/print.css":1,"sites\/default\/themes\/usability\/css\/jfontsize.css":1,"sites\/default\/themes\/usability\/css\/jquery-ui.css":1,"sites\/default\/themes\/usability\/css\/style-960.css":1}},"better_exposed_filters":{"views":{"related_content":{"displays":{"block_5":{"filters":[]}}},"resources_views":{"displays":{"block_5":{"filters":[]}}},"related_categories":{"displays":{"block_1":{"filters":[]}}},"archive":{"displays":{"block":{"filters":[]}}}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-52 node-type-blog list-view sidebar_right sidebar_left" >
+<!--[if IE 8]>
+<div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+<div id="ie-9">
+<![endif]-->
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-QN2B" title="googletagmanager"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-QN2B');</script>
+<!-- End Google Tag Manager -->
+  <div id="skip-link">
+    <a href="52.html#main-content" class="element-invisible element-focusable skippy">Skip to main content</a>
+  </div>
+    <div id="wrapper">
+	<div id="header">
+	  
+		<div id="topBranding">
+		  <div class="girdle">
+			  <div class="topNavMenuButton">
+				<a href="52.html#"><img src="../sites/default/themes/usability/css/images/menu_icon_mobileversion.png" alt="expand navigation menu"></a>
+			  </div>
+			  <div id="logo">
+				  <div class="logoWrapper"><a href="../index.html" title="Home"><img src="{{ site.baseurl }}/sites/default/themes/usability/css/images/logo_without_tagline.png" alt="Home" class="usability-logo" /></a>				  <span id="slogan"><em>Improving the User Experience </em></span></div>  
+			  </div>
+			  <div class="topNavSearchButton">
+				<a href="52.html#"><img src="../sites/default/themes/usability/css/images/search_icon_mobileversion.png" alt="Search"></a>
+			  </div> 
+			  <div id="gsearch">
+					<div id="gsearch_inner">
+						<form name="HHS" action='https://search.hhs.gov/searchblox/usability/index.html' method='get'>
+						    <label for="searchbox">Search</label>
+						    <input type="text" name="query" id="searchbox" size="20" maxlength="256" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+						    <input type="image" src="../sites/default/themes/usability/css/images/search_arrow.png" name="btnG" class="submit" id="gsearchbtn" alt="Search" value="Search" role="button" />
+						    <input type='hidden' name='page' value='1'>
+						    <input type='hidden' name='pagesize' value='10'>
+						    <input type='hidden' name='sortdir' value='desc'>
+						    <input type='hidden' name='sort' value='relevance'>
+						    <input type='hidden' name='adsCname' value='HHS'>
+						    <input type='hidden' name='adsDisplay' value='false'>
+						    <input type='hidden' name='cname' value='usability'>
+						    <input type='hidden' name='default' value='AND'>
+						    <input type='hidden' name='tune' value='false'>
+					</form>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		<div id="topNavigation">		  <div class="girdle">
+		
+		  <div class="region region-topnav">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../what-and-why/index.html" title="">What &amp; Why of Usability</a></li>
+<li class="leaf"><a href="../how-to-and-tools/index.html">How To &amp; Tools</a></li>
+<li class="last expanded active-trail"><a href="../get-involved/index.html" title="" class="active-trail">Get Involved</a><ul class="menu"><li class="first last leaf active-trail"><a href="../get-involved/blog/2009/10/online-form.html" class="menu-position-link active-trail active">Developing an Online Form</a></li>
+</ul></li>
+</ul>  </div>
+</div>
+  </div>
+		
+		</div>	
+	  </div> 
+	</div>
+	<div id="contentWrap">
+		<div class="shadow"></div>
+	  <div class="girdle">
+	
+	<div id="navigationLeft">
+		<div id="sidebar-left">
+			    <div class="region region-sidebar-left">
+    <div id="block-menu-menu-task-bar" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../how-to-and-tools/methods/index.html" title=""><img alt="" src="../sites/default/themes/usability/css/images/methods_icon_1.png" /> <span>Methods</span></a></li>
+<li class="leaf"><a href="../how-to-and-tools/resources/templates.html" title=""><img alt="" src="../sites/default/themes/usability/css/images/resources&amp;templates_icon_1.png" /> <span>Templates &<br />Documents</span></a></li>
+<li class="last leaf"><a href="https://guidelines.usability.gov/" title=""><img alt="" src="../sites/default/themes/usability/css/images/guidelines_icon_1.png" /> <span>Guidelines</span></a></li>
+</ul>  </div>
+</div>
+  </div>
+			</div>
+		</div>
+	<div id="content">
+	<div id="breadcrumbs"><p class='breadcrumb'><a href="../index.html">Home</a> > <a href="../get-involved/index.html" title="">Get Involved</a> > Developing an Online Form</p></div>
+
+
+
+          <div id="tabs-wrapper" class="clearfix">          </div>                                        		  
+<div class="region region-content">
+
+      <div id="add_this_container">
+	
+	
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        	<!--BEGIN text resizer -->
+	    <div class="fontResize">
+		<a class="jfontsize-button" id="jfontsize-m" href="52.html#"><img src="../sites/default/themes/usability/css/images/text_resize_minus_a_icon.png" width="27" height="27" border="0" alt="Minimize text size" title="Minimize text size" /></a>
+        <a class="jfontsize-button" id="jfontsize-d" href="52.html#"><img src="../sites/default/themes/usability/css/images/text_resize_default_a_icon.png" width="27" height="27" border="0" alt="Reset text to normal size" title="Reset text to normal size" /></a>
+        <a class="jfontsize-button" id="jfontsize-p" href="52.html#"><img src="../sites/default/themes/usability/css/images/text_resize_plus_a_icon.png" width="27" height="27" border="0" alt="Increase text size" title="Increase text size"/></a>
+		
+		<script type="text/javascript" language="javascript">
+			jQuery('.region-content').jfontsize({
+			btnMinusClasseId: '#jfontsize-m',
+			btnDefaultClasseId: '#jfontsize-d',
+			btnPlusClasseId: '#jfontsize-p'
+			});
+		</script>
+        
+		</div>
+		 <div class="shareToolBox">
+		<div class="shareMore">
+			<a class="addthis_button_print" href="52.html#"><img src="../sites/default/themes/usability/css/images/insidepage_print_icon.png" width="27" height="27" border="0" alt="Print this page" title="Print this page" /></a>
+			
+			<!-- AddThis Button BEGIN -->
+		<div class="additionalShareOptions">
+        <a class="addthis_button_email" href="52.html#"><img src="../sites/default/themes/usability/css/images/insidepage_email_icon.png" width="27" height="27" border="0" alt="Email this page" title="Email this page" /></a>
+		<a class="addthis_button_twitter" tw:via="UsabilityGov" href="52.html#"><img src="../sites/default/themes/usability/css/images/insidepage_twitter_icon.png" width="27" height="27" border="0" alt="Tweet this page" title="Tweet this page" /></a> 
+		<a class="addthis_button_facebook" href="52.html#"><img src="../sites/default/themes/usability/css/images/insidepage_facebook_icon.png" width="27" height="27" border="0" alt="Post this page" title="Post this page" /></a> 
+		<a class="addthis_button_pinterest_share" href="52.html#"><img src="../sites/default/themes/usability/css/images/insidepage_pinterest_icon.png" width="27" height="27" border="0" alt="Pin this page" title="Pin this page" /></a>
+		<a class="addthis_button_compact" href="52.html#"><img src="../sites/default/themes/usability/css/images/insidepage_plus_icon.png" width="27" height="27" border="0" alt="More ways to share" title="More ways to share" /></a>
+		</div><a class="moreShareButton" href="52.html#"><img src="../sites/default/themes/usability/css/images/insidepage_share_icon.png" width="27" height="27" border="0" alt="Share tools" title="Share tools" />Share</a>
+		</div>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=hhsgov" async="async"></script>
+		</div> 
+		<!-- AddThis Button END -->
+	
+		</div>
+				
+		<script type="text/javascript">
+				 var addthis_config =  {
+						  ui_click: true,
+						  data_track_addressbar: false,
+						  services_compact: 'linkedin, google_plusone_share, tumblr, reddit, delicious, myspace, digg, stumbleupon, favorites',
+						  ui_508_compliant: true,
+						  
+					};
+					
+				var addthis_share = {
+    			templates : {
+        		twitter : "{{title}} {{url}} (via @UsabilityGov)"
+  						  }
+				}
+		 </script>
+
+
+		<!-- END text resizer -->
+
+  </div><!--End of this add_this_container-->
+ 
+        <a id="main-content"></a>
+                    				<h1 class="with-tabs">Developing an Online Form</h1>
+					                  
+<div>
+
+
+  <div>
+
+    
+	                                            <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <article about="/get-involved/blog/2009/10/online-form.html" typeof="sioc:Item foaf:Document">
+        <span property="dc:title" content="Developing an Online Form" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-field-by-line field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Usability.gov Staff Writer</div></div></div><div class="field field-name-field-blog-post-date field-type-datetime field-label-hidden"><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2009-10-01T15:15:00-04:00">Thursday, October 1, 2009</span></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Creating an online form can present developers with many challenges. This case study reviews how a paper-based form was taken through the usability engineering process to develop a functional online version. We discuss the steps in planning and research, prototype development, test design, and the usability test results.</p>
+<h2>
+	Consumer Advocates in Research and Related Activities (CARRA)</h2>
+<p>The National Cancer Institute (NCI) developed the Consumer Advocates in Research and Related Activities (CARRA) program to increase the involvement of people affected by cancer in NCI activities. A Web site was built to educate CARRA members about their roles and responsibilities. One of the features of the site was to provide a method for NCI staff members to request consumer advocates for participation in their research activities. An online form was developed for this purpose.</p>
+<h2>
+	Initial Paper Prototype</h2>
+<h3>
+	Lessons Learned</h3>
+<p><strong>1. A form that works on paper may not necessarily work online</strong>. Determine the goal(s) of the form and what information needs to be collected up front before the form is designed.</p>
+<p>We were given an existing paper-based form that was designed to serve as a direct interface to an internal database. The fields on the paper form were matched to the fields in the database. The goal was to automate the CARRA member selection process, by putting the paper form on the Web and linking it to the database.</p>
+<p>We took the existing paper prototype &amp; created an online version which mirrored the paper format exactly. It was extremely difficult to replicate the paper version of the form online in HTML and still be usable. The overall layout and design looked too dense, and we quickly realized that the form couldn't go online in its current state, and needed usability engineering.</p>
+<p>We then clarified what information the client needed to collect in order to fulfill a user's request:</p>
+<ul>
+<li>
+		Contact information for the person requesting an advocate</li>
+<li>
+		Information about the activity they need an advocate for</li>
+<li>
+		How much time they need an advocate for, and</li>
+<li>
+		What type of personal characteristics, skills, and background they are looking for in an advocate</li>
+</ul>
+<p><strong>Paper Prototype</strong></p>
+<p><img alt="Paper Prototype of the Activity Profile for CARRA" src="../sites/default/files/images/paper-prototype-1.JPG" style="width: 404px; height: 674px;" title="Paper Prototype of the Activity Profile for CARRA" /></p>
+<p><strong>Original HTML mock-up</strong></p>
+<p><img alt="Original HTML mock-up of the Activity Profile for CARRA Participation" src="../sites/default/files/images/paper-prototype-2.JPG" style="width: 404px; height: 845px;" title="Original HTML mock-up of the Activity Profile for CARRA Participation" /></p>
+<p><strong>2. Don't ask for the same information more than once; collect only information that you are going to use.</strong></p>
+<p>The original paper-based form had a number of questions that were duplicative. We eliminated the ones that were unnecessary to avoid having users re-enter the same information in different ways.</p>
+<p><strong>Original Questions</strong></p>
+<p><img alt="Some of the original questions showing duplication on the CARRA form." src="../sites/default/files/images/paper-prototype-3.JPG" style="width: 436px; height: 266px;" title="Some of the original questions showing duplication on the CARRA form." /></p>
+<p><strong>Revised Questions</strong></p>
+<p><img alt="Revised questions" src="../sites/default/files/images/paper-prototype-4.JPG" title="Revised questions" /></p>
+<p><strong>3. Provide a logical structure.</strong></p>
+<p>We then decided to review current research on effective form design, as well as look at other forms on the Web to determine how they were being used to collect information, and what aspects of existing forms online would fit our needs. We paid close attention to the style, organization, layout, field labels, use of widgets, and other elements integral to form design.</p>
+<p>Our existing paper prototype was then revised based on the information gained from our review. We applied a mental model of how a typical user might approach the form to create a more logical structure. We divided the form into three distinct sections, and placed related fields under these section headings to fit the model:</p>
+<ul>
+<li>
+		<strong>Contact Information</strong> - which included information such as name, email, phone #</li>
+<li>
+		<strong>Activity Information</strong> - where users could provide information about the activity they needed an advocate for</li>
+<li>
+		<strong>CARRA Member Profile</strong> - where users could provide information about the specific characteristics, skills, and requirements of the advocate</li>
+</ul>
+<p><strong>4. Use appropriate form elements (widgets) for the type of question you're asking.</strong></p>
+<p>We went through each question and field on the form to determine the most appropriate widget to use. The goal was to minimize user workload by maintaining consistency among widget types. Our design decisions were based on the following guidelines:</p>
+<table>
+<thead>
+<tr>
+<th scope="col">
+				Form Element</th>
+<th scope="col">
+				Type of Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+				Radio Buttons</td>
+<td>
+				Simple question where only one choice can be made, and choices are mutually exclusive</td>
+</tr>
+<tr>
+<td>
+				Drop-down Box</td>
+<td>
+				There are multiple options, but users can only choose one</td>
+</tr>
+<tr>
+<td>
+				Check Boxes or Open-list Box</td>
+<td>
+				There are multiple options, and users can make more than one choice</td>
+</tr>
+<tr>
+<td>
+				Text Box</td>
+<td>
+				Open-ended question where users can type in the answer</td>
+</tr>
+</tbody>
+</table>
+<h2>
+	First iteration after usability engineering</h2>
+<p><img alt="First iteration of the CARRA form after usability testing." src="../sites/default/files/images/paper-prototype-5.JPG" title="First iteration of the CARRA form after usability testing." /></p>
+<h2>
+	Designing the Usability Test</h2>
+<h3>
+	Lessons Learned</h3>
+<p><strong>1. Identify problem areas on the form and anticipate usability issues to test.</strong></p>
+<p>Before the online form was developed, NCI staff had to request CARRA members by filling out the original paper version of the form. We first looked at samples of completed forms to determine where users had been making errors. Being able to see where some of the problems already existed helped us shape the design of the test.</p>
+<p><strong>2. Determine the characteristics of your users and develop user profiles.</strong></p>
+<p>We determined that there would be two different types of users; those who have a science background, and those who work in health communications. We began writing scenarios for each of the user profiles by looking at the questions on the form, and trying to determine, field by field, what was essential information that needed to be provided in the scenario, and what can be inferred by the user within the context of the scenario.</p>
+<p style="margin-left:33.5pt;"><strong>Original Scenario</strong><br />
+	<em>You have an upcoming site visit review for a cancer center. It will be held on May 14-16, 2002 at the City of Hope Cancer Institute in Duarte, CA."</em></p>
+<p>Ultimately, we interviewed one participant of each of the user types and developed scenarios that reflected the way they approached an activity, which was quite different than the linear approach we were going to take.</p>
+<p style="margin-left:33.5pt;"><strong>Revised Scenario</strong><br />
+	<em>"You have an upcoming RFA grant review meeting in which you'll need two consumer advocates to participate in. You would like the CARRA members to have the following characteristics."</em></p>
+<p>During testing, participants were asked if they had ever requested a CARRA member for one of their research activities. If they had, users were then instructed to fill out the form as if they were requesting one for that activity and told to make up any information if they forgot certain details related to it. A "science" or a "communications" activity scenario was provided if users had never requested a CARRA member (to match the user profiles). All participants had used CARRA in the past and filled out the form without the use of the scenarios. This reflected more of a "real-world" situation for users.</p>
+<p><strong>3. The testing protocol for an online form differs from traditional scenario-based tasks.</strong></p>
+<p>A performance-based usability test was employed using a think aloud protocol. Several techniques were used to solicit participant feedback during this test. Participants were asked to fill out the prototype of the form online. They were asked to describe out loud how they were attempting to complete each field as they worked on them. After they completed filling out the form, the test facilitator performed a critical-incident analysis by following up on the participants' actions/comments and asking questions to clarify comments made or to encourage the participant to continue describing his/her actions. Observers took notes of user comments and actions during test performance. All tests were video recorded. Finally, participants answered seven general questions about their overall impressions of the form. Each test was approximately 1 hour</p>
+<h2>
+	Usability Test Results</h2>
+<p><strong>1. Avoid using jargon; use clear, simple language for all field labels and questions.</strong></p>
+<p>Users were confused by some of the terminology that was being used, such as the title of the form (Activity Profile for CARRA Participation), section headings (Contact Information, Activity Information, CARRA Member Profile), and other fields throughout the form (Activity Contact, Activity Contact E-mail). See image below.</p>
+<p><strong>2. Provide a context for filling out the form.</strong></p>
+<p>Users wanted a context as to why they were filling out the form and when they would receive a response. They also wanted to be able to contact CARRA if they needed to follow up on their request. This information was added at the top of the form. See image below.</p>
+<p><strong>3. Include field formatting instructions, if necessary.</strong> Users weren't sure if they should put their internal office phone extensions, or full phone number. See image below.</p>
+<p><img alt="A Before screen capture showing confusing field descriptions and an After screen capture showing form instructions and sample answers to questions." src="../sites/default/files/images/paper-prototype-6.JPG" style="width: 452px; height: 635px;" title="A Before screen capture showing confusing field descriptions and an After screen capture showing form instructions and sample answers to questions." /></p>
+<p><strong>4. Ensure form elements (widgets) can actually be used.</strong></p>
+<p>Users had difficulty selecting more than one option in the open-list boxes; some text boxes didn't have enough space for users to enter the information they wanted to. See image below.</p>
+<p><strong>5. Ensure all questions are worded clearly.</strong></p>
+<p>Questions that are vague or not written clearly will cause confusion and users won't know how to answer them. One field, "ethnic/minority issues (please describe)" was for users to indicate if they wanted CARRA members of a certain race or ethnicity.</p>
+<p>Users weren't sure what "ethnic/minority issues" meant, and as a result, put a range of incorrect responses (i.e. "recruit CARRA members who are ethnically diverse; ensure minorities are recruited for clinical trials, target communities with health disparities). See image below.</p>
+<p><strong>6. Reduce cognitive load in a form; don't make users think (humans don't think like a database).</strong></p>
+<p>Overall, users had difficulty trying to match the information about their activities, as well as what they were looking for in a CARRA member with the predetermined categories and fields on the form. It took more time for users to translate what they knew in their heads to fit. See image below.</p>
+<p><img alt="Reference numbers 4 and 5 showing complicated questions" src="../sites/default/files/images/paper-prototype-7.JPG" style="width: 436px; height: 226px;" title="Reference numbers 4 and 5 showing complicated questions" /></p>
+<h2>
+	Conclusion</h2>
+<p>Overall, users experienced general frustration while filling out the Activity Profile form. It did not meet their expectations.</p>
+<p>This form was initially designed for multiple purposes and audiences:</p>
+<ol>
+<li>
+		Assist Liaison Activities Branch with tracking the CARRA program</li>
+<li>
+		Serve as a confirmation record for CARRA members participating in an activity</li>
+<li>
+		For NCI staff to request a CARRA member</li>
+</ol>
+<p>This test demonstrated many of the problems associated with taking a tracking form that is defined by an internal database, and using it to serve a purpose for which it was not originally intended. By conducting this usability test, we discovered that the form did not meet users' expectations. The form was modified by providing text boxes where users could enter an open-ended, narrative text description of their activity and the characteristics they are looking for in a CARRA member. Further testing on the redesigned form should be conducted to reevaluate these changes.</p>
+<h2>
+	For More Information</h2>
+<ul>
+<li>
+		Information about the CARRA program: <a href="http://ncccp.cancer.gov/files/launch/binder_doc46.pdf">http://ncccp.cancer.gov/files/launch/binder_doc46.pdf</a>.</li>
+<li>
+		Information on forms design: <a href="http://www.formsthatwork.com/">http://www.formsthatwork.com/</a> <a href="http://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px;" title="Site exit disclaimer" /></a></li>
+</ul>
+</div></div></div>     <div id="voc-wrapper">
+		<div id="survey_target" style="border-top:1px solid #ccc;"> </div>
+	</div>
+            
+	 	
+	  
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+      </div>  
+</div>
+
+</div>
+	</div>
+	<div id="sidebarRight">
+	<div id="sidebar-right">
+			  <div class="region region-sidebar-right">
+    <div id="block-nodeblock-1868" class="block block-nodeblock">
+
+    
+  <div class="content">
+    <article about="/blog-rss.html" typeof="sioc:Item foaf:Document">
+
+  
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><h2 id="rightRail-rss">
+	<a href="./get-involved/blog/rss.xml">Blog RSS <img alt="RSS ICON" src="../sites/default/files/images/rss-image.jpg" /></a></h2>
+</div></div></div>
+	            
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+<div id="block-views-related-content-block-5" class="block block-views">
+
+    <h2>Related Content</h2>
+  
+  <div class="content">
+    <div class="view view-related-content view-id-related_content view-display-id-block_5 view-dom-id-8d901852add54f7cf61db720972c4a28">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/07/recruiting-participants.html">Recruiting Participants &amp; the Legend of “The General Public”</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/05/welcome-to-relauched-hhsgov.html">Welcome to the Reimagined HHS.gov</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/02/working-with-kids-and-teens.html">Usability Testing with Kids and Teens</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2014/12/building-a-lab-series-constructing-and-equipping-a-lab.html">Constructing and Equipping a Lab – Part 3</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2014/10/building-a-lab-series-deciding-if-you-need-a-dedicated-usability-lab.html">Deciding if You Need a Dedicated Usability Lab – Part 2</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-resources-views-block-5" class="block block-views">
+
+    <h2>Related Resources</h2>
+  
+  <div class="content">
+    <div class="view view-resources-views view-id-resources_views view-display-id-block_5 view-dom-id-0ca23ef224e81d3a87207f8adafb3c89">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/receipt-form-usability-test-compensation-adult.html">Receipt Form: Usability Test Compensation Receipt Form (Adult)</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/receipt-form-usability-test-compensation-minor.html">Receipt Form: Usability Test Compensation (Minor)</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/introduction-to-testing-with-moderator-interaction.html">Introduction to Testing with Moderator Interaction</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/templates/digital-recording-release-form-minor.html">Digital Recording Release Form (Minor)</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-related-categories-block-1" class="block block-views">
+
+    <h2>Related Categories</h2>
+  
+  <div class="content">
+    <div class="view view-related-categories view-id-related_categories view-display-id-block_1 view-dom-id-64c804f0b91315c271e8ceba52e17b60">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">  
+  <div class="views-field views-field-name">        <span class="field-content"><a href="../tags/form-design/index.html">Form Design</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-archive-block" class="block block-views">
+
+    <h2>Blog Archives</h2>
+  
+  <div class="content">
+    <div class="view view-archive view-id-archive view-display-id-block view-dom-id-e528e585cf8a9b54320d3ed9dd6b2124">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+  <ul class="views-summary">
+      <li><a href="../get-involved/blog/2016/index.html">2016</a>
+              (1)
+          </li>
+      <li><a href="../get-involved/blog/2015/index.html">2015</a>
+              (3)
+          </li>
+      <li><a href="../get-involved/blog/2014/index.html">2014</a>
+              (5)
+          </li>
+      <li><a href="../get-involved/blog/2013/index.html">2013</a>
+              (9)
+          </li>
+      <li><a href="../get-involved/blog/2012/index.html">2012</a>
+              (3)
+          </li>
+      <li><a href="../get-involved/blog/2011/index.html">2011</a>
+              (1)
+          </li>
+      <li><a href="../get-involved/blog/2010/index.html">2010</a>
+              (4)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2009/index.html">2009</a>
+              (8)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2008/index.html">2008</a>
+              (3)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2007/index.html">2007</a>
+              (3)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2006/index.html">2006</a>
+              (9)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2005/index.html">2005</a>
+              (8)
+          </li>
+    </ul>
+</div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <div id="voc-wrapper">
+    <div id="survey_target"></div>
+</div>     </div>
+  
+  
+</div>  </div>
+</div>
+  </div>
+			</div>
+	</div>
+	<div class="clearBoth"></div>	
+	</div>
+	</div>
+	<div id="footerWrapper">
+		  <div class="girdle">
+		  <div class="region region-footer">
+    <div id="block-nodeblock-36" class="block block-nodeblock">
+
+    
+  <div class="content">
+    <article about="/footer.html" typeof="sioc:Item foaf:Document">
+    
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div role="contentinfo">
+<div id="footerBranding">
+<p><a href="/"><img alt="usability.gov, go to the homepage" src="../sites/default/files/images/footer-logo.png" /></a></p>
+</div>
+<div id="stayConnected">
+		Stay Connected <a href="https://twitter.com/usabilitygov"><img alt="Follow us on Twitter @UsabilityGov" src="../sites/default/files/images/footer_twitter_icon.png" title="Follow us on Twitter @UsabilityGov" /></a><a href="../rss.xml"><img alt="RSS Feed" src="../sites/default/files/images/rss-image-footer.png" title="RSS Feed" /></a></div>
+<div id="footerLinks">
+<ul>
+<li>
+				<a href="http://www.hhs.gov/Accessibility.html">Accessibility</a></li>
+<li>
+				<a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a></li>
+<li>
+				<a href="http://www.hhs.gov/foia/">FOIA</a></li>
+<li>
+				<a href="../about-us/index.html">About Us</a></li>
+<li>
+				<a href="../site-tour.html">Tour the Site</a></li>
+<li>
+				<a href="../stay-connected/index.html">Widgets &amp; Badges</a></li>
+<li>
+				<a href="http://www.hhs.gov/Disclaimer.html">Disclaimers</a></li>
+<li>
+				<a href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a></li>
+<li>
+				<a href="http://www.hhs.gov/asa/eeo/resources/index.html">No FEAR</a></li>
+<li>
+				<a href="http://www.hhs.gov/plugins.html">Viewers &amp; Players</a></li>
+<li>
+				<a href="http://www.whitehouse.gov/">WhiteHouse.gov</a></li>
+<li>
+				<a href="http://www.usa.gov/">USA.gov</a></li>
+<li>
+				<a class="last" href="http://www.gobiernousa.gov/">GobiernoUSA.gov</a></li>
+</ul>
+</div>
+<div id="branddate">
+		<img alt="U.S. Flag" src="../sites/default/files/images/footer_usaflag_icon.png" style="width: 20px; height: 13px; margin-right: 15px;" /> 
+<script>
+<!--//--><![CDATA[// ><!--
+var now = new Date();document.write(now.format('mmmm dd, yyyy'));
+//--><!]]>
+</script></div>
+<div id="copyright">
+		<a class="footerLinks" href="http://www.hhs.gov">U.S. Department of Health &amp; Human Services</a> - 200 Independence Avenue, S.W. - Washington, D.C. 20201</div>
+</div>
+<p> </p>
+</div></div></div>
+	            
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+  </div>
+		</div>
+	</div>
+  	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!--[if IE 8]>
+</div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+</div id="ie-9">
+<![endif]-->  
+</body>
+</html>

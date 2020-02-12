@@ -1,0 +1,706 @@
+---
+layout: default
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="{{ site.baseurl }}/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width" />
+<link rel="canonical" href="../get-involved/blog/2009/10/designing-educational-booklets-for-the-web.html" />
+<link rel="shortlink" href="72.html" />
+<meta name="author" content="Assistant Secretary for Public Affairs" />
+<meta name="description" content="Get the lessons learned based on the results of usability tests on two booklets from the National Cancer Institute that were transferred from print to the Web." />
+<meta name="dc.title" content="Designing Educational Booklets for the Web" />
+<meta name="keywords" content="user experience, ux, difference between print and web, NCI, usability testing" />
+<meta name="dc.description" content="Get the lessons learned based on the results of usability tests on two booklets from the National Cancer Institute that were transferred from print to the Web." />
+<meta name="dc.creator" content="Assistant Secretary for Public Affairs" />
+<meta name="dc.publisher" content="Department of Health and Human Services" />
+<meta name="dc.language" content="en-us" />
+<meta name="dc.date" content="2013-12-16" />
+<meta name="DCTERMS.dateReviewed" content="2013-05-23" />
+<meta name="DCTERMS.dateCreated" content="2013-05-23" />
+<meta name="DCTERMS.dateModified" content="2013-12-16" />
+<meta name="DCTERMS.keywords" content="user experience, ux, difference between print and web, NCI, usability testing" />
+<meta name="nodeid" content="72" />
+  <title>Designing Educational Booklets for the Web | Usability.gov</title>
+  <meta content="width" name="MobileOptimized"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="on" http-equiv="cleartype"/>
+  <style type="text/css" media="all and (min-width: 720px)">
+@import url("{{ site.baseurl }}/modules/system/system.base.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.menus.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.messages.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/system/system.theme.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css");
+@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css");
+</style>
+<style type="text/css" media="all and (min-width: 720px)">
+@import url("{{ site.baseurl }}/sites/all/modules/ckeditor/ckeditor.css");
+@import url("{{ site.baseurl }}/sites/all/modules/ctools/css/ctools.css");
+@import url("{{ site.baseurl }}/sites/all/modules/panels/css/panels.css");
+@import url("{{ site.baseurl }}/modules/book/book.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/comment/comment.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/date/date_api/date.css");
+@import url("{{ site.baseurl }}/sites/all/modules/date/date_popup/themes/datepicker.1.7.css");
+@import url("{{ site.baseurl }}/modules/field/theme/field.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/google_appliance/theme/google_appliance.css");
+@import url("{{ site.baseurl }}/modules/node/node.css?q56q1n");
+@import url("{{ site.baseurl }}/modules/search/search.css?q56q1n");
+@import url("{{ site.baseurl }}/sites/all/modules/views/css/views.css");
+@import url("{{ site.baseurl }}/sites/all/modules/comment_goodness/css/disabled_actions.css");
+</style>
+<style type="text/css" media="all">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/reset.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/layout.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style.css");
+</style>
+<style type="text/css" media="print">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/print.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jfontsize.css");
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jquery-ui.css");
+</style>
+<style type="text/css" media="screen and (min-width: 720px)">
+@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style-960.css");
+</style>
+ 
+ <!--[if lte IE 10]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/style-960.css" />
+  <![endif]-->
+  
+   <!--[if gte IE 9]>
+  <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/ie9.css" />
+  <![endif]-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/misc/drupal.js?q56q1n"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery.ui || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/all/modules/comment_goodness/comment_goodness.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/misc.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/jquery.jfontsize-1.0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"usability","theme_token":"WwkFX9KmT1XZDmmo3lBVTTmotIv8Py9_REqCKjFueic","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/comment_goodness\/comment_goodness.js":1,"sites\/default\/themes\/usability\/js\/misc.js":1,"sites\/default\/themes\/usability\/js\/jquery.jfontsize-1.0.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_appliance\/theme\/google_appliance.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/comment_goodness\/css\/disabled_actions.css":1,"sites\/default\/themes\/usability\/user.css":1,"sites\/default\/themes\/usability\/css\/reset.css":1,"sites\/default\/themes\/usability\/css\/layout.css":1,"sites\/default\/themes\/usability\/css\/style.css":1,"sites\/default\/themes\/usability\/css\/print.css":1,"sites\/default\/themes\/usability\/css\/jfontsize.css":1,"sites\/default\/themes\/usability\/css\/jquery-ui.css":1,"sites\/default\/themes\/usability\/css\/style-960.css":1}},"better_exposed_filters":{"views":{"related_content":{"displays":{"block_5":{"filters":[]}}},"resources_views":{"displays":{"block_5":{"filters":[]}}},"related_categories":{"displays":{"block_1":{"filters":[]}}},"archive":{"displays":{"block":{"filters":[]}}}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-72 node-type-blog list-view sidebar_right sidebar_left" >
+<!--[if IE 8]>
+<div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+<div id="ie-9">
+<![endif]-->
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-QN2B" title="googletagmanager"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-QN2B');</script>
+<!-- End Google Tag Manager -->
+  <div id="skip-link">
+    <a href="72.html#main-content" class="element-invisible element-focusable skippy">Skip to main content</a>
+  </div>
+    <div id="wrapper">
+	<div id="header">
+	  
+		<div id="topBranding">
+		  <div class="girdle">
+			  <div class="topNavMenuButton">
+				<a href="72.html#"><img src="../sites/default/themes/usability/css/images/menu_icon_mobileversion.png" alt="expand navigation menu"></a>
+			  </div>
+			  <div id="logo">
+				  <div class="logoWrapper"><a href="../index.html" title="Home"><img src="{{ site.baseurl }}/sites/default/themes/usability/css/images/logo_without_tagline.png" alt="Home" class="usability-logo" /></a>				  <span id="slogan"><em>Improving the User Experience </em></span></div>  
+			  </div>
+			  <div class="topNavSearchButton">
+				<a href="72.html#"><img src="../sites/default/themes/usability/css/images/search_icon_mobileversion.png" alt="Search"></a>
+			  </div> 
+			  <div id="gsearch">
+					<div id="gsearch_inner">
+						<form name="HHS" action='https://search.hhs.gov/searchblox/usability/index.html' method='get'>
+						    <label for="searchbox">Search</label>
+						    <input type="text" name="query" id="searchbox" size="20" maxlength="256" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+						    <input type="image" src="../sites/default/themes/usability/css/images/search_arrow.png" name="btnG" class="submit" id="gsearchbtn" alt="Search" value="Search" role="button" />
+						    <input type='hidden' name='page' value='1'>
+						    <input type='hidden' name='pagesize' value='10'>
+						    <input type='hidden' name='sortdir' value='desc'>
+						    <input type='hidden' name='sort' value='relevance'>
+						    <input type='hidden' name='adsCname' value='HHS'>
+						    <input type='hidden' name='adsDisplay' value='false'>
+						    <input type='hidden' name='cname' value='usability'>
+						    <input type='hidden' name='default' value='AND'>
+						    <input type='hidden' name='tune' value='false'>
+					</form>
+				</div>
+				</div>
+		  </div>
+		</div>
+		
+		<div id="topNavigation">		  <div class="girdle">
+		
+		  <div class="region region-topnav">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../what-and-why/index.html" title="">What &amp; Why of Usability</a></li>
+<li class="leaf"><a href="../how-to-and-tools/index.html">How To &amp; Tools</a></li>
+<li class="last expanded active-trail"><a href="../get-involved/index.html" title="" class="active-trail">Get Involved</a><ul class="menu"><li class="first last leaf active-trail"><a href="../get-involved/blog/2009/10/designing-educational-booklets-for-the-web.html" class="menu-position-link active-trail active">Designing Educational Booklets for the Web</a></li>
+</ul></li>
+</ul>  </div>
+</div>
+  </div>
+		
+		</div>	
+	  </div> 
+	</div>
+	<div id="contentWrap">
+		<div class="shadow"></div>
+	  <div class="girdle">
+	
+	<div id="navigationLeft">
+		<div id="sidebar-left">
+			    <div class="region region-sidebar-left">
+    <div id="block-menu-menu-task-bar" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../how-to-and-tools/methods/index.html" title=""><img alt="" src="../sites/default/themes/usability/css/images/methods_icon_1.png" /> <span>Methods</span></a></li>
+<li class="leaf"><a href="../how-to-and-tools/resources/templates.html" title=""><img alt="" src="../sites/default/themes/usability/css/images/resources&amp;templates_icon_1.png" /> <span>Templates &<br />Documents</span></a></li>
+<li class="last leaf"><a href="https://guidelines.usability.gov/" title=""><img alt="" src="../sites/default/themes/usability/css/images/guidelines_icon_1.png" /> <span>Guidelines</span></a></li>
+</ul>  </div>
+</div>
+  </div>
+			</div>
+		</div>
+	<div id="content">
+	<div id="breadcrumbs"><p class='breadcrumb'><a href="../index.html">Home</a> > <a href="../get-involved/index.html" title="">Get Involved</a> > Designing Educational Booklets for the Web</p></div>
+
+
+
+          <div id="tabs-wrapper" class="clearfix">          </div>                                        		  
+<div class="region region-content">
+
+      <div id="add_this_container">
+	
+	
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        	<!--BEGIN text resizer -->
+	    <div class="fontResize">
+		<a class="jfontsize-button" id="jfontsize-m" href="72.html#"><img src="../sites/default/themes/usability/css/images/text_resize_minus_a_icon.png" width="27" height="27" border="0" alt="Minimize text size" title="Minimize text size" /></a>
+        <a class="jfontsize-button" id="jfontsize-d" href="72.html#"><img src="../sites/default/themes/usability/css/images/text_resize_default_a_icon.png" width="27" height="27" border="0" alt="Reset text to normal size" title="Reset text to normal size" /></a>
+        <a class="jfontsize-button" id="jfontsize-p" href="72.html#"><img src="../sites/default/themes/usability/css/images/text_resize_plus_a_icon.png" width="27" height="27" border="0" alt="Increase text size" title="Increase text size"/></a>
+		
+		<script type="text/javascript" language="javascript">
+			jQuery('.region-content').jfontsize({
+			btnMinusClasseId: '#jfontsize-m',
+			btnDefaultClasseId: '#jfontsize-d',
+			btnPlusClasseId: '#jfontsize-p'
+			});
+		</script>
+        
+		</div>
+		 <div class="shareToolBox">
+		<div class="shareMore">
+			<a class="addthis_button_print" href="72.html#"><img src="../sites/default/themes/usability/css/images/insidepage_print_icon.png" width="27" height="27" border="0" alt="Print this page" title="Print this page" /></a>
+			
+			<!-- AddThis Button BEGIN -->
+		<div class="additionalShareOptions">
+        <a class="addthis_button_email" href="72.html#"><img src="../sites/default/themes/usability/css/images/insidepage_email_icon.png" width="27" height="27" border="0" alt="Email this page" title="Email this page" /></a>
+		<a class="addthis_button_twitter" tw:via="UsabilityGov" href="72.html#"><img src="../sites/default/themes/usability/css/images/insidepage_twitter_icon.png" width="27" height="27" border="0" alt="Tweet this page" title="Tweet this page" /></a> 
+		<a class="addthis_button_facebook" href="72.html#"><img src="../sites/default/themes/usability/css/images/insidepage_facebook_icon.png" width="27" height="27" border="0" alt="Post this page" title="Post this page" /></a> 
+		<a class="addthis_button_pinterest_share" href="72.html#"><img src="../sites/default/themes/usability/css/images/insidepage_pinterest_icon.png" width="27" height="27" border="0" alt="Pin this page" title="Pin this page" /></a>
+		<a class="addthis_button_compact" href="72.html#"><img src="../sites/default/themes/usability/css/images/insidepage_plus_icon.png" width="27" height="27" border="0" alt="More ways to share" title="More ways to share" /></a>
+		</div><a class="moreShareButton" href="72.html#"><img src="../sites/default/themes/usability/css/images/insidepage_share_icon.png" width="27" height="27" border="0" alt="Share tools" title="Share tools" />Share</a>
+		</div>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=hhsgov" async="async"></script>
+		</div> 
+		<!-- AddThis Button END -->
+	
+		</div>
+				
+		<script type="text/javascript">
+				 var addthis_config =  {
+						  ui_click: true,
+						  data_track_addressbar: false,
+						  services_compact: 'linkedin, google_plusone_share, tumblr, reddit, delicious, myspace, digg, stumbleupon, favorites',
+						  ui_508_compliant: true,
+						  
+					};
+					
+				var addthis_share = {
+    			templates : {
+        		twitter : "{{title}} {{url}} (via @UsabilityGov)"
+  						  }
+				}
+		 </script>
+
+
+		<!-- END text resizer -->
+
+  </div><!--End of this add_this_container-->
+ 
+        <a id="main-content"></a>
+                    				<h1 class="with-tabs">Designing Educational Booklets for the Web</h1>
+					                  
+<div>
+
+
+  <div>
+
+    
+	                                            <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <article about="/get-involved/blog/2009/10/designing-educational-booklets-for-the-web.html" typeof="sioc:Item foaf:Document">
+        <span property="dc:title" content="Designing Educational Booklets for the Web" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="5" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-field-by-line field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Usability.gov Staff Writer</div></div></div><div class="field field-name-field-blog-post-date field-type-datetime field-label-hidden"><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2009-10-01T12:45:00-04:00">Thursday, October 1, 2009</span></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>We discuss here the results of usability tests on two booklets which were transferred from print to the Web. The booklets provide the public with basic information on various cancers, cancer treatment, and other cancer-related topics. The booklets were written by the National Cancer Institute's Office of Education and Special Initiatives (NCI OESI).</p>
+<h2>
+	Web-based booklets versus print booklets</h2>
+<p>Booklets that work well in print do not always work well on the Web because on the Web:</p>
+<ul>
+<li>
+		Users see much less of a page than they do on paper</li>
+<li>
+		Users cannot flip through pages to find something they are looking for</li>
+<li>
+		Users are slower at reading from the computer screen and often find they get eyestrain. This may be because of the position of the screen, the way we sit at the computer, or the difference in the way the light is reflected with monitors compared to paper</li>
+</ul>
+<p>Therefore, users look for information differently on the Web and are often reluctant to read large blocks of text from the screen. So, if they find a booklet interesting but too much to deal with on the Web, users might want to print it out or even order the paper copy.</p>
+<p>Goals of the Usability Tests</p>
+<p>We wanted to find out more about issues that may make an online booklet more usable, such as:</p>
+<ul>
+<li>
+		Will users have more success using a "detailed" table of contents (a set of links showing primary and secondary headings) or a "minimal" table of contents (a set of links showing only primary headings)?</li>
+<li>
+		What makes a heading informative enough to help users find the information they are looking for?</li>
+<li>
+		Do anchor links (links at the top of a page that take users to information further down that page) help users?</li>
+<li>
+		Will users scroll through long pages of text? Can they easily find what they are looking for by scrolling?</li>
+<li>
+		How much of a booklet do users want to print at one time?</li>
+<li>
+		How much explanatory text is needed to go with icons that indicate other ways of getting a booklet? Icons include "print", "PDF," and "order" (for a paper copy).</li>
+</ul>
+<h2>
+	What Was Tested</h2>
+<p>We tested two online booklets: Chemotherapy and You and Facing Forward: Life After Cancer Treatment. Primary audiences for the booklets include patients, their family, and friends. The secondary audience is the health care professionals who provide the booklets to the patients.</p>
+<p>Both online booklets are written at the eighth-grade reading level.</p>
+<p><img alt="Chemotherapy and You home page" src="../sites/default/files/images/online-booklets-1.JPG" style="width: 454px; height: 367px;" title="Chemotherapy and You home page" /></p>
+<p>Chemotherapy and You has information on what to expect during chemotherapy and what patients can do to take care of themselves before and after treatment. Facing Forward: Life After Cancer Treatment addresses issues faced by patients who have completed treatment.</p>
+<p><img alt="Facing Forward: Life After Cancer home page" src="../sites/default/files/images/online-booklets-2.JPG" style="width: 454px; height: 375px;" title="Facing Forward: Life After Cancer home page" /></p>
+<h2>
+	Who Participated in the Usability Tests</h2>
+<p>Fourteen participants tested the booklets:</p>
+<ul>
+<li>
+		9 clinical nurses</li>
+<li>
+		1 clinical assistant</li>
+<li>
+		2 cancer patients</li>
+<li>
+		2 family members of cancer patients</li>
+</ul>
+<p>Most clinicians were very Web savvy. The patients and their family members were not as Web savvy.</p>
+<h2>
+	Methodology Used</h2>
+<p>Each participant used the two online booklets for about an hour spending one half-hour on each booklet. During this time they:</p>
+<ul>
+<li>
+		Answered questions on who they think the booklets are for, what they think the booklets are about, and what they would do with them</li>
+<li>
+		Used each online booklet to search for specific information.</li>
+<li>
+		Answered questions about their impressions of the online booklets</li>
+<li>
+		Answered questions specifically about the format of the icons in the booklets, the format they prefer, and reasons for their preference.</li>
+</ul>
+<h2>
+	Lessons Learned</h2>
+<h3>
+	Navigation</h3>
+<p><strong>1. Provide a detailed table of contents to help users find information faster, to help them understand the range of topics covered by the booklet, and to increase user satisfaction.</strong></p>
+<p><strong>Comment:</strong> The "detailed" table of contents is a set of links showing both primary and secondary headings. In our usability tests, we found that the detailed table of contents gave participants a better idea of what they could find in each section and allowed them to get to the information directly and quickly.</p>
+<p>When looking for information, users who were not sure what primary heading they would find it under could scan the secondary headings directly and select the link of interest to them. This helped them get to information faster. Most participants who used the detailed table of contents commented on how much they liked it.</p>
+<p><strong>Example 2a</strong></p>
+<p><img alt="An image showing what users liked and their performance was improved by second-level headings upfront in the site" src="../sites/default/files/images/online-booklets-3.JPG" style="width: 454px; height: 440px;" title="An image showing what users liked and their performance was improved by second-level headings upfront in the site" /></p>
+<p><strong>2. Provide links to all content headings on the top of a page (anchor links) to allow users to get to information directly and quickly.</strong></p>
+<p><strong>Comment:</strong> An anchor link is a link that takes you to another part of the same page. On the second level pages of Chemotherapy and You, participants could click to all the headings on the page via a set of anchor links on the top of the page. (See example 2a below.)</p>
+<p>On a long page with a large amount of information, having the content headings as links at the top of the page allows users to click to information directly, reducing scrolling and scanning. In our usability tests, users often got frustrated when they had to scroll or scan a lot to find information. Also important, these anchor links let users grasp immediately what information the page contains. Keep in mind that for such anchor links to work well, the headings must be easily understandable and must be descriptive of the content.</p>
+<p><strong>Example 2a</strong></p>
+<p><img alt="An image showing anchor links in Chemotherapy and You helped participants find information quickly." src="../sites/default/files/images/online-booklets-4.JPG" style="width: 454px; height: 399px;" title="An image showing anchor links in Chemotherapy and You helped participants find information quickly." /></p>
+<p><strong>Example 2b</strong></p>
+<p><img alt="An image showing that on the Facing Forward page that no links are included in the bulleted text. Users had to scroll a lot to find information." src="../sites/default/files/images/online-booklets-5.JPG" title="An image showing that on the Facing Forward page that no links are included in the bulleted text. Users had to scroll a lot to find information." /></p>
+<h3>
+	Page Layout</h3>
+<p><strong>3. Keep key links and information above the first screen fold (where the screen ends) or provide an indication that key data is below the screen fold.</strong></p>
+<p><strong>Comment:</strong> Half of the participants took white space at the bottom of the screen to mean that there was nothing below that on the page. They did not scroll down far enough and hence missed an important link, "Detailed Table of Contents". The reason: At 800 x 600 resolution (the resolution most users have their computer set at), the first screen fold of information cuts off at the table of contents link "Conclusion." This indicated to some participants that the Table of Contents ended there, and they did not scroll further down the page. Other participants, who did scroll down a little, did not realize that there was a link below the table of contents' last link, "Resources," because of the amount of white space separating this and the "Detailed Table of Contents."</p>
+<p><img alt="An image showing that the Detailed Table of Contents link was positioned below the fold on a 15 inch monitor at a resolution of 800 x 600." src="../sites/default/files/images/online-booklets-6.JPG" style="width: 454px; height: 413px;" title="An image showing that the Detailed Table of Contents link was positioned below the fold on a 15 inch monitor at a resolution of 800 x 600." /></p>
+<h3>
+	Content</h3>
+<p><strong>4. Organize information in a way that users understand, and then write descriptive headings.</strong></p>
+<p><strong>Comment:</strong> When chunking information, consider the logical placement of information from the users' perspective. For example, in Facing Forward while 'Practical Matters After Cancer Treatment' might have seemed like a reasonable place to have information on support organizations for cancer patients, participants in our usability tests did not expect it there. An overwhelming number of participants thought they would find support organizations under 'Additional Resources.'</p>
+<p>Once the information is chunked appropriately, write headings that are descriptive of the information. On the Web, page headings become links out of context on a previous page - like the table of contents of a printed booklet. Therefore, headings should clearly explain to users what page they are about to link to.</p>
+<p><strong>Example 4a</strong></p>
+<p><img alt="An image showing the two links, Practical Matters After Cancer treatment and Additional Resources." src="../sites/default/files/images/online-booklets-7.JPG" style="width: 454px; height: 398px;" title="An image showing the two links, Practical Matters After Cancer treatment and Additional Resources." /></p>
+<p><strong>Example 4b</strong></p>
+<p><img alt="An image showing the two links, Understanding Chemotherapy and What Can I Expect During Chemotherapy." src="../sites/default/files/images/online-booklets-8.JPG" style="width: 454px; height: 394px;" title="An image showing the two links, Understanding Chemotherapy and What Can I Expect During Chemotherapy." /></p>
+<p><strong>5. Use large fonts and black text on a white background to enhance the readability of content.</strong></p>
+<p><strong>Comment:</strong> Many participants commented that they found the booklets easy to read online because of the font sizes and colors (black text on white background). Research has shown that font sizes greater than ten points (preferably twelve points) and black text on a white background elicit better reading performance, in general.</p>
+<p><strong>6. Use terms that are clear and readily understandable by all audiences. Avoid jargon.</strong></p>
+<p><strong>Comment:</strong> The patients and family members who participated in the testing were not familiar with the term 'complementary therapy,' a key link to critical health information. Only one patient, who had been in treatment for several years, knew what it means. (Complementary therapies are alternate therapies, such as massage therapy, yoga, etc.)</p>
+<p>To find out the best words to use for uncommon terms and phrases, you can use surveys, interviews and other data collection techniques.</p>
+<p>For more information, learn more about <a href="../what-and-why/user-research.html">user research</a>.</p>
+<p><img alt="An image showing the link Complementary Therapies." src="../sites/default/files/images/online-booklets-9.JPG" title="An image showing the link Complementary Therapies." /></p>
+<h3>
+	Printing</h3>
+<p><strong>7. a. Provide users with the option to print sections of a large booklet.</strong></p>
+<p><strong>b. Provide users with an indication of the number of pages that will be printed.</strong></p>
+<p><strong>Comment:</strong> Participants did not always want to print out the entire booklet. They wanted to be able to print out just sections of the booklets. They gave reasons like these:</p>
+<ul>
+<li>
+		They may be interested in reading just parts of the booklet.</li>
+<li>
+		It might take time to print out all the pages. (They had no idea how many pages would be printed.)</li>
+<li>
+		They did not want to waste paper.</li>
+</ul>
+<p><strong>8. Provide options such as printing, downloading, and ordering on all Web pages of an online booklet. Group these options together, across the top of the Web page.</strong></p>
+<p><strong>Comment:</strong> Icons for printing, downloading, and ordering each online booklet were available on the home page as well as across the top of all Web pages in the booklet. When asked how they would print or order the booklet, most participants (ten) used the icons that were across the top of the second-level Web page they were on.</p>
+<p>In the usability tests for these online booklets, we found that grouping the icons for print, PDF, and order together across the top of the Web page worked well for the participants. Participants noticed the icons immediately. In usability tests of other Web sites, we have tested various other ways of displaying these options. In comparison to those other Web sites, the grouping and positioning of the icons in these booklets was very effective.</p>
+<p><img alt="An image showing the different format icons located on the second level pages." src="../sites/default/files/images/online-booklets-10.JPG" title="An image showing the different format icons located on the second level pages." /></p>
+<h3>
+	Use of Icons</h3>
+<p><strong>9. Do not provide lengthy text with an icon if the icon itself is readily recognizable or the icon along with its label is easily understandable.</strong></p>
+<p><strong>Comment:</strong> On the Web, users tend to skip over text they consider non-essential. In our usability tests, participants did not read the descriptions under the icons for "Printable Version," "Download PDF," and "Order Free Copy." Most of them just chose an icon they recognized; others read the icon labels but not the text descriptions under the icons.</p>
+<p><img alt="An image showing the descriptions below the icons indicating the other formats available." src="../sites/default/files/images/online-booklets-11.JPG" title="An image showing the descriptions below the icons indicating the other formats available." /></p>
+</div></div></div>     <div id="voc-wrapper">
+		<div id="survey_target" style="border-top:1px solid #ccc;"> </div>
+	</div>
+            
+	 	
+	  
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+      </div>  
+</div>
+
+</div>
+	</div>
+	<div id="sidebarRight">
+	<div id="sidebar-right">
+			  <div class="region region-sidebar-right">
+    <div id="block-nodeblock-1868" class="block block-nodeblock">
+
+    
+  <div class="content">
+    <article about="/blog-rss.html" typeof="sioc:Item foaf:Document">
+
+  
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><h2 id="rightRail-rss">
+	<a href="./get-involved/blog/rss.xml">Blog RSS <img alt="RSS ICON" src="../sites/default/files/images/rss-image.jpg" /></a></h2>
+</div></div></div>
+	            
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+<div id="block-views-related-content-block-5" class="block block-views">
+
+    <h2>Related Content</h2>
+  
+  <div class="content">
+    <div class="view view-related-content view-id-related_content view-display-id-block_5 view-dom-id-908068b6b741e45e224252ca58a1f92b">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2015/05/welcome-to-relauched-hhsgov.html">Welcome to the Reimagined HHS.gov</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../what-and-why/content-strategy.html">Content Strategy Basics</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2013/11/creating-cross-channel-experiences.html">Creating Cross-Channel Experiences</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../what-and-why/user-centered-government.html">Creating a User-Centered Approach in Government</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../get-involved/blog/2013/08/responsive-design-one-site-fits-all.html">One Site Fits All: A Responsive Solution</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-resources-views-block-5" class="block block-views">
+
+    <h2>Related Resources</h2>
+  
+  <div class="content">
+    <div class="view view-resources-views view-id-resources_views view-display-id-block_5 view-dom-id-3ccff9542497f3fbb12660af3c67728e">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/publications/defensive-design-web-how-improve-error-messages-help-forms-and-other-crisis-points.html">Defensive Design for the Web: How to improve error messages, help, forms, and other...</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/multimedia-and-trainings/plain-language-practice-writing-web.html">Plain Language in Practice: Writing for the Web</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/multimedia-and-trainings/write-plainly-update-plain-writing-principles-and-new-law.html">Write Plainly: An Update on Plain Writing Principles and the New Law</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="../how-to-and-tools/resources/multimedia-and-trainings/plain-language-act-what-it-means-what-you-need-do.html">Plain Language: The Act, What It Means, What You Need to Do</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-related-categories-block-1" class="block block-views">
+
+    <h2>Related Categories</h2>
+  
+  <div class="content">
+    <div class="view view-related-categories view-id-related_categories view-display-id-block_1 view-dom-id-1225b3b902e1d45f98d47fe85f195515">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">  
+  <div class="views-field views-field-name">        <span class="field-content"><a href="../tags/content-strategy/index.html">Content Strategy</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-archive-block" class="block block-views">
+
+    <h2>Blog Archives</h2>
+  
+  <div class="content">
+    <div class="view view-archive view-id-archive view-display-id-block view-dom-id-1d9c9fb1317d5a0da622bbaec46c297a">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">
+  <ul class="views-summary">
+      <li><a href="../get-involved/blog/2016/index.html">2016</a>
+              (1)
+          </li>
+      <li><a href="../get-involved/blog/2015/index.html">2015</a>
+              (3)
+          </li>
+      <li><a href="../get-involved/blog/2014/index.html">2014</a>
+              (5)
+          </li>
+      <li><a href="../get-involved/blog/2013/index.html">2013</a>
+              (9)
+          </li>
+      <li><a href="../get-involved/blog/2012/index.html">2012</a>
+              (3)
+          </li>
+      <li><a href="../get-involved/blog/2011/index.html">2011</a>
+              (1)
+          </li>
+      <li><a href="../get-involved/blog/2010/index.html">2010</a>
+              (4)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2009/index.html">2009</a>
+              (8)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2008/index.html">2008</a>
+              (3)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2007/index.html">2007</a>
+              (3)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2006/index.html">2006</a>
+              (9)
+          </li>
+      <li><a href="http://www.usability.gov/get-involved/blog/2005/index.html">2005</a>
+              (8)
+          </li>
+    </ul>
+</div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <div id="voc-wrapper">
+    <div id="survey_target"></div>
+</div>     </div>
+  
+  
+</div>  </div>
+</div>
+  </div>
+			</div>
+	</div>
+	<div class="clearBoth"></div>	
+	</div>
+	</div>
+	<div id="footerWrapper">
+		  <div class="girdle">
+		  <div class="region region-footer">
+    <div id="block-nodeblock-36" class="block block-nodeblock">
+
+    
+  <div class="content">
+    <article about="/footer.html" typeof="sioc:Item foaf:Document">
+    
+  
+  <div>
+  
+
+      
+
+
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div role="contentinfo">
+<div id="footerBranding">
+<p><a href="/"><img alt="usability.gov, go to the homepage" src="../sites/default/files/images/footer-logo.png" /></a></p>
+</div>
+<div id="stayConnected">
+		Stay Connected <a href="https://twitter.com/usabilitygov"><img alt="Follow us on Twitter @UsabilityGov" src="../sites/default/files/images/footer_twitter_icon.png" title="Follow us on Twitter @UsabilityGov" /></a><a href="../rss.xml"><img alt="RSS Feed" src="../sites/default/files/images/rss-image-footer.png" title="RSS Feed" /></a></div>
+<div id="footerLinks">
+<ul>
+<li>
+				<a href="http://www.hhs.gov/Accessibility.html">Accessibility</a></li>
+<li>
+				<a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a></li>
+<li>
+				<a href="http://www.hhs.gov/foia/">FOIA</a></li>
+<li>
+				<a href="../about-us/index.html">About Us</a></li>
+<li>
+				<a href="../site-tour.html">Tour the Site</a></li>
+<li>
+				<a href="../stay-connected/index.html">Widgets &amp; Badges</a></li>
+<li>
+				<a href="http://www.hhs.gov/Disclaimer.html">Disclaimers</a></li>
+<li>
+				<a href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a></li>
+<li>
+				<a href="http://www.hhs.gov/asa/eeo/resources/index.html">No FEAR</a></li>
+<li>
+				<a href="http://www.hhs.gov/plugins.html">Viewers &amp; Players</a></li>
+<li>
+				<a href="http://www.whitehouse.gov/">WhiteHouse.gov</a></li>
+<li>
+				<a href="http://www.usa.gov/">USA.gov</a></li>
+<li>
+				<a class="last" href="http://www.gobiernousa.gov/">GobiernoUSA.gov</a></li>
+</ul>
+</div>
+<div id="branddate">
+		<img alt="U.S. Flag" src="../sites/default/files/images/footer_usaflag_icon.png" style="width: 20px; height: 13px; margin-right: 15px;" /> 
+<script>
+<!--//--><![CDATA[// ><!--
+var now = new Date();document.write(now.format('mmmm dd, yyyy'));
+//--><!]]>
+</script></div>
+<div id="copyright">
+		<a class="footerLinks" href="http://www.hhs.gov">U.S. Department of Health &amp; Human Services</a> - 200 Independence Avenue, S.W. - Washington, D.C. 20201</div>
+</div>
+<p> </p>
+</div></div></div>
+	            
+	  
+  </div>
+
+</article>
+  </div>
+</div>
+  </div>
+		</div>
+	</div>
+  	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!--[if IE 8]>
+</div id="ie-8">
+<![endif]-->
+<!--[if IE 9]>
+</div id="ie-9">
+<![endif]-->  
+</body>
+</html>
