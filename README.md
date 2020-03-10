@@ -73,10 +73,11 @@ Then we re-ran `wget -p -k --no-clobber https://www.usability.gov/` to clean up 
 ## Installing Locally
 
 **To build the pages with Jekyll:**
-1. open a new tab in terminal
-2. Navigate to the root directory of the project
-3. run: `bundle exec jekyll serve`
-4. Go to <http://localhost:4000> to see the site.
+1. Open a new tab in terminal
+1. Navigate to the root directory of the project
+1. Run: `bundle install` to add any new dependencies
+1. Run: `bundle exec jekyll serve`
+1. Go to <http://localhost:4000> to see the site.
 
 **To build the CSS styles:**
 1. open a new tab in terminal
