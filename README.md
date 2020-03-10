@@ -2,12 +2,19 @@
 
 _A future product of Digital.gov and the General Services Administration_
 
+**Preview on Federalist** https://cg-ca533af2-85d8-48d5-b022-a488db3d069b.app.cloud.gov/site/gsa/digitalgov-usability/
+
 ---
 
 ## Overview
 
 **Usability.gov is moving to the GSA!**
 The team at Digital.gov is taking over ownership of Usability.gov and will be working with experts across the government community to update the site with the [U.S. Web Design System](https://designsystem.digital.gov/) and help it to be in line with [21st Century IDEA](https://digital.gov/resources/21st-century-integrated-digital-experience-act/).
+
+
+
+---
+
 
 
 ### History
@@ -22,7 +29,7 @@ According to _"The Story Behind Usability.gov"_ by Sanjay Koyani from 2002
 [**Usability.gov**](Usability.gov) has been an important resource for people in government to learn how to how to make websites more usable, useful, and accessible.
 
 
-## Plan / To-do
+## What we're working on
 
 - Put up a static version of Usability.gov on [Federalist](https://federalist.18f.gov/).
 - Transfer the usability.gov domain to from HHS to GSA
@@ -37,9 +44,11 @@ According to _"The Story Behind Usability.gov"_ by Sanjay Koyani from 2002
 ---
 
 
-## Making the site static
+## Migrating to a static site
 
-We used [WGET](https://www.gnu.org/software/wget/manual/wget.html) to copy the whole site as static HTML files.
+To move the site over to [Federalist](https://federalist.18f.gov/), we used [WGET](https://www.gnu.org/software/wget/manual/wget.html) to take snapshots of the whole site as static HTML files.
+
+Here's what we used:
 
 ```
 wget \
@@ -58,3 +67,19 @@ wget \
 ```
 
 Then we re-ran `wget -p -k --no-clobber https://www.usability.gov/` to clean up all the relative URLs.
+
+---
+
+## Installing Locally
+
+**To build the pages with Jekyll:**
+1. open a new tab in terminal
+2. Navigate to the root directory of the project
+3. run: `bundle exec jekyll serve`
+4. Go to <http://localhost:4000> to see the site.
+
+**To build the CSS styles:**
+1. open a new tab in terminal
+2. Navigate to the root directory of the project
+3. run: `gulp`
+4. Go to <http://localhost:4000>.
