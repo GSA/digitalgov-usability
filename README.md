@@ -72,6 +72,8 @@ Then we re-ran `wget -p -k --no-clobber https://www.usability.gov/` to clean up 
 
 ## Installing Locally
 
+
+
 **To build the pages with Jekyll:**
 1. open a new tab in terminal
 2. Navigate to the root directory of the project
