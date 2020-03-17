@@ -4,7 +4,7 @@
     <link>./get-involved/blog/rss.xml</link>
     <description></description>
     <language>en</language>
-     <atom:link href="./get-involved/blog/rss.xml" rel="self" type="application/rss+xml" />
+     <atom:link href="/get-involved/blog/rss.xml" rel="self" type="application/rss+xml" />
       <item>
     <title>USDA Invites You to Reimagine the National School Meals Program Application</title>
     <link>https://www.usability.gov/get-involved/blog/2016/02/usda-invites-you-to-reimagine-national-school-meals-program.html</link>
