@@ -74,10 +74,10 @@
     /* with id _targetID.                                                 */
     function loadSurvey() {
       var _hostname = "comment-app.hhs.gov";
-      var _url = "http://"+ _hostname + "/surveys/" + _surveyID + ".json";
+      var _url = "https://"+ _hostname + "/surveys/" + _surveyID + ".json";
       var target = jQuery("#" + _targetID)
       var surveyID = _surveyID
-      
+
       /* get the survey identified by id _surveyID and insert it into the */
       /* DOM element _targetID.                                           */
       jQuery.getJSON(_url, "callback=?&page_url=" + _pageURL, function(data){
@@ -85,12 +85,12 @@
       });
 
       jQuery(document).on("submit", "#"+_targetID+" form", function(){
-      
+
         // create and post to a hidden iframe to avoid cross-domain POST limitations
         var iframe = jQuery("<iframe>");
         var uniqueString = "surveyPostContainerIframe";
         var form = target.children("form").first();
-        
+
         // add the hidden iframe
         jQuery("body").append(iframe);
         iframe.hide();
@@ -130,17 +130,17 @@
 /******************* Survey.js ******************************************/
 function show_next_page(page){
   var required_unanswered = false;
-  
+
   required_unanswered = check_for_unanswered_required(page);
-  
+
   if (!required_unanswered){
     jQuery("#page_" + page).hide();
     var next_page = jQuery("#page_" + page + "_next_page").val();
-    
+
     /* Set the prev page on next page */
    set_prev_page(page, next_page);
-    
-    jQuery("#page_"+ next_page).show();  
+
+    jQuery("#page_"+ next_page).show();
     window.location.hash="PAGE_" + next_page;
   } else {
     alert('Please answer all required questions before moving on to the next page.');
@@ -179,7 +179,7 @@ function check_for_unanswered_required(page) {
           required =  true;
         } else if( jQuery(".question_" + question_number + "_answer").attr('type') == "textarea" && jQuery(".question_" + question_number + "_answer").val() == "") {
           required =  true;
-        } 
+        }
       }
     });
     return required;
