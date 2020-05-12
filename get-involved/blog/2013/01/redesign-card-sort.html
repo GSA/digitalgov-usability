@@ -84,10 +84,10 @@ layout: default
    <!--[if gte IE 9]>
   <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/ie9.css" />
   <![endif]-->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-3.5.0.min.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-window.jQuery || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+window.jQuery || document.write("<script src='{{ site.baseurl }}/misc/jquery-3.5.0.min.js'>\x3C/script>")
 //--><!]]>
 </script>
 <script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
@@ -145,20 +145,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			  </div> 
 			  <div id="gsearch">
 					<div id="gsearch_inner">
-						<form name="HHS" action='https://search.hhs.gov/searchblox/usability/index.html' method='get'>
-						    <label for="searchbox">Search</label>
-						    <input type="text" name="query" id="searchbox" size="20" maxlength="256" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
-						    <input type="image" src="../../../../sites/default/themes/usability/css/images/search_arrow.png" name="btnG" class="submit" id="gsearchbtn" alt="Search" value="Search" role="button" />
-						    <input type='hidden' name='page' value='1'>
-						    <input type='hidden' name='pagesize' value='10'>
-						    <input type='hidden' name='sortdir' value='desc'>
-						    <input type='hidden' name='sort' value='relevance'>
-						    <input type='hidden' name='adsCname' value='HHS'>
-						    <input type='hidden' name='adsDisplay' value='false'>
-						    <input type='hidden' name='cname' value='usability'>
-						    <input type='hidden' name='default' value='AND'>
-						    <input type='hidden' name='tune' value='false'>
-					</form>
+						{% include search.html %}
 				</div>
 				</div>
 		  </div>
@@ -209,64 +196,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="tabs-wrapper" class="clearfix">          </div>                                        		  
 <div class="region region-content">
 
-      <div id="add_this_container">
-	
-	
-		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-        	<!--BEGIN text resizer -->
-	    <div class="fontResize">
-		<a class="jfontsize-button" id="jfontsize-m" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/text_resize_minus_a_icon.png" width="27" height="27" border="0" alt="Minimize text size" title="Minimize text size" /></a>
-        <a class="jfontsize-button" id="jfontsize-d" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/text_resize_default_a_icon.png" width="27" height="27" border="0" alt="Reset text to normal size" title="Reset text to normal size" /></a>
-        <a class="jfontsize-button" id="jfontsize-p" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/text_resize_plus_a_icon.png" width="27" height="27" border="0" alt="Increase text size" title="Increase text size"/></a>
-		
-		<script type="text/javascript" language="javascript">
-			jQuery('.region-content').jfontsize({
-			btnMinusClasseId: '#jfontsize-m',
-			btnDefaultClasseId: '#jfontsize-d',
-			btnPlusClasseId: '#jfontsize-p'
-			});
-		</script>
-        
-		</div>
-		 <div class="shareToolBox">
-		<div class="shareMore">
-			<a class="addthis_button_print" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/insidepage_print_icon.png" width="27" height="27" border="0" alt="Print this page" title="Print this page" /></a>
-			
-			<!-- AddThis Button BEGIN -->
-		<div class="additionalShareOptions">
-        <a class="addthis_button_email" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/insidepage_email_icon.png" width="27" height="27" border="0" alt="Email this page" title="Email this page" /></a>
-		<a class="addthis_button_twitter" tw:via="UsabilityGov" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/insidepage_twitter_icon.png" width="27" height="27" border="0" alt="Tweet this page" title="Tweet this page" /></a> 
-		<a class="addthis_button_facebook" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/insidepage_facebook_icon.png" width="27" height="27" border="0" alt="Post this page" title="Post this page" /></a> 
-		<a class="addthis_button_pinterest_share" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/insidepage_pinterest_icon.png" width="27" height="27" border="0" alt="Pin this page" title="Pin this page" /></a>
-		<a class="addthis_button_compact" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/insidepage_plus_icon.png" width="27" height="27" border="0" alt="More ways to share" title="More ways to share" /></a>
-		</div><a class="moreShareButton" href="redesign-card-sort.html#"><img src="../../../../sites/default/themes/usability/css/images/insidepage_share_icon.png" width="27" height="27" border="0" alt="Share tools" title="Share tools" />Share</a>
-		</div>
-<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=hhsgov" async="async"></script>
-		</div> 
-		<!-- AddThis Button END -->
-	
-		</div>
-				
-		<script type="text/javascript">
-				 var addthis_config =  {
-						  ui_click: true,
-						  data_track_addressbar: false,
-						  services_compact: 'linkedin, google_plusone_share, tumblr, reddit, delicious, myspace, digg, stumbleupon, favorites',
-						  ui_508_compliant: true,
-						  
-					};
-					
-				var addthis_share = {
-    			templates : {
-        		twitter : "{{title}} {{url}} (via @UsabilityGov)"
-  						  }
-				}
-		 </script>
-
-
-		<!-- END text resizer -->
-
-  </div><!--End of this add_this_container-->
+      
  
         <a id="main-content"></a>
                     				<h1 class="with-tabs">IA Your Way: Participate in Our Card Sort</h1>
@@ -292,19 +222,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="field field-name-field-by-line field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Katie Messner, Web Manager Usability.gov, Digital Communications Division, ASPA/HHS</div></div></div><div class="field field-name-field-blog-post-date field-type-datetime field-label-hidden"><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2013-01-07T11:00:00-05:00">Monday, January 7, 2013</span></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><em><strong>Editor's Note:</strong> Participation in the card sort has ended. Please visit our <a href="../../../index.html">Get Involved</a> page to learn about other opportunities</em></p>
 <p><a href="http://aquilentux.optimalworkshop.com/optimalsort/hhs-usabilitygov-1"><img alt="Screenshot of Optimal Sort Cardsorting Instructions" src="../../../../sites/default/files/images/d7.jpg" style="float: right;" title="Screenshot of Optimal Sort Cardsorting Instructions" /></a></p>
-<p>Thanks to site metrics and your <a href="../../2012/12/redesign-survey.html">survey feedback</a>, we have an idea of what content you would like to see on Usability.gov. Now as part of our ongoing effort to <a href="../../2012/11/recreating-the-home-of-user-experience.html">recreate the home of user experience</a>, we’re conducting an <a href="https://aquilentux.optimalworkshop.com/optimalsort/hhs-usabilitygov-1">online card sort</a> <a href="http://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a> to help us to understand how you would like to see that content organized and labeled.</p>
+<p>Thanks to site metrics and your <a href="../../2012/12/redesign-survey.html">survey feedback</a>, we have an idea of what content you would like to see on Usability.gov. Now as part of our ongoing effort to <a href="../../2012/11/recreating-the-home-of-user-experience.html">recreate the home of user experience</a>, we’re conducting an <a href="https://aquilentux.optimalworkshop.com/optimalsort/hhs-usabilitygov-1">online card sort</a> <a href="https://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a> to help us to understand how you would like to see that content organized and labeled.</p>
 <h2>
 	Participating in Our Online Card Sort</h2>
 <p>If you haven’t participated in a card sort before, it involves:</p>
 <p>Organizing a series of phrases and topics into groups that make sense to you and represent how you would expect to find information grouped on the website</p>
 <p>Proposing labels for each group that you’ve created</p>
-<p>If you <a href="https://aquilentux.optimalworkshop.com/optimalsort/hhs-usabilitygov-1">participate in the card sort</a> <a href="http://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a>, it should only take 10 to 15 minutes to complete.</p>
+<p>If you <a href="https://aquilentux.optimalworkshop.com/optimalsort/hhs-usabilitygov-1">participate in the card sort</a> <a href="https://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a>, it should only take 10 to 15 minutes to complete.</p>
 <h2>
 	What We Hope to Learn</h2>
-<p><a href="http://www.optimalworkshop.com/optimalsort.htm">OptimalSort</a> <a href="http://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a>, the software we’re using to conduct the online card sort, enables us to analyze your feedback.</p>
+<p><a href="http://www.optimalworkshop.com/optimalsort.htm">OptimalSort</a> <a href="https://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a>, the software we’re using to conduct the online card sort, enables us to analyze your feedback.</p>
 <p>We understand that Usability.gov serves a variety of web professionals. We are trying to build a site that is intuitive and  satisfies as many groups as possible. Conducting this remote open card sort will help us to do that.</p>
 <p>You can also learn <a href="../../../../how-to-and-tools/methods/card-sorting.html">how to conduct a card sort</a> of your own.</p>
-<p>To tell us what you think, use the twitter hash tag <a href="https://twitter.com/search/%23usabilityreboot">#UsabilityReboot</a> <a href="http://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a> and follow <a href="https://twitter.com/usabilitygov">@UsabilityGov</a> <a href="http://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a> on twitter to learn more about the redesign. For comments more than 140 characters long or if you are interested in participating or contributing to the site, please contact us at <a href="mailto:info.usability@hhs.gov">info.usability@hhs.gov</a>.</p>
+<p>To tell us what you think, use the twitter hash tag <a href="https://twitter.com/search/%23usabilityreboot">#UsabilityReboot</a> <a href="https://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a> and follow <a href="https://twitter.com/usabilitygov">@UsabilityGov</a> <a href="https://www.hhs.gov/Disclaimer.html"><img alt="Site exit disclaimer" src="../../../../sites/default/files/images/0-external-disclaimer.jpg" style="width: 11px; height: 10px" title="Site exit disclaimer" /></a> on twitter to learn more about the redesign. For comments more than 140 characters long or if you are interested in participating or contributing to the site, please contact us at <a href="mailto:info.usability@hhs.gov">info.usability@hhs.gov</a>.</p>
 <p><em><strong>Editor's Note:</strong> Participation in the card sort has ended. Please visit our <a href="../../../index.html">Get Involved</a> page to learn about other opportunities</em></p>
 </div></div></div>     <div id="voc-wrapper">
 		<div id="survey_target" style="border-top:1px solid #ccc;"> </div>
@@ -521,11 +451,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="footerLinks">
 <ul>
 <li>
-				<a href="http://www.hhs.gov/Accessibility.html">Accessibility</a></li>
+				<a href="https://www.hhs.gov/Accessibility.html">Accessibility</a></li>
 <li>
-				<a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a></li>
+				<a href="https://www.hhs.gov/Privacy.html">Privacy Policy</a></li>
 <li>
-				<a href="http://www.hhs.gov/foia/">FOIA</a></li>
+				<a href="https://www.hhs.gov/foia/">FOIA</a></li>
 <li>
 				<a href="../../../../about-us/index.html">About Us</a></li>
 <li>
@@ -533,13 +463,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>
 				<a href="../../../../stay-connected/index.html">Widgets &amp; Badges</a></li>
 <li>
-				<a href="http://www.hhs.gov/Disclaimer.html">Disclaimers</a></li>
+				<a href="https://www.hhs.gov/Disclaimer.html">Disclaimers</a></li>
 <li>
-				<a href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a></li>
+				<a href="https://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a></li>
 <li>
-				<a href="http://www.hhs.gov/asa/eeo/resources/index.html">No FEAR</a></li>
+				<a href="https://www.hhs.gov/asa/eeo/resources/index.html">No FEAR</a></li>
 <li>
-				<a href="http://www.hhs.gov/plugins.html">Viewers &amp; Players</a></li>
+				<a href="https://www.hhs.gov/plugins.html">Viewers &amp; Players</a></li>
 <li>
 				<a href="http://www.whitehouse.gov/">WhiteHouse.gov</a></li>
 <li>
@@ -556,7 +486,7 @@ var now = new Date();document.write(now.format('mmmm dd, yyyy'));
 //--><!]]>
 </script></div>
 <div id="copyright">
-		<a class="footerLinks" href="http://www.hhs.gov">U.S. Department of Health &amp; Human Services</a> - 200 Independence Avenue, S.W. - Washington, D.C. 20201</div>
+		<a class="footerLinks" href="https://www.hhs.gov">U.S. Department of Health &amp; Human Services</a> - 200 Independence Avenue, S.W. - Washington, D.C. 20201</div>
 </div>
 <p> </p>
 </div></div></div>

@@ -1,0 +1,8 @@
+
+<!-- Search box -->
+<form accept-charset="UTF-8" action='https://find.digitalgov.gov/search' method="get">
+  <label for="searchbox">Search</label>
+  <input type="text" name="query" id="searchbox" size="20" maxlength="256" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+  <input type="image" src="{{ "/sites/default/themes/usability/css/images/search_arrow.png" | prepend: site.baseurl }}" name="btnG" class="submit" id="gsearchbtn" alt="Search" value="Search" role="button" />
+  <input id="affiliate" name="affiliate" type="hidden" value="digitalgov">
+</form>
