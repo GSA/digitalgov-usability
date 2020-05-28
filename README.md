@@ -32,7 +32,7 @@ According to _"The Story Behind Usability.gov"_ by Sanjay Koyani from 2002
 ## What we're working on
 
 - Put up a static version of Usability.gov on [Federalist](https://federalist.18f.gov/).
-- Transfer the usability.gov domain to from HHS to GSA
+- Transfer the usability.gov domain to from HHS to GSA (done)
 - Transfer any usability.gov accounts (analytics, google webmaster tools, social media accounts, etc...)
 - Point usability.gov toward the Federalist site
 - Stand up a team through [Open Opportunities](https://openopps.usajobs.gov/) to help with the transition of the site.
