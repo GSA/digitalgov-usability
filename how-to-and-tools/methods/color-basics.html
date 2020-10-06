@@ -2,523 +2,811 @@
 layout: default
 ---
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:sioc="http://rdfs.org/sioc/ns#"
-  xmlns:sioct="http://rdfs.org/sioc/types#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"
+	xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 
 <head profile="http://www.w3.org/1999/xhtml/vocab">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
-<link rel="shortcut icon" href="{{ site.baseurl }}/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
-<meta name="viewport" content="width=device-width" />
-<link rel="shortlink" href="../../node/6202.html" />
-<link rel="canonical" href="color-basics.html" />
-<meta name="author" content="Assistant Secretary for Public Affairs" />
-<meta name="description" content="A color wheel is an illustrative model of color hues around a circle.  It shows the relationships between the primary, secondary, and intermediate/ tertiary colors and helps demonstrate color temperature. Digital teams communicate exact colors through the use of hex codes." />
-<meta name="dc.title" content="Color Basics" />
-<meta name="keywords" content="user experience, ux, visual design, color wheel, color, hex code" />
-<meta name="dc.description" content="A color wheel is an illustrative model of color hues around a circle.  It shows the relationships between the primary, secondary, and intermediate/ tertiary colors and helps demonstrate color temperature. Digital teams communicate exact colors through the use of hex codes." />
-<meta name="dc.creator" content="Assistant Secretary for Public Affairs" />
-<meta name="dc.publisher" content="Department of Health and Human Services" />
-<meta name="dc.language" content="en-us" />
-<meta name="dc.date" content="2015-02-11" />
-<meta name="DCTERMS.dateCreated" content="2015-02-11" />
-<meta name="DCTERMS.dateModified" content="2015-02-11" />
-<meta name="DCTERMS.keywords" content="user experience, ux, visual design, color wheel, color, hex code" />
-<meta name="nodeid" content="6202" />
-  <title>Color Basics | Usability.gov</title>
-  <meta content="width" name="MobileOptimized"/>
-<meta content="true" name="HandheldFriendly"/>
-<meta content="on" http-equiv="cleartype"/>
-  <style type="text/css" media="all and (min-width: 720px)">
-@import url("{{ site.baseurl }}/modules/system/system.base.css?q4ruqy");
-@import url("{{ site.baseurl }}/modules/system/system.menus.css?q4ruqy");
-@import url("{{ site.baseurl }}/modules/system/system.messages.css?q4ruqy");
-@import url("{{ site.baseurl }}/modules/system/system.theme.css?q4ruqy");
-@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css");
-@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css");
-</style>
-<style type="text/css" media="all and (min-width: 720px)">
-@import url("{{ site.baseurl }}/sites/all/modules/ckeditor/ckeditor.css");
-@import url("{{ site.baseurl }}/sites/all/modules/ctools/css/ctools.css");
-@import url("{{ site.baseurl }}/sites/all/modules/panels/css/panels.css");
-@import url("{{ site.baseurl }}/modules/book/book.css?q4ruqy");
-@import url("{{ site.baseurl }}/modules/comment/comment.css?q4ruqy");
-@import url("{{ site.baseurl }}/sites/all/modules/date/date_api/date.css");
-@import url("{{ site.baseurl }}/sites/all/modules/date/date_popup/themes/datepicker.1.7.css");
-@import url("{{ site.baseurl }}/modules/field/theme/field.css?q4ruqy");
-@import url("{{ site.baseurl }}/sites/all/modules/google_appliance/theme/google_appliance.css");
-@import url("{{ site.baseurl }}/modules/node/node.css?q4ruqy");
-@import url("{{ site.baseurl }}/modules/search/search.css?q4ruqy");
-@import url("{{ site.baseurl }}/sites/all/modules/views/css/views.css");
-</style>
-<style type="text/css" media="all">
-@import url("{{ site.baseurl }}/sites/default/themes/usability/css/reset.css");
-@import url("{{ site.baseurl }}/sites/default/themes/usability/css/layout.css");
-@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style.css");
-</style>
-<style type="text/css" media="print">
-@import url("{{ site.baseurl }}/sites/default/themes/usability/css/print.css");
-@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jfontsize.css");
-@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jquery-ui.css");
-</style>
-<style type="text/css" media="screen and (min-width: 720px)">
-@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style-960.css");
-</style>
- 
- <!--[if lte IE 10]>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+	<link rel="shortcut icon" href="{{ site.baseurl }}/sites/default/files/favicon.ico"
+		type="image/vnd.microsoft.icon" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="shortlink" href="../../node/6202.html" />
+	<link rel="canonical" href="color-basics.html" />
+	<meta name="author" content="Assistant Secretary for Public Affairs" />
+	<meta name="description"
+		content="A color wheel is an illustrative model of color hues around a circle.  It shows the relationships between the primary, secondary, and intermediate/ tertiary colors and helps demonstrate color temperature. Digital teams communicate exact colors through the use of hex codes." />
+	<meta name="dc.title" content="Color Basics" />
+	<meta name="keywords" content="user experience, ux, visual design, color wheel, color, hex code" />
+	<meta name="dc.description"
+		content="A color wheel is an illustrative model of color hues around a circle.  It shows the relationships between the primary, secondary, and intermediate/ tertiary colors and helps demonstrate color temperature. Digital teams communicate exact colors through the use of hex codes." />
+	<meta name="dc.creator" content="Assistant Secretary for Public Affairs" />
+	<meta name="dc.publisher" content="Department of Health and Human Services" />
+	<meta name="dc.language" content="en-us" />
+	<meta name="dc.date" content="2015-02-11" />
+	<meta name="DCTERMS.dateCreated" content="2015-02-11" />
+	<meta name="DCTERMS.dateModified" content="2015-02-11" />
+	<meta name="DCTERMS.keywords" content="user experience, ux, visual design, color wheel, color, hex code" />
+	<meta name="nodeid" content="6202" />
+	<title>Color Basics | Usability.gov</title>
+	<meta content="width" name="MobileOptimized" />
+	<meta content="true" name="HandheldFriendly" />
+	<meta content="on" http-equiv="cleartype" />
+	<style type="text/css" media="all and (min-width: 720px)">
+		@import url("{{ site.baseurl }}/modules/system/system.base.css?q4ruqy");
+		@import url("{{ site.baseurl }}/modules/system/system.menus.css?q4ruqy");
+		@import url("{{ site.baseurl }}/modules/system/system.messages.css?q4ruqy");
+		@import url("{{ site.baseurl }}/modules/system/system.theme.css?q4ruqy");
+		@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css");
+		@import url("{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css");
+	</style>
+	<style type="text/css" media="all and (min-width: 720px)">
+		@import url("{{ site.baseurl }}/sites/all/modules/ckeditor/ckeditor.css");
+		@import url("{{ site.baseurl }}/sites/all/modules/ctools/css/ctools.css");
+		@import url("{{ site.baseurl }}/sites/all/modules/panels/css/panels.css");
+		@import url("{{ site.baseurl }}/modules/book/book.css?q4ruqy");
+		@import url("{{ site.baseurl }}/modules/comment/comment.css?q4ruqy");
+		@import url("{{ site.baseurl }}/sites/all/modules/date/date_api/date.css");
+		@import url("{{ site.baseurl }}/sites/all/modules/date/date_popup/themes/datepicker.1.7.css");
+		@import url("{{ site.baseurl }}/modules/field/theme/field.css?q4ruqy");
+		@import url("{{ site.baseurl }}/sites/all/modules/google_appliance/theme/google_appliance.css");
+		@import url("{{ site.baseurl }}/modules/node/node.css?q4ruqy");
+		@import url("{{ site.baseurl }}/modules/search/search.css?q4ruqy");
+		@import url("{{ site.baseurl }}/sites/all/modules/views/css/views.css");
+	</style>
+	<style type="text/css" media="all">
+		@import url("{{ site.baseurl }}/sites/default/themes/usability/css/reset.css");
+		@import url("{{ site.baseurl }}/sites/default/themes/usability/css/layout.css");
+		@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style.css");
+	</style>
+	<style type="text/css" media="print">
+		@import url("{{ site.baseurl }}/sites/default/themes/usability/css/print.css");
+		@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jfontsize.css");
+		@import url("{{ site.baseurl }}/sites/default/themes/usability/css/jquery-ui.css");
+	</style>
+	<style type="text/css" media="screen and (min-width: 720px)">
+		@import url("{{ site.baseurl }}/sites/default/themes/usability/css/style-960.css");
+	</style>
+
+	<!--[if lte IE 10]>
   <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/style-960.css" />
   <![endif]-->
-  
-   <!--[if gte IE 9]>
+
+	<!--[if gte IE 9]>
   <link type="text/css" rel="stylesheet" media="screen" href="/sites/default/themes/usability/css/ie9.css" />
   <![endif]-->
-  <script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-3.5.1.min.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-window.jQuery || document.write("<script src='{{ site.baseurl }}/misc/jquery-3.5.1.min.js'>\x3C/script>")
+	<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+< !--//-->
+	< ![CDATA[//><!--
+				window.jQuery || document.write("<script src='{{ site.baseurl }}/misc/jquery-3.5.1.min.js'>\x3C/script>")
 //--><!]]>
-</script>
-<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery.once.js?v=1.2"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/misc/drupal.js?q4ruqy"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-window.jQuery.ui || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+	</script>
+	<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/misc/jquery.once.js?v=1.2"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/misc/drupal.js?q4ruqy"></script>
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	< !--//-->
+	< ![CDATA[//><!--
+		window.jQuery.ui || document.write("<script src='{{ site.baseurl }}/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
 //--><!]]>
-</script>
-<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/misc.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/jquery.jfontsize-1.0.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"usability","theme_token":"iptlC3O65HlJVxliSxw0Y4HFsWvF1CIortKhTXPUjqc","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/3.5.1\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/default\/themes\/usability\/js\/misc.js":1,"sites\/default\/themes\/usability\/js\/jquery.jfontsize-1.0.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_appliance\/theme\/google_appliance.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/default\/themes\/usability\/user.css":1,"sites\/default\/themes\/usability\/css\/reset.css":1,"sites\/default\/themes\/usability\/css\/layout.css":1,"sites\/default\/themes\/usability\/css\/style.css":1,"sites\/default\/themes\/usability\/css\/print.css":1,"sites\/default\/themes\/usability\/css\/jfontsize.css":1,"sites\/default\/themes\/usability\/css\/jquery-ui.css":1,"sites\/default\/themes\/usability\/css\/style-960.css":1}},"better_exposed_filters":{"views":{"related_content":{"displays":{"block_5":{"filters":[]}}},"resources_views":{"displays":{"block_5":{"filters":[]}}},"related_categories":{"displays":{"block_1":{"filters":[]}}}}}});
+	</script>
+	<script type="text/javascript" src="{{ site.baseurl }}/sites/default/themes/usability/js/misc.js"></script>
+	<script type="text/javascript"
+		src="{{ site.baseurl }}/sites/default/themes/usability/js/jquery.jfontsize-1.0.js"></script>
+	<script type="text/javascript">
+	< !--//-->
+	< ![CDATA[//><!--
+		jQuery.extend(Drupal.settings, { "basePath": "\/", "pathPrefix": "", "ajaxPageState": { "theme": "usability", "theme_token": "iptlC3O65HlJVxliSxw0Y4HFsWvF1CIortKhTXPUjqc", "js": { "\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/3.5.1\/jquery.min.js": 1, "0": 1, "misc\/jquery-extend-3.4.0.js": 1, "misc\/jquery.once.js": 1, "misc\/drupal.js": 1, "\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js": 1, "1": 1, "sites\/default\/themes\/usability\/js\/misc.js": 1, "sites\/default\/themes\/usability\/js\/jquery.jfontsize-1.0.js": 1 }, "css": { "modules\/system\/system.base.css": 1, "modules\/system\/system.menus.css": 1, "modules\/system\/system.messages.css": 1, "modules\/system\/system.theme.css": 1, "misc\/ui\/jquery.ui.core.css": 1, "misc\/ui\/jquery.ui.theme.css": 1, "sites\/all\/modules\/ckeditor\/ckeditor.css": 1, "sites\/all\/modules\/ctools\/css\/ctools.css": 1, "sites\/all\/modules\/panels\/css\/panels.css": 1, "modules\/book\/book.css": 1, "modules\/comment\/comment.css": 1, "sites\/all\/modules\/date\/date_api\/date.css": 1, "sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css": 1, "modules\/field\/theme\/field.css": 1, "sites\/all\/modules\/google_appliance\/theme\/google_appliance.css": 1, "modules\/node\/node.css": 1, "modules\/search\/search.css": 1, "modules\/user\/user.css": 1, "sites\/all\/modules\/views\/css\/views.css": 1, "sites\/default\/themes\/usability\/user.css": 1, "sites\/default\/themes\/usability\/css\/reset.css": 1, "sites\/default\/themes\/usability\/css\/layout.css": 1, "sites\/default\/themes\/usability\/css\/style.css": 1, "sites\/default\/themes\/usability\/css\/print.css": 1, "sites\/default\/themes\/usability\/css\/jfontsize.css": 1, "sites\/default\/themes\/usability\/css\/jquery-ui.css": 1, "sites\/default\/themes\/usability\/css\/style-960.css": 1 } }, "better_exposed_filters": { "views": { "related_content": { "displays": { "block_5": { "filters": [] } } }, "resources_views": { "displays": { "block_5": { "filters": [] } } }, "related_categories": { "displays": { "block_1": { "filters": [] } } } } } });
 //--><!]]>
-</script>
+	</script>
 </head>
-<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-6202 node-type-method sidebar_right sidebar_left" >
-<!--[if IE 8]>
+
+<body
+	class="html not-front not-logged-in no-sidebars page-node page-node- page-node-6202 node-type-method sidebar_right sidebar_left">
+	<!--[if IE 8]>
 <div id="ie-8">
 <![endif]-->
-<!--[if IE 9]>
+	<!--[if IE 9]>
 <div id="ie-9">
 <![endif]-->
-<!-- Google Tag Manager -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-QN2B" title="googletagmanager"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-QN2B');</script>
-<!-- End Google Tag Manager -->
-  <div id="skip-link">
-    <a href="color-basics.html#main-content" class="element-invisible element-focusable skippy">Skip to main content</a>
-  </div>
-    <div id="wrapper">
-	<div id="header">
-	  
-		<div id="topBranding">
-		  <div class="girdle">
-			  <div class="topNavMenuButton">
-				<a href="color-basics.html#"><img src="../../sites/default/themes/usability/css/images/menu_icon_mobileversion.png" alt="expand navigation menu"></a>
-			  </div>
-			  <div id="logo">
-				  <div class="logoWrapper"><a href="../../index.html" title="Home"><img src="{{ site.baseurl }}/sites/default/themes/usability/css/images/logo_without_tagline.png" alt="Home" class="usability-logo" /></a>				  <span id="slogan"><em>Improving the User Experience </em></span></div>  
-			  </div>
-			  <div class="topNavSearchButton">
-				<a href="color-basics.html#"><img src="../../sites/default/themes/usability/css/images/search_icon_mobileversion.png" alt="Search"></a>
-			  </div> 
-			  <div id="gsearch">
-					<div id="gsearch_inner">
-						{% include search.html %}
-				</div>
-				</div>
-		  </div>
-		</div>
-		
-		<div id="topNavigation">		  <div class="girdle">
-		
-		  <div class="region region-topnav">
-    <div id="block-system-main-menu" class="block block-system block-menu">
-
-    
-  <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="../../what-and-why/index.html" title="">What &amp; Why of Usability</a></li>
-<li class="expanded active-trail"><a href="../index.html" class="active-trail">How To &amp; Tools</a><ul class="menu"><li class="first last leaf active-trail"><a href="color-basics.html" class="menu-position-link active-trail active">Color Basics</a></li>
-</ul></li>
-<li class="last leaf"><a href="../../get-involved/index.html" title="">Get Involved</a></li>
-</ul>  </div>
-</div>
-  </div>
-		
-		</div>	
-	  </div> 
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-QN2B" title="googletagmanager" height="0"
+			width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-QN2B');</script>
+	<!-- End Google Tag Manager -->
+	<div id="skip-link">
+		<a href="color-basics.html#main-content" class="element-invisible element-focusable skippy">Skip to main
+			content</a>
 	</div>
-	<div id="contentWrap">
-		<div class="shadow"></div>
-	  <div class="girdle">
-	
-	<div id="navigationLeft">
-		<div id="sidebar-left">
-			    <div class="region region-sidebar-left">
-    <div id="block-menu-menu-task-bar" class="block block-menu">
+	<div id="wrapper">
+		<div id="header">
 
-    
-  <div class="content">
-    <ul class="menu"><li class="first leaf"><a href="index.html" title=""><img alt="" src="../../sites/default/themes/usability/css/images/methods_icon_1.png" /> <span>Methods</span></a></li>
-<li class="leaf"><a href="../resources/templates.html" title=""><img alt="" src="../../sites/default/themes/usability/css/images/resources&amp;templates_icon_1.png" /> <span>Templates &<br />Documents</span></a></li>
-<li class="last leaf"><a href="https://guidelines.usability.gov/" title=""><img alt="" src="../../sites/default/themes/usability/css/images/guidelines_icon_1.png" /> <span>Guidelines</span></a></li>
-</ul>  </div>
-</div>
-  </div>
+			<div id="topBranding">
+				<div class="girdle">
+					<div class="topNavMenuButton">
+						<a href="color-basics.html#"><img
+								src="../../sites/default/themes/usability/css/images/menu_icon_mobileversion.png"
+								alt="expand navigation menu"></a>
+					</div>
+					<div id="logo">
+						<div class="logoWrapper"><a href="../../index.html" title="Home"><img
+									src="{{ site.baseurl }}/sites/default/themes/usability/css/images/logo_without_tagline.png"
+									alt="Home" class="usability-logo" /></a> <span id="slogan"><em>Improving the User
+									Experience </em></span></div>
+					</div>
+					<div class="topNavSearchButton">
+						<a href="color-basics.html#"><img
+								src="../../sites/default/themes/usability/css/images/search_icon_mobileversion.png"
+								alt="Search"></a>
+					</div>
+					<div id="gsearch">
+						<div id="gsearch_inner">
+							{% include search.html %}
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="topNavigation">
+				<div class="girdle">
+
+					<div class="region region-topnav">
+						<div id="block-system-main-menu" class="block block-system block-menu">
+
+
+							<div class="content">
+								<ul class="menu">
+									<li class="first leaf"><a href="../../what-and-why/index.html" title="">What &amp;
+											Why of Usability</a></li>
+									<li class="expanded active-trail"><a href="../index.html" class="active-trail">How
+											To &amp; Tools</a>
+										<ul class="menu">
+											<li class="first last leaf active-trail"><a href="color-basics.html"
+													class="menu-position-link active-trail active">Color Basics</a></li>
+										</ul>
+									</li>
+									<li class="last leaf"><a href="../../get-involved/index.html" title="">Get
+											Involved</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
-	<div id="content">
-	<div id="breadcrumbs"><p class='breadcrumb'><a href="../../index.html">Home</a> > <a href="../index.html">How To &amp; Tools</a> > Color Basics</p></div>
+		<div id="contentWrap">
+			<div class="shadow"></div>
+			<div class="girdle">
+
+				<div id="navigationLeft">
+					<div id="sidebar-left">
+						<div class="region region-sidebar-left">
+							<div id="block-menu-menu-task-bar" class="block block-menu">
+
+
+								<div class="content">
+									<ul class="menu">
+										<li class="first leaf"><a href="index.html" title=""><img alt=""
+													src="../../sites/default/themes/usability/css/images/methods_icon_1.png" />
+												<span>Methods</span></a></li>
+										<li class="leaf"><a href="../resources/templates.html" title=""><img alt=""
+													src="../../sites/default/themes/usability/css/images/resources&amp;templates_icon_1.png" />
+												<span>Templates &<br />Documents</span></a></li>
+										<li class="last leaf"><a href="https://guidelines.usability.gov/" title=""><img
+													alt=""
+													src="../../sites/default/themes/usability/css/images/guidelines_icon_1.png" />
+												<span>Guidelines</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="content">
+					<div id="breadcrumbs">
+						<p class='breadcrumb'><a href="../../index.html">Home</a> > <a href="../index.html">How To &amp;
+								Tools</a> > Color Basics</p>
+					</div>
 
 
 
-          <div id="tabs-wrapper" class="clearfix">          </div>                                        		  
-<div class="region region-content">
-
-      
- 
-        <a id="main-content"></a>
-                    				<h1 class="with-tabs">Color Basics</h1>
-					                  
-<div>
+					<div id="tabs-wrapper" class="clearfix"> </div>
+					<div class="region region-content">
 
 
-  <div>
 
-    
-	                                            <div id="block-system-main" class="block block-system">
+						<a id="main-content"></a>
+						<h1 class="with-tabs">Color Basics</h1>
 
-    
-  <div class="content">
-    <article about="/how-to-and-tools/methods/color-basics.html" typeof="sioc:Item foaf:Document">
-        <span property="dc:title" content="Color Basics" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
-  
-  <div>
-  
-
-      
+						<div>
 
 
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>A color wheel is an illustrative model of color hues around a circle.  It shows the relationships between the primary, secondary, and intermediate/ tertiary colors and helps demonstrate color temperature. Digital teams communicate exact colors through the use of hex codes.</p>
-<h2>
-	Understanding the Color Wheel</h2>
-<p>Many color wheels are shown using 12 colors.  Using this color wheel as an example, it can be read as follows:</p>
-<ul>
-<li>
-		<strong><img alt="Color wheel with Three Primary Colors (Ps): Red, Yellow, Blue; Three Secondary Colors (S’): Orange, Green, Violent; and Six Tertiary Colors (Ts):  Red-Orange, Yellow-Orange, Yellow-Green, Blue-Green, Blue-Violet, Red-Violet, which are formed by mixing a primary with a secondary" src="../../sites/default/files/images/color-wheel.png" style="width: 381px; height: 317px; float: right;" />Three Primary Colors (Ps)</strong>: Red, Yellow, Blue</li>
-<li>
-		<strong>Three Secondary Colors (S’)</strong>: Orange, Green, Violent</li>
-<li>
-		<strong>Six Tertiary Colors (Ts)</strong>:  Red-Orange, Yellow-Orange, Yellow-Green, Blue-Green, Blue-Violet, Red-Violet, which are formed by mixing a primary with a secondary</li>
-</ul>
-<p>It’s important to note that some people add more intermediates, for 24 total named colors, and some color wheels show interior points and circles, which represent color mixtures.</p>
-<h2>
-	Color Temperature</h2>
-<p>The colors on the red side of the wheel are warm; the green side of the wheel has the cooler colors. These color temperature designations are absolute. More subtle color temperature relationships are relative, meaning that each color on the warm side of the wheel can be known as cool, and colors on the cools side of the wheel can be known as warm depending on the relationship to their neighboring color. Colors from the same hue, for instance red, can also be warmer or cooler than one another.</p>
-<p>
-	Color temperatures affect us both psychologically and perceptually by helping us determine how objects appear positioned.</p>
-<table border="1" cellpadding="0" cellspacing="0" width="100%">
-<tbody>
-<tr bgcolor="#4f81bd">
-<th scope="col" valign="top" width="50%">
-				Warm Colors</th>
-<th scope="col" valign="top" width="50%">
-				Cool Colors</th>
-</tr>
-<tr>
-<td valign="top" width="319">
-<p class="rtecenter"><strong><img alt="Warm color scale" src="../../sites/default/files/warm-colors.png" style="width: 302px; height: 62px;" /></strong></p>
-<ul>
-<li>
-						Warm colors include red, orange, and yellow, and variations of those three colors.</li>
-<li>
-						Red and yellow are both primary colors, with orange falling in the middle.</li>
-<li>
-						Warm colors appear closer to the observer.</li>
-</ul>
-</td>
-<td valign="top" width="319">
-<p class="rtecenter"><img alt="Cool color scale" src="../../sites/default/files/cool-colors.png" style="width: 303px; height: 62px;" /></p>
-<ul>
-<li>
-						Cool colors include green, blue, and purple, and variations of those three colors.</li>
-<li>
-						Blue is the only primary color within the cool spectrum.</li>
-<li>
-						Greens take on some of the attributes of yellow, and purple takes on some of the attributes of red.</li>
-<li>
-						They are often more subdued than warm colors.</li>
-<li>
-						Cool colors appear farther from the observer.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-<h2>
-	Neutrals</h2>
-<p><img alt="Neutral colors" src="../../sites/default/files/images/neutrals.png" style="width: 285px; height: 67px; float: right;" />Neutral colors include black, white, gray, tans, and browns. They’re commonly combined with brighter accent colors but they can also be used on their own in designs. The meanings and impressions of neutral colors depend more so upon the colors around them.</p>
-<h2>
-	Color Models: CMYK vs. RGB</h2>
-<p>There are two models for colors.  They have different purposes and different attributes.  They are as follows:</p>
-<ul>
-<li>
-		<strong><img alt="CMYK Color Model / RGB Color Model" src="../../sites/default/files/cmyk-rgb.png" style="width: 124px; height: 284px; float: right;" />CMYK Color Models</strong>: Stands for cyan, magenta, and yellow. It applies to painting and printing.  The CMYK model is a subtractive model, meaning that colors are created through absorbing wavelengths of visible light. The wavelengths of light that don’t get absorbed are reflected, and that reflected light ends up being the color we see.</li>
-<li>
-		<strong>RGB Color Models</strong>: RGB stands for red, green, and blue. It applies to computers, televisions, and electronics. The RGB model is an additive model, meaning that colors are created through light waves that are added together in particular combinations in order to produce colors.</li>
-</ul>
-<h2>
-	Hex Codes</h2>
-<p>To name colors in web design, teams use hexademal code. All hexadermal codes:</p>
-<ul>
-<li>
-		Start with a hash mark (#)</li>
-<li>
-		<img alt="SmashingMagazine’s hex code example showing the three pairs of characters sequenced together (totaling of six characters), with each pair controlling one of the primary additive colors (red, green, blue)" src="../../sites/default/files/hex-colors.png" style="width: 233px; height: 121px; float: right;" />Consist of three pairs of characters sequenced together (totaling of six characters), with each pair controlling one of the primary additive colors (red, green, blue)</li>
-<li>
-		Those six characters following the hash mark consist of ten numerals (0-9) and/ or six letters (a-f)</li>
-</ul>
-<p>It is easy to identify patterns in the hex codes some colors; see <a href="http://www.smashingmagazine.com/2012/10/04/the-code-side-of-color/">SmashingMagazine’s great chart</a> <a href="https://www.hhs.gov/disclaimer.html"><img alt="Exit Disclaimer" src="../../sites/default/files/exit_disclaimer.png" style="width: 10px; height: 10px;" /></a> at the right for this. Some things to know include:</p>
-<ul>
-<li>
-		00 is a lack of primary</li>
-<li>
-		ff is the primary at full strength</li>
-</ul>
-<p>To find additive colors, start with black and change each pair to ff:</p>
-<ul type="disc">
-<li>
-		<img alt="SmashingMagazine’s chart showing the hex codes of black, the three additive colors, white, and the three subtractive colors" src="../../sites/default/files/hex-colors-2.png" style="width: 336px; height: 301px; float: right;" />#000000 is black (no primaries)</li>
-<li>
-		#<strong>ff</strong>0000 is the brightest red</li>
-<li>
-		#00<strong>ff</strong>00 is the brightest green</li>
-<li>
-		#0000<strong>ff</strong> is the brightest blue</li>
-</ul>
-<p>To find subtractive colors, start with white and change each pair to 00:</p>
-<ul type="disc">
-<li>
-		#ffffff is white (all primaries</li>
-<li>
-		#<strong>00</strong>ffff is the brightest cyan</li>
-<li>
-		#ff<strong>00</strong>ff is the brightest magenta</li>
-<li>
-		#ffff<strong>00</strong> is the brightest yellow</li>
-</ul>
-<p>It is also possible to abbreviate some hex numbers.  For instances #fae expands to #ffaaee and #09b expands to #0099bb.</p>
-<h2>
-	Additional Resources</h2>
-<ul>
-<li>
-		Color Meaning</li>
-<li>
-		Color Pallets</li>
-<li>
-		<a href="http://www.smashingmagazine.com/2010/01/28/color-theory-for-designers-part-1-the-meaning-of-color/">Color Theory for Designers, Part 1: The Meaning of Color</a> <a href="https://www.hhs.gov/disclaimer.html"><img alt="Exit Disclaimer" src="../../sites/default/files/exit_disclaimer.png" style="width: 10px; height: 10px;" /></a></li>
-<li>
-		<a href="http://www.smashingmagazine.com/2012/10/04/the-code-side-of-color/">The Code Side of Color</a> <a href="https://www.hhs.gov/disclaimer.html"><img alt="Exit Disclaimer" src="../../sites/default/files/exit_disclaimer.png" style="width: 10px; height: 10px;" /></a></li>
-<li>
-		<a href="http://blog.hubspot.com/marketing/color-palette-famous-websites">Color Theory 101: Deconstructing 7 Famous Brands' Color Palettes</a> <a href="https://www.hhs.gov/disclaimer.html"><img alt="Exit Disclaimer" src="../../sites/default/files/exit_disclaimer.png" style="width: 10px; height: 10px;" /></a></li>
-<li>
-		<a href="http://daphne.palomar.edu/design/color.html">Color</a> <a href="https://www.hhs.gov/disclaimer.html"><img alt="Exit Disclaimer" src="../../sites/default/files/exit_disclaimer.png" style="width: 10px; height: 10px;" /></a></li>
-<li>
-		<a href="http://desktoppub.about.com/cs/color/a/symbolism.htm">Color Meanings</a> <a href="https://www.hhs.gov/disclaimer.html"><img alt="Exit Disclaimer" src="../../sites/default/files/exit_disclaimer.png" style="width: 10px; height: 10px;" /></a></li>
-<li>
-		<a href="http://www.color-wheel-pro.com/color-meaning.html">Color Wheel Pro: Color Meaning</a> <a href="https://www.hhs.gov/disclaimer.html"><img alt="Exit Disclaimer" src="../../sites/default/files/exit_disclaimer.png" style="width: 10px; height: 10px;" /></a></li>
-</ul>
-</div></div></div>
-     <div id="voc-wrapper">
-		<div id="survey_target" style="border-top:1px solid #ccc;"> </div>
-	</div>
+							<div>
 
-            
-	  
-  </div>
 
-</article>
-  </div>
-</div>
-      </div>  
-</div>
+								<div id="block-system-main" class="block block-system">
 
-</div>
-	</div>
-	<div id="sidebarRight">
-	<div id="sidebar-right">
-			  <div class="region region-sidebar-right">
-    <div id="block-views-related-content-block-5" class="block block-views">
 
-    <h2>Related Content</h2>
-  
-  <div class="content">
-    <div class="view view-related-content view-id-related_content view-display-id-block_5 view-dom-id-bd1696cdfa1ef684d32eca764a106efb">
-        
-  
-  
-      <div class="view-content">
-      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="../../get-involved/blog/2015/05/welcome-to-relauched-hhsgov.html">Welcome to the Reimagined HHS.gov</a></span>  </div></li>
-          <li class="views-row views-row-2 views-row-even">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="../../get-involved/blog/2013/11/creating-cross-channel-experiences.html">Creating Cross-Channel Experiences</a></span>  </div></li>
-          <li class="views-row views-row-3 views-row-odd">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="../../what-and-why/user-centered-government.html">Creating a User-Centered Approach in Government</a></span>  </div></li>
-          <li class="views-row views-row-4 views-row-even">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="../../what-and-why/visual-design.html">Visual Design Basics</a></span>  </div></li>
-          <li class="views-row views-row-5 views-row-odd views-row-last">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="../../get-involved/blog/2013/08/responsive-design-one-site-fits-all.html">One Site Fits All: A Responsive Solution</a></span>  </div></li>
-      </ul></div>    </div>
-  
-  
-  
-  
-  
-  
-</div>  </div>
-</div>
-<div id="block-views-resources-views-block-5" class="block block-views">
+									<div class="content">
+										<article about="/how-to-and-tools/methods/color-basics.html"
+											typeof="sioc:Item foaf:Document">
+											<span property="dc:title" content="Color Basics"
+												class="rdf-meta element-hidden"></span><span property="sioc:num_replies"
+												content="0" datatype="xsd:integer"
+												class="rdf-meta element-hidden"></span>
 
-    <h2>Related Resources</h2>
-  
-  <div class="content">
-    <div class="view view-resources-views view-id-resources_views view-display-id-block_5 view-dom-id-55ebe1c629d48d52e1f5bf3d217f1d12">
-        
-  
-  
-      <div class="view-content">
-      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="../resources/templates/creating-wireframes.html">Creating Wireframes</a></span>  </div></li>
-          <li class="views-row views-row-2 views-row-even">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="../resources/publications/universal-principles-design-revised-and-updated-125-ways-enhance-usability-influence-perception.html">Universal Principles of Design, Revised and Updated: 125 Ways to Enhance Usability,...</a></span>  </div></li>
-          <li class="views-row views-row-3 views-row-odd">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="../resources/multimedia-and-trainings/improve-efficiency-and-usability-design-templates.html">Improve Efficiency and Usability with Design Templates</a></span>  </div></li>
-          <li class="views-row views-row-4 views-row-even views-row-last">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="../resources/multimedia-and-trainings/mobile-webinar-series-responsive-design.html">Mobile Webinar Series: Responsive Design</a></span>  </div></li>
-      </ul></div>    </div>
-  
-  
-  
-  
-  
-  
-</div>  </div>
-</div>
-<div id="block-views-related-categories-block-1" class="block block-views">
+											<div>
 
-    <h2>Related Categories</h2>
-  
-  <div class="content">
-    <div class="view view-related-categories view-id-related_categories view-display-id-block_1 view-dom-id-643a1c82da47217bd9e5ef01bfd2e218">
-        
-  
-  
-      <div class="view-content">
-      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">  
-  <div class="views-field views-field-name">        <span class="field-content"><a href="../../tags/basics/index.html">Basics</a></span>  </div></li>
-      </ul></div>    </div>
-  
-  
-  
-  
-  
-  
-</div>  </div>
-</div>
-  </div>
+
+
+
+
+												<div
+													class="field field-name-body field-type-text-with-summary field-label-hidden">
+													<div class="field-items">
+														<div class="field-item even" property="content:encoded">
+															<p>A color wheel is an illustrative model of color hues
+																around a circle.  It shows the relationships between the
+																primary, secondary, and intermediate/ tertiary colors
+																and helps demonstrate color temperature. Digital teams
+																communicate exact colors through the use of hex codes.
+															</p>
+															<h2>
+																Understanding the Color Wheel</h2>
+															<p>Many color wheels are shown using 12 colors.  Using this
+																color wheel as an example, it can be read as follows:
+															</p>
+															<ul>
+																<li>
+																	<strong><img
+																			alt="Color wheel with Three Primary Colors (Ps): Red, Yellow, Blue; Three Secondary Colors (S’): Orange, Green, Violet; and Six Tertiary Colors (Ts):  Red-Orange, Yellow-Orange, Yellow-Green, Blue-Green, Blue-Violet, Red-Violet, which are formed by mixing a primary with a secondary"
+																			src="../../sites/default/files/images/color-wheel.png"
+																			style="width: 381px; height: 317px; float: right;" />Three
+																		Primary Colors (Ps)</strong>: Red, Yellow, Blue
+																</li>
+																<li>
+																	<strong>Three Secondary Colors (S’)</strong>:
+																	Orange, Green, Violet</li>
+																<li>
+																	<strong>Six Tertiary Colors (Ts)</strong>:
+																	 Red-Orange, Yellow-Orange, Yellow-Green,
+																	Blue-Green, Blue-Violet, Red-Violet, which are
+																	formed by mixing a primary with a secondary</li>
+															</ul>
+															<p>It’s important to note that some people add more
+																intermediates, for 24 total named colors, and some color
+																wheels show interior points and circles, which represent
+																color mixtures.</p>
+															<h2>
+																Color Temperature</h2>
+															<p>The colors on the red side of the wheel are warm; the
+																green side of the wheel has the cooler colors. These
+																color temperature designations are absolute. More subtle
+																color temperature relationships are relative, meaning
+																that each color on the warm side of the wheel can be
+																known as cool, and colors on the cools side of the wheel
+																can be known as warm depending on the relationship to
+																their neighboring color. Colors from the same hue, for
+																instance red, can also be warmer or cooler than one
+																another.</p>
+															<p>
+																Color temperatures affect us both psychologically and
+																perceptually by helping us determine how objects appear
+																positioned.</p>
+															<table border="1" cellpadding="0" cellspacing="0"
+																width="100%">
+																<tbody>
+																	<tr bgcolor="#4f81bd">
+																		<th scope="col" valign="top" width="50%">
+																			Warm Colors</th>
+																		<th scope="col" valign="top" width="50%">
+																			Cool Colors</th>
+																	</tr>
+																	<tr>
+																		<td valign="top" width="319">
+																			<p class="rtecenter"><strong><img
+																						alt="Warm color scale"
+																						src="../../sites/default/files/warm-colors.png"
+																						style="width: 302px; height: 62px;" /></strong>
+																			</p>
+																			<ul>
+																				<li>
+																					Warm colors include red, orange, and
+																					yellow, and variations of those
+																					three colors.</li>
+																				<li>
+																					Red and yellow are both primary
+																					colors, with orange falling in the
+																					middle.</li>
+																				<li>
+																					Warm colors appear closer to the
+																					observer.</li>
+																			</ul>
+																		</td>
+																		<td valign="top" width="319">
+																			<p class="rtecenter"><img
+																					alt="Cool color scale"
+																					src="../../sites/default/files/cool-colors.png"
+																					style="width: 303px; height: 62px;" />
+																			</p>
+																			<ul>
+																				<li>
+																					Cool colors include green, blue, and
+																					purple, and variations of those
+																					three colors.</li>
+																				<li>
+																					Blue is the only primary color
+																					within the cool spectrum.</li>
+																				<li>
+																					Greens take on some of the
+																					attributes of yellow, and purple
+																					takes on some of the attributes of
+																					red.</li>
+																				<li>
+																					They are often more subdued than
+																					warm colors.</li>
+																				<li>
+																					Cool colors appear farther from the
+																					observer.</li>
+																			</ul>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															<h2>
+																Neutrals</h2>
+															<p><img alt="Neutral colors"
+																	src="../../sites/default/files/images/neutrals.png"
+																	style="width: 285px; height: 67px; float: right;" />Neutral
+																colors include black, white, gray, tans, and browns.
+																They’re commonly combined with brighter accent colors
+																but they can also be used on their own in designs. The
+																meanings and impressions of neutral colors depend more
+																so upon the colors around them.</p>
+															<h2>
+																Color Models: CMYK vs. RGB</h2>
+															<p>There are two models for colors.  They have different
+																purposes and different attributes.  They are as follows:
+															</p>
+															<ul>
+																<li>
+																	<strong><img
+																			alt="CMYK Color Model / RGB Color Model"
+																			src="../../sites/default/files/cmyk-rgb.png"
+																			style="width: 124px; height: 284px; float: right;" />CMYK
+																		Color Models</strong>: Stands for cyan, magenta,
+																	and yellow. It applies to painting and printing. 
+																	The CMYK model is a subtractive model, meaning that
+																	colors are created through absorbing wavelengths of
+																	visible light. The wavelengths of light that don’t
+																	get absorbed are reflected, and that reflected light
+																	ends up being the color we see.</li>
+																<li>
+																	<strong>RGB Color Models</strong>: RGB stands for
+																	red, green, and blue. It applies to computers,
+																	televisions, and electronics. The RGB model is an
+																	additive model, meaning that colors are created
+																	through light waves that are added together in
+																	particular combinations in order to produce colors.
+																</li>
+															</ul>
+															<h2>
+																Hex Codes</h2>
+															<p>To name colors in web design, teams use hexademal code.
+																All hexadermal codes:</p>
+															<ul>
+																<li>
+																	Start with a hash mark (#)</li>
+																<li>
+																	<img alt="SmashingMagazine’s hex code example showing the three pairs of characters sequenced together (totaling of six characters), with each pair controlling one of the primary additive colors (red, green, blue)"
+																		src="../../sites/default/files/hex-colors.png"
+																		style="width: 233px; height: 121px; float: right;" />Consist
+																	of three pairs of characters sequenced together
+																	(totaling of six characters), with each pair
+																	controlling one of the primary additive colors (red,
+																	green, blue)</li>
+																<li>
+																	Those six characters following the hash mark consist
+																	of ten numerals (0-9) and/ or six letters (a-f)</li>
+															</ul>
+															<p>It is easy to identify patterns in the hex codes some
+																colors; see <a
+																	href="http://www.smashingmagazine.com/2012/10/04/the-code-side-of-color/">SmashingMagazine’s
+																	great chart</a> <a
+																	href="https://www.hhs.gov/disclaimer.html"><img
+																		alt="Exit Disclaimer"
+																		src="../../sites/default/files/exit_disclaimer.png"
+																		style="width: 10px; height: 10px;" /></a> at the
+																right for this. Some things to know include:</p>
+															<ul>
+																<li>
+																	00 is a lack of primary</li>
+																<li>
+																	ff is the primary at full strength</li>
+															</ul>
+															<p>To find additive colors, start with black and change each
+																pair to ff:</p>
+															<ul type="disc">
+																<li>
+																	<img alt="SmashingMagazine’s chart showing the hex codes of black, the three additive colors, white, and the three subtractive colors"
+																		src="../../sites/default/files/hex-colors-2.png"
+																		style="width: 336px; height: 301px; float: right;" />#000000 is
+																	black (no primaries)</li>
+																<li>
+																	#<strong>ff</strong>0000 is the brightest red</li>
+																<li>
+																	#00<strong>ff</strong>00 is the brightest green</li>
+																<li>
+																	#0000<strong>ff</strong> is the brightest blue</li>
+															</ul>
+															<p>To find subtractive colors, start with white and change
+																each pair to 00:</p>
+															<ul type="disc">
+																<li>
+																	#ffffff is white (all primaries</li>
+																<li>
+																	#<strong>00</strong>ffff is the brightest cyan</li>
+																<li>
+																	#ff<strong>00</strong>ff is the brightest magenta
+																</li>
+																<li>
+																	#ffff<strong>00</strong> is the brightest yellow
+																</li>
+															</ul>
+															<p>It is also possible to abbreviate some hex numbers.  For
+																instances #fae expands to #ffaaee and #09b expands to
+																#0099bb.</p>
+															<h2>
+																Additional Resources</h2>
+															<ul>
+																<li>
+																	Color Meaning</li>
+																<li>
+																	Color Pallets</li>
+																<li>
+																	<a
+																		href="http://www.smashingmagazine.com/2010/01/28/color-theory-for-designers-part-1-the-meaning-of-color/">Color
+																		Theory for Designers, Part 1: The Meaning of
+																		Color</a> <a
+																		href="https://www.hhs.gov/disclaimer.html"><img
+																			alt="Exit Disclaimer"
+																			src="../../sites/default/files/exit_disclaimer.png"
+																			style="width: 10px; height: 10px;" /></a>
+																</li>
+																<li>
+																	<a
+																		href="http://www.smashingmagazine.com/2012/10/04/the-code-side-of-color/">The
+																		Code Side of Color</a> <a
+																		href="https://www.hhs.gov/disclaimer.html"><img
+																			alt="Exit Disclaimer"
+																			src="../../sites/default/files/exit_disclaimer.png"
+																			style="width: 10px; height: 10px;" /></a>
+																</li>
+																<li>
+																	<a
+																		href="http://blog.hubspot.com/marketing/color-palette-famous-websites">Color
+																		Theory 101: Deconstructing 7 Famous Brands'
+																		Color Palettes</a> <a
+																		href="https://www.hhs.gov/disclaimer.html"><img
+																			alt="Exit Disclaimer"
+																			src="../../sites/default/files/exit_disclaimer.png"
+																			style="width: 10px; height: 10px;" /></a>
+																</li>
+																<li>
+																	<a
+																		href="http://daphne.palomar.edu/design/color.html">Color</a> <a
+																		href="https://www.hhs.gov/disclaimer.html"><img
+																			alt="Exit Disclaimer"
+																			src="../../sites/default/files/exit_disclaimer.png"
+																			style="width: 10px; height: 10px;" /></a>
+																</li>
+																<li>
+																	<a
+																		href="http://desktoppub.about.com/cs/color/a/symbolism.htm">Color
+																		Meanings</a> <a
+																		href="https://www.hhs.gov/disclaimer.html"><img
+																			alt="Exit Disclaimer"
+																			src="../../sites/default/files/exit_disclaimer.png"
+																			style="width: 10px; height: 10px;" /></a>
+																</li>
+																<li>
+																	<a
+																		href="http://www.color-wheel-pro.com/color-meaning.html">Color
+																		Wheel Pro: Color Meaning</a> <a
+																		href="https://www.hhs.gov/disclaimer.html"><img
+																			alt="Exit Disclaimer"
+																			src="../../sites/default/files/exit_disclaimer.png"
+																			style="width: 10px; height: 10px;" /></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div id="voc-wrapper">
+													<div id="survey_target" style="border-top:1px solid #ccc;"> </div>
+												</div>
+
+
+
+											</div>
+
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div id="sidebarRight">
+					<div id="sidebar-right">
+						<div class="region region-sidebar-right">
+							<div id="block-views-related-content-block-5" class="block block-views">
+
+								<h2>Related Content</h2>
+
+								<div class="content">
+									<div
+										class="view view-related-content view-id-related_content view-display-id-block_5 view-dom-id-bd1696cdfa1ef684d32eca764a106efb">
+
+
+
+										<div class="view-content">
+											<div class="item-list">
+												<ul>
+													<li class="views-row views-row-1 views-row-odd views-row-first">
+														<div class="views-field views-field-title"> <span
+																class="field-content"><a
+																	href="../../get-involved/blog/2015/05/welcome-to-relauched-hhsgov.html">Welcome
+																	to the Reimagined HHS.gov</a></span> </div>
+													</li>
+													<li class="views-row views-row-2 views-row-even">
+														<div class="views-field views-field-title"> <span
+																class="field-content"><a
+																	href="../../get-involved/blog/2013/11/creating-cross-channel-experiences.html">Creating
+																	Cross-Channel Experiences</a></span> </div>
+													</li>
+													<li class="views-row views-row-3 views-row-odd">
+														<div class="views-field views-field-title"> <span
+																class="field-content"><a
+																	href="../../what-and-why/user-centered-government.html">Creating
+																	a User-Centered Approach in Government</a></span>
+														</div>
+													</li>
+													<li class="views-row views-row-4 views-row-even">
+														<div class="views-field views-field-title"> <span
+																class="field-content"><a
+																	href="../../what-and-why/visual-design.html">Visual
+																	Design Basics</a></span> </div>
+													</li>
+													<li class="views-row views-row-5 views-row-odd views-row-last">
+														<div class="views-field views-field-title"> <span
+																class="field-content"><a
+																	href="../../get-involved/blog/2013/08/responsive-design-one-site-fits-all.html">One
+																	Site Fits All: A Responsive Solution</a></span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+
+
+
+
+
+									</div>
+								</div>
+							</div>
+							<div id="block-views-resources-views-block-5" class="block block-views">
+
+								<h2>Related Resources</h2>
+
+								<div class="content">
+									<div
+										class="view view-resources-views view-id-resources_views view-display-id-block_5 view-dom-id-55ebe1c629d48d52e1f5bf3d217f1d12">
+
+
+
+										<div class="view-content">
+											<div class="item-list">
+												<ul>
+													<li class="views-row views-row-1 views-row-odd views-row-first">
+														<div class="views-field views-field-title"> <span
+																class="field-content"><a
+																	href="../resources/templates/creating-wireframes.html">Creating
+																	Wireframes</a></span> </div>
+													</li>
+													<li class="views-row views-row-2 views-row-even">
+														<div class="views-field views-field-title"> <span
+																class="field-content"><a
+																	href="../resources/publications/universal-principles-design-revised-and-updated-125-ways-enhance-usability-influence-perception.html">Universal
+																	Principles of Design, Revised and Updated: 125 Ways
+																	to Enhance Usability,...</a></span> </div>
+													</li>
+													<li class="views-row views-row-3 views-row-odd">
+														<div class="views-field views-field-title"> <span
+																class="field-content"><a
+																	href="../resources/multimedia-and-trainings/improve-efficiency-and-usability-design-templates.html">Improve
+																	Efficiency and Usability with Design
+																	Templates</a></span> </div>
+													</li>
+													<li class="views-row views-row-4 views-row-even views-row-last">
+														<div class="views-field views-field-title"> <span
+																class="field-content"><a
+																	href="../resources/multimedia-and-trainings/mobile-webinar-series-responsive-design.html">Mobile
+																	Webinar Series: Responsive Design</a></span> </div>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+
+
+
+
+
+									</div>
+								</div>
+							</div>
+							<div id="block-views-related-categories-block-1" class="block block-views">
+
+								<h2>Related Categories</h2>
+
+								<div class="content">
+									<div
+										class="view view-related-categories view-id-related_categories view-display-id-block_1 view-dom-id-643a1c82da47217bd9e5ef01bfd2e218">
+
+
+
+										<div class="view-content">
+											<div class="item-list">
+												<ul>
+													<li
+														class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+														<div class="views-field views-field-name"> <span
+																class="field-content"><a
+																	href="../../tags/basics/index.html">Basics</a></span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+
+
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearBoth"></div>
 			</div>
-	</div>
-	<div class="clearBoth"></div>	
-	</div>
-	</div>
-	<div id="footerWrapper">
-		  <div class="girdle">
-		  <div class="region region-footer">
-    <div id="block-nodeblock-36" class="block block-nodeblock">
-
-    
-  <div class="content">
-    <article about="/footer.html" typeof="sioc:Item foaf:Document">
-    
-  
-  <div>
-  
-
-      
+		</div>
+		<div id="footerWrapper">
+			<div class="girdle">
+				<div class="region region-footer">
+					<div id="block-nodeblock-36" class="block block-nodeblock">
 
 
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div role="contentinfo">
-<div id="footerBranding">
-<p><a href="/"><img alt="usability.gov, go to the homepage" src="../../sites/default/files/images/footer-logo.png" /></a></p>
-</div>
-<div id="stayConnected">
-		Stay Connected <a href="https://twitter.com/usabilitygov"><img alt="Follow us on Twitter @UsabilityGov" src="../../sites/default/files/images/footer_twitter_icon.png" title="Follow us on Twitter @UsabilityGov" /></a><a href="../../rss.xml"><img alt="RSS Feed" src="../../sites/default/files/images/rss-image-footer.png" title="RSS Feed" /></a></div>
-<div id="footerLinks">
-<ul>
-<li>
-				<a href="https://www.gsa.gov/website-information/accessibility-aids">Accessibility</a></li>
-<li>
-				<a href="https://www.gsa.gov/reference/gsa-privacy-program/privacy-policy-and-procedures-guide">Privacy Policy</a></li>
-<li>
-				<a href="https://www.gsa.gov/reference/freedom-of-information-act-foia">FOIA</a></li>
-<li>
-				<a href="../../about-us/index.html">About Us</a></li>
-<li>
-				<a href="../../site-tour.html">Tour the Site</a></li>
-<li>
+						<div class="content">
+							<article about="/footer.html" typeof="sioc:Item foaf:Document">
 
-				<a href="https://www.gsa.gov/website-information/website-policies">Website Policies</a></li>
-<li>
-				<a href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002">No FEAR</a></li>
 
-<li>
-				<a href="http://www.whitehouse.gov/">WhiteHouse.gov</a></li>
-<li>
-				<a href="http://www.usa.gov/">USA.gov</a></li>
-<li>
-				<a class="last" href="http://www.gobiernousa.gov/">GobiernoUSA.gov</a></li>
-</ul>
-</div>
-<div id="branddate">
-		<img alt="U.S. Flag" src="../../sites/default/files/images/footer_usaflag_icon.png" style="width: 20px; height: 13px; margin-right: 15px;" /> 
-<script>
-<!--//--><![CDATA[// ><!--
-var now = new Date();document.write(now.format('mmmm dd, yyyy'));
+								<div>
+
+
+
+
+
+									<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+										<div class="field-items">
+											<div class="field-item even" property="content:encoded">
+												<div role="contentinfo">
+													<div id="footerBranding">
+														<p><a href="/"><img alt="usability.gov, go to the homepage"
+																	src="../../sites/default/files/images/footer-logo.png" /></a>
+														</p>
+													</div>
+													<div id="stayConnected">
+														Stay Connected <a href="https://twitter.com/usabilitygov"><img
+																alt="Follow us on Twitter @UsabilityGov"
+																src="../../sites/default/files/images/footer_twitter_icon.png"
+																title="Follow us on Twitter @UsabilityGov" /></a><a
+															href="../../rss.xml"><img alt="RSS Feed"
+																src="../../sites/default/files/images/rss-image-footer.png"
+																title="RSS Feed" /></a></div>
+													<div id="footerLinks">
+														<ul>
+															<li>
+																<a
+																	href="https://www.gsa.gov/website-information/accessibility-aids">Accessibility</a>
+															</li>
+															<li>
+																<a
+																	href="https://www.gsa.gov/reference/gsa-privacy-program/privacy-policy-and-procedures-guide">Privacy
+																	Policy</a></li>
+															<li>
+																<a
+																	href="https://www.gsa.gov/reference/freedom-of-information-act-foia">FOIA</a>
+															</li>
+															<li>
+																<a href="../../about-us/index.html">About Us</a></li>
+															<li>
+																<a href="../../site-tour.html">Tour the Site</a></li>
+															<li>
+
+																<a
+																	href="https://www.gsa.gov/website-information/website-policies">Website
+																	Policies</a></li>
+															<li>
+																<a
+																	href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002">No
+																	FEAR</a></li>
+
+															<li>
+																<a href="http://www.whitehouse.gov/">WhiteHouse.gov</a>
+															</li>
+															<li>
+																<a href="http://www.usa.gov/">USA.gov</a></li>
+															<li>
+																<a class="last"
+																	href="http://www.gobiernousa.gov/">GobiernoUSA.gov</a>
+															</li>
+														</ul>
+													</div>
+													<div id="branddate">
+														<img alt="U.S. Flag"
+															src="../../sites/default/files/images/footer_usaflag_icon.png"
+															style="width: 20px; height: 13px; margin-right: 15px;" />
+														<script>
+< !--//-->
+														< ![CDATA[// ><!--
+var now = new Date(); document.write(now.format('mmmm dd, yyyy'));
 //--><!]]>
-</script></div>
-<div id="copyright">
-	<a class="footerLinks" href="https://www.gsa.gov">U.S. General Services Administration</a> Technology Transformation Services</div>
-</div>
-<p> </p>
-</div></div></div>
-	            
-	  
-  </div>
+														</script>
+													</div>
+													<div id="copyright">
+														<a class="footerLinks" href="https://www.gsa.gov">U.S. General
+															Services Administration</a> Technology Transformation
+														Services</div>
+												</div>
+												<p> </p>
+											</div>
+										</div>
+									</div>
 
-</article>
-  </div>
-</div>
-  </div>
+
+								</div>
+
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
 	</div>
-  	
-</div>
 
 
 
@@ -538,12 +826,13 @@ var now = new Date();document.write(now.format('mmmm dd, yyyy'));
 
 
 
-    
-<!--[if IE 8]>
+
+	<!--[if IE 8]>
 </div id="ie-8">
 <![endif]-->
-<!--[if IE 9]>
+	<!--[if IE 9]>
 </div id="ie-9">
-<![endif]-->  
+<![endif]-->
 </body>
+
 </html>
